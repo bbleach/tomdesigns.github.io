@@ -38,6 +38,12 @@
 			</div>
 		</div>
 	</div>
+	<div class="mobile-content mobilelogo">
+		<p>test</p>
+		<a href="#hidemobile">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</a>
+	</div>
 	<div class="about">
 		<div class="about-text">
 			<h1>I specialise in front-end development</h1>
@@ -76,6 +82,7 @@
 	$(document).ready(function () { $('.navbutton2').hide()});
 	$(document).ready(function () { $('.navbutton3').hide()});
 	$(document).ready(function () { $('.navbutton4').hide()});
+	$(document).ready(function () { $('.mobile-content').hide()});
 	
 	 $(".nav").hover(
         function () {
@@ -97,9 +104,11 @@
 	});
 	
 	$(".scrollbutton2").click(function() {
-    $('html, body').stop().animate({
-        scrollTop: $(".about").offset().top
-    }, 2000, 'easeInOutExpo');
+    $('html, body').stop().animate({scrollTop: $(".about").offset().top}, 2000, 'easeInOutExpo');
+	});
+	
+	$(".mobilelogo").click(function() {
+    $('.mobile-content').stop().fadeIn(600)
 	});
 		
 	$(".scrollbutton3").click(function() {
@@ -167,13 +176,6 @@
         dotColor: '#ff0000',
         lineColor: '#ff0000'
     });
-	
-	var waypoint = new Waypoint({
-		element: document.getElementById('.contact'),
-		handler: function(direction) {
-    		alert('Direction: ' + direction)
-		}
-	})
 	
 </script>
 </body>
