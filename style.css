@@ -288,12 +288,14 @@
 		width: 100vw;
 		position: fixed;
 		z-index: 0;
+		display: none;
 	}
 	.header-particles-wrapper {
 		height: 120%;
 		position: fixed;
 		top: -20%;
 		z-index: 0;
+		display: none;
 	}
 	.hero-text,.hero-subtext {
 		position: fixed;
