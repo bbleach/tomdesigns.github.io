@@ -180,6 +180,9 @@
 		height: 200px;
 		z-index: 10;
 	}
+	.mobile-content {
+		display: none;
+	}
 }
 @media screen and (orientation: portrait){
 	* {
@@ -187,6 +190,23 @@
 		margin: 0px;
 		padding: 0px;
 		font-family: Roboto, sans-serif;
+		overflow: hidden;
+	}
+	.mobile-content {
+		width: 400vw;
+		height: 100%;
+		z-index: 100;
+		top: -100vh;
+		position: relative;
+		background-color: #ffffff;
+		color: #000000
+	}
+	.mobilelogo {
+		position: fixed;
+		color: 000000;
+		margin-top: 30px;
+		margin-left: 50%;
+		transform: translateX(-50%) scale(3);
 	}
 	footer {
 		overflow: hidden;
@@ -296,9 +316,10 @@
 		position: fixed;
 		top: 85vh;
 		left: 50%;
- 		   transform: translateX(-50%);
+ 		transform: translateX(-50%);
 		transform: scale(5);
 		z-index: 10;
+		display: none;
 	}
 	.about {
  		background: #03A9F4;
