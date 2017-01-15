@@ -107,7 +107,7 @@ html,body {
 }
 .hero-subtext {
 	font-size: 2vw;
-	line-height: 60vh;
+	line-height: 200px;
 }
 .scrollButton2{
 	position: fixed;
