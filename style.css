@@ -283,13 +283,13 @@
 		z-index: 2;
 	}
 	.hero-text {
-		font-size: 8vw;
+		font-size: 6vw;
 	}
 	.hero-text b {
 		color: #40C4FF;
 	}
 	.hero-subtext {
-		font-size: 4vw;
+		font-size: 3vw;
 		line-height: 20vh;
 	}
 	.scrollButton2{
