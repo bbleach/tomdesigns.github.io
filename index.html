@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="particleground-master/jquery.particleground.min.js"></script>
+<script src="https://use.fontawesome.com/e384dc41c7.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="imakewebthings-waypoints-34d9f6d/lib/jquery.waypoints.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+<title>2017Site</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="nav">
+		<a href="#header" class="navbutton1 logo">	
+			<i class="fa fa-university" aria-hidden="true"></i>
+		</a>	
+		<ul>
+			<li><a class="navbutton2" href="#about">About</a></li>
+ 			<li><a class="navbutton3" href="#portfolio">Projects</a></li>
+ 			<li><a class="navbutton4" href="#contact">Contact</a></li>
+		</ul>
+	</div>
+	<div class="header-wrapper">
+		<div class="header">
+				<h1 class="hero-text">Hey, <b>I'm Tom</b></h1>
+				<h2 class="hero-subtext">Graphic and web designer</h2>
+				<a href="#about" class="scrollbutton2"><div class="scrollButton2"><i class="material-icons">expand_more</i></div></a>
+			<div class="header-particles-wrapper">
+				<div class="header-particles">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about">
+		<div class="about-text">
+			<h1>I specialise in front-end development</h1>
+		</div>
+	</div>
+	<div class="portfolio">
+	</div>
+	<div class="contact">
+		<div class="contact-text">
+			<h1>Contact Me</h1><br>
+			<h2><span class="contact-text-title">E-mail:</span> <a href="mailto:hello@tomdesigner.co.uk?Subject=Business%20Enquiry" onclick="#contact" target="_top">
+			hello@tomdesigner.co.uk*</a></h2>
+			<h2><span class="contact-text-title">Skype:</span> <a href="skype:live:djt8000?userinfo">live:djt8000</a></h2><br><br><br><br><br>
+			<p>*Replys from 'tommitchelmore@outlook.com'</p>
+		</div>
+	</div>
+	<div class="footer">
+	</div>
+
+<script>
+ 	$(window).scroll(function() {
+  		if ($(this).hero-text()> 100) {
+			$('.hero-text').fadeOut();
+				} else {
+					$('.hero-text').fadeIn();
+			}
+	});
+	$(window).on('beforeunload', function(){
+  	$(window).scrollTop(0);
+	});
+	$(document).ready(function () { $('html').hide().fadeIn(1500).delay(6000)});
+	$(document).ready(function () { $('.hero-text').hide().delay(1500).fadeIn(3000)});
+	$(document).ready(function () { $('.hero-subtext').hide().delay(2000).fadeIn(3000)});
+	$(document).ready(function () { $('.scrollbutton2').hide().delay(3000).fadeIn(300)});
+	$(document).ready(function () { $('.nav').animate({top: -80})});
+	$(document).ready(function () { $('.navbutton2').hide()});
+	$(document).ready(function () { $('.navbutton3').hide()});
+	$(document).ready(function () { $('.navbutton4').hide()});
+	
+	 $(".nav").hover(
+        function () {
+			$(".navbutton2").fadeIn();
+			$(".navbutton3").fadeIn();
+			$(".navbutton4").fadeIn();
+        },
+        function () {
+			$(".navbutton2").fadeOut();
+			$(".navbutton3").fadeOut();
+			$(".navbutton4").fadeOut();
+        }
+    );
+	
+	$(".scrollbutton1").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $(".header-wrapper").offset().top
+    }, 2000, 'easeInOutExpo');
+	});
+	
+	$(".scrollbutton2").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $(".about").offset().top
+    }, 2000, 'easeInOutExpo');
+	});
+		
+	$(".scrollbutton3").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $(".portfolio").offset().top
+    }, 2000, 'easeInOutExpo');
+	});
+	
+	$(".scrollbutton4").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $(".contact").offset().top
+    }, 2000, 'easeInOutExpo');
+	});
+	
+	$(".navbutton1").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $(".header-wrapper").offset().top
+    }, 2000, 'easeInOutExpo');
+	});
+	
+	$(".navbutton2").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $(".about").offset().top
+    }, 2000, 'easeInOutExpo');
+	});
+	
+	$(".navbutton3").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $(".portfolio").offset().top
+    }, 2000, 'easeInOutExpo');
+	});
+	
+	$(".navbutton4").click(function() {
+    $('html, body').stop().animate({
+        scrollTop: $(".contact").offset().top
+    }, 2000, 'easeInOutExpo');
+	});
+	
+	$(document).scroll(function() {
+		var y = $(this).scrollTop();
+		if (y > 300) {
+    $('.nav').stop().animate({top: 0}, {duration: 600, easing: "easeOutCirc" });
+	} else {
+    $('.nav').stop().animate({top: -80}, {duration: 600, easing: "easeOutCirc" });
+	}
+	});
+    
+	$(document).scroll(function() {
+		var y = $(this).scrollTop();
+		if (y < 300) {
+    $('.hero-text').stop().fadeIn(1000);
+	$('.hero-subtext').stop().fadeIn(1000);
+	$('.scrollbutton2').stop().fadeIn(300);
+	$('.header-particles').stop().fadeIn(100);
+	} else {
+    $('.hero-text').stop().fadeOut(100);
+	$('.hero-subtext').stop().fadeOut(100);
+	$('.scrollbutton2').stop().fadeOut(100);
+	$('.header-particles').stop().fadeOut(100);
+	}
+	});
+	
+	$('.header-particles').particleground();
+	    $('.header-particles').particleground({
+        dotColor: '#ff0000',
+        lineColor: '#ff0000'
+    });
+	
+	var waypoint = new Waypoint({
+		element: document.getElementById('.contact'),
+		handler: function(direction) {
+    		alert('Direction: ' + direction)
+		}
+	})
+	
+</script>
+</body>
+</html>
