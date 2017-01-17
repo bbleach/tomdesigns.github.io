@@ -115,7 +115,7 @@
 		top: 85vh;
 		left: 50%;
    		transform: translateX(-50%);
-		transform: scale(3);
+		transform: scale(2);
 		z-index: 10;
 	}
 	.about {
