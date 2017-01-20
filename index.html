@@ -94,9 +94,10 @@
 	$(document).ready(function () { $('.navbutton2').hide()});
 	$(document).ready(function () { $('.navbutton3').hide()});
 	$(document).ready(function () { $('.navbutton4').hide()});
-	$(document).ready(function () { $('.mobilelogo').hide().delay(2500).fadeIn(3000)});
-	
-	 $(".nav").hover(
+	$(document).ready(function () { if(window.innerHeight > window.innerWidth){
+	$('.mobilelogo').hide().delay(2500).fadeIn(3000)}});
+			  
+	$(".nav").hover(
         function () {
 			$(".navbutton2").fadeIn();
 			$(".navbutton3").fadeIn();
