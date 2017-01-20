@@ -222,9 +222,9 @@
 	.mobilelogo {
 		position: fixed;
 		color: 000000;
-		top: 65vh;
+		top: 80vh;
 		margin-left: 50%;
-		transform: translateX(-50%) scale(3);
+		transform: translateX(-50%) scale(4);
 	}
 	footer {
 		overflow: hidden;
