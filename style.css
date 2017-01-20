@@ -36,7 +36,7 @@
 		position: fixed;
 		top: -80px;
 		color: #ffffff;
-		background-color: #3f51b5;
+		background-color: #212121;
 		z-index: 1000;
 		display: hidden;
 		box-shadow: 0px 0px 15px 0px #000000;
@@ -73,7 +73,7 @@
 	.header {
 		background-attachment: fixed;
 		background-repeat: repeat;
-		background: #212121;
+		background: #303030;
 		height: 100vh;
 		width: 100%;
 		color: #FFFFFF;
@@ -134,7 +134,7 @@
 		position: relative;
 	}
 	.contact {
-		background: #212121;
+		background: #303030;
 		height: 100%;
 		width: 100%;
 		position: relative;
@@ -170,7 +170,7 @@
 		opacity: 0.7;
 	}
 	.footer {
-		background-color: #151515;
+		background-color: #212121;
 		height: 200px;
 		z-index: 10;
 	}
