@@ -200,6 +200,9 @@
 		color: #FFFFFF;
 		opacity: 0.5;
 	}
+	.mobilelogo {
+		display: none;
+	}
 }
 @media screen and (orientation: portrait){
 	* {
@@ -220,7 +223,7 @@
 	.mobilelogo {
 		position: fixed;
 		color: 000000;
-		margin-top: 30px;
+		top: 90vh;
 		margin-left: 50%;
 		transform: translateX(-50%) scale(3);
 	}
