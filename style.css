@@ -1,4 +1,7 @@
 @charset "utf-8";
+:root {
+	--customColor: #43A047;
+}
 * {
 	white-space: 0px;
 	margin: 0px;
@@ -56,7 +59,7 @@
 		color: #AAAAAA
 	}
 	.nav a:hover {
-		color: #F44336;
+		color: var(--customColor);
 	}
 	.nav ul {
 		transform: translateX(-50%);
@@ -98,7 +101,7 @@
 		font-size: 5vw;
 	}
 	.hero-text b {
-		color: #F44336;
+		color: var(--customColor);
 	}
 	.hero-subtext {
 		font-size: 2vw;
@@ -113,7 +116,7 @@
 		z-index: 10;
 	}
 	.about {
-	 	background: #F44336;
+	 	background: var(--customColor);
 		height: 100%;
 		width: 100%;
 		position: relative;
@@ -148,7 +151,7 @@
 	}
 	.contact-text h1 {
 		font-size: 50px;
-		color: #F44336;
+		color: var(--customColor);
 	}
 	.contact-text h2 {
 		font-size: 25px;
@@ -163,7 +166,7 @@
 		text-decoration: none;
 	}
 	.contact-text a:hover {
-		color: #F44336
+		color: var(--customColor)
 	}
 	.contact-text-title {
 		font-weight: 300;
@@ -263,7 +266,7 @@
 		color: #AAAAAA
 	}
 	.nav a:hover {
-		color: #F44336;
+		color: var(--customColor);
 	}
 	.nav ul {
 		transform: translateX(-50%);
@@ -305,7 +308,7 @@
 		font-size: 8vw;
 	}
 	.hero-text b {
-		color: #F44336;
+		color: var(--customColor);
 	}
 	.hero-subtext {
 		font-size: 4vw;
@@ -321,7 +324,7 @@
 		display: none;
 	}
 	.about {
- 		background: #F44336;
+ 		background: var(--customColor);
 		height: 100%;
 		width: 100%;
 		position: relative;
@@ -361,7 +364,7 @@
 	}
 	.contact-text h1 {
 		font-size: 50px;
-		color: #40C4FF;
+		color: var(--customColor);
 	}
 	.contact-text h2 {
 		font-size: 25px;
@@ -376,7 +379,7 @@
 		text-decoration: none;
 	}
 	.contact-text a:hover {
-		color: #40C4FF
+		color: var(--customColor)
 	}
 	.contact-text-title {
 		font-weight: 300;
