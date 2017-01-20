@@ -94,7 +94,7 @@
 	$(document).ready(function () { $('.navbutton2').hide()});
 	$(document).ready(function () { $('.navbutton3').hide()});
 	$(document).ready(function () { $('.navbutton4').hide()});
-	$(document).ready(function () { $('.mobile-content').animate({top: '100%'},0)});
+	$(document).ready(function () { $('.mobile-content').hide().animate({top: '100%'},0).show()});
 	$(document).ready(function () { $('.mobilelogo').hide().delay(2500).fadeIn(3000)});
 	
 	 $(".nav").hover(
@@ -121,7 +121,7 @@
 	});
 	
 	$(".mobilelogo").click(function() {
-    	$('.mobile-content').stop().animate({top: '0%'},600)
+    	$('.mobile-content').stop().show().animate({top: '0%'},600)
 	});
 		
 	$(".scrollbutton3").click(function() {
