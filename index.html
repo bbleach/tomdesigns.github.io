@@ -169,6 +169,30 @@
   	  }, 2000, 'easeInOutExpo');
 	});
 	
+	$(".red").click(function() {
+		$(":root").css("--customColor", "#F44336");
+	});
+	
+	$(".blue").click(function() {
+		$(":root").css("--customColor", "#2196F3");
+	});
+	
+	$(".green").click(function() {
+		$(":root").css("--customColor", "#4CAF50");
+	});
+	
+	$(".yellow").click(function() {
+		$(":root").css("--customColor", "#CDDC39");
+	});
+	
+	$(".pink").click(function() {
+		$(":root").css("--customColor", "#E91E63");
+	});
+	
+	$(".purple").click(function() {
+		$(":root").css("--customColor", "#9C27B0");
+	});
+	
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
 		if (y > 300) {
