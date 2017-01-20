@@ -56,7 +56,7 @@
 		color: #AAAAAA
 	}
 	.nav a:hover {
-		color: #3f51b5;
+		color: #F44336;
 	}
 	.nav ul {
 		transform: translateX(-50%);
@@ -98,7 +98,7 @@
 		font-size: 5vw;
 	}
 	.hero-text b {
-		color: #3f51b5;
+		color: #F44336;
 	}
 	.hero-subtext {
 		font-size: 2vw;
@@ -113,7 +113,7 @@
 		z-index: 10;
 	}
 	.about {
-	 	background: #3f51b5;
+	 	background: #F44336;
 		height: 100%;
 		width: 100%;
 		position: relative;
@@ -148,7 +148,7 @@
 	}
 	.contact-text h1 {
 		font-size: 50px;
-		color: #3f51b5;
+		color: #F44336;
 	}
 	.contact-text h2 {
 		font-size: 25px;
@@ -163,7 +163,7 @@
 		text-decoration: none;
 	}
 	.contact-text a:hover {
-		color: #3f51b5
+		color: #F44336
 	}
 	.contact-text-title {
 		font-weight: 300;
@@ -263,7 +263,7 @@
 		color: #AAAAAA
 	}
 	.nav a:hover {
-		color: #3f51b5;
+		color: #F44336;
 	}
 	.nav ul {
 		transform: translateX(-50%);
@@ -321,7 +321,7 @@
 		display: none;
 	}
 	.about {
- 		background: #3f51b5;
+ 		background: #F44336;
 		height: 100%;
 		width: 100%;
 		position: relative;
