@@ -225,6 +225,7 @@
 		top: 80vh;
 		margin-left: 50%;
 		transform: translateX(-50%) scale(4);
+		z-index: 1000;
 	}
 	footer {
 		overflow: hidden;
