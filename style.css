@@ -215,6 +215,9 @@
 		transform: translateX(-50%) scale(4);
 		z-index: 1000;
 	}
+	.hidemobile {
+		color: 000000;
+	}
 	footer {
 		overflow: hidden;
 		margin: 0px;
