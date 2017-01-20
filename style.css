@@ -204,12 +204,12 @@
 		height: 100%;
 		z-index: 100;
 		position: fixed;
-		background-color: #03A9F4;
+		background-color: #ffffff;
 		color: #000000;
 	}
 	.mobilelogo {
 		position: fixed;
-		color: #000000;
+		color: #ffffff;
 		top: 80vh;
 		margin-left: 50%;
 		transform: translateX(-50%) scale(4);
