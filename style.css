@@ -217,7 +217,8 @@
 		z-index: 100;
 		position: relative;
 		background-color: #ffffff;
-		color: #000000
+		color: #000000;
+		display: inherit;
 	}
 	.mobilelogo {
 		position: fixed;
