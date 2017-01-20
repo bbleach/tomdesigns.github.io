@@ -170,15 +170,6 @@
   	  $('.nav').stop().animate({top: -80}, {duration: 600, easing: "easeOutCirc" });
 	}
 	});
-	
-	$(document).scroll(function() {
-		var y = $(this).scrollTop();
-		if (y > '200%') {
-  	  $('.nav').stop().animate({background-color: '#3F51B5'}, 600);
-	} else {
-  	  $('.nav').stop().animate({background-color: '#212121'}, 600);
-	}
-	});
     
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
