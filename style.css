@@ -98,7 +98,6 @@
 		position: fixed;
 		top: -20%;
 		z-index: 0;
-		background-position: fixed;
 	}
 	.hero-text,.hero-subtext {
 		position: fixed;
