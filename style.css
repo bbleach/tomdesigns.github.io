@@ -214,10 +214,9 @@
 		width: 100%;
 		height: 100%;
 		z-index: 100;
-		position: relative;
+		position: fixed;
 		background-color: #ffffff;
 		color: #000000;
-		display: inherit;
 	}
 	.mobilelogo {
 		position: fixed;
