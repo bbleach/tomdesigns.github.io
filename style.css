@@ -1,6 +1,6 @@
 @charset "utf-8";
 :root {
-	--customColor: #43A047;
+	--custom-color: #43A047;
 }
 * {
 	white-space: 0px;
