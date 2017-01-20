@@ -222,7 +222,7 @@
 	.mobilelogo {
 		position: fixed;
 		color: 000000;
-		top: 90vh;
+		top: 65vh;
 		margin-left: 50%;
 		transform: translateX(-50%) scale(3);
 	}
