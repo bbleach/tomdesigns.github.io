@@ -25,12 +25,6 @@
 			<li><a class="navbutton2" href="javascript:void(0)">About</a></li>
  			<li><a class="navbutton3" href="javascript:void(0)">Projects</a></li>
  			<li><a class="navbutton4" href="javascript:void(0)">Contact</a></li>
-			<li><a class="red" href="javascript:void(0)">Red</a></li>
- 			<li><a class="blue" href="javascript:void(0)">Blue</a></li>
- 			<li><a class="green" href="javascript:void(0)">Green</a></li>
-			<li><a class="yellow" href="javascript:void(0)">Yellow</a></li>
-			<li><a class="pink" href="javascript:void(0)">Pink</a></li>
-			<li><a class="purple" href="javascript:void(0)">Purple</a></li>
 		</ul>
 	</div>
 	<div class="header-wrapper">
@@ -108,23 +102,11 @@
 		$(".navbutton2").fadeIn();
 		$(".navbutton3").fadeIn();
 		$(".navbutton4").fadeIn();
-		$(".red").fadeIn();
-		$(".blue").fadeIn();
-		$(".green").fadeIn();
-		$(".yellow").fadeIn();
-		$(".pink").fadeIn();
-		$(".purple").fadeIn();
         },
         function () {
 		$(".navbutton2").fadeOut();
 		$(".navbutton3").fadeOut();
 		$(".navbutton4").fadeOut();
-		$(".red").fadeOut();
-		$(".blue").fadeOut();
-		$(".green").fadeOut();
-		$(".yellow").fadeOut();
-		$(".pink").fadeOut();
-		$(".purple").fadeOut();
         }
     );
 	
@@ -180,31 +162,7 @@
         scrollTop: $(".contact").offset().top
   	  }, 2000, 'easeInOutExpo');
 	});
-	
-	$(".red").click(function() {
-		$(":root").animate({"--custom-color": "#F44336"},3000);
-	});
-	
-	$(".blue").click(function() {
-		$(":root").css("--custom-color", "#2196F3");
-	});
-	
-	$(".green").click(function() {
-		$(":root").css("--custom-color", "#4CAF50");
-	});
-	
-	$(".yellow").click(function() {
-		$(":root").css("--custom-color", "#CDDC39");
-	});
-	
-	$(".pink").click(function() {
-		$(":root").css("--custom-color", "#E91E63");
-	});
-	
-	$(".purple").click(function() {
-		$(":root").css("--custom-color", "#9C27B0");
-	});
-	
+
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
 		if (y > 300) {
