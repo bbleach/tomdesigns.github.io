@@ -133,10 +133,10 @@
 	
 		$(".scrollButton2").hover(
         function () {
-		$(".scrollButtonHighlight").fadeIn();
+		$(".scrollButtonHighlight").stop().fadeIn();
         },
         function () {
-		$(".scrollButtonHighlight").fadeOut();
+		$(".scrollButtonHighlight").stop().fadeOut();
         }
    	);
 	
