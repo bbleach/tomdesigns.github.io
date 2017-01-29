@@ -115,12 +115,6 @@
    		transform: translateX(-50%);
 		transform: scale(2);
 		z-index: 10;
-		animation-name: scrollBtn2;
-		animation-duration: 0.5s;
-	}
-	@keyframes scrollBtn2 {
-		from {transform: scale(2,2)}
-		to {transform: scale(3,3)}
 	}
 	.scrollButtonHighlight {
 		color: #F50057;
