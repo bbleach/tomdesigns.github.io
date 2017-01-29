@@ -94,6 +94,7 @@
 	$(document).ready(function () { $('.scrollbutton2').hide().delay(2000).fadeIn(3000)});
 	$(document).ready(function () { $('.footer').hide().delay(1000).fadeIn(3000)});
 	$(document).ready(function () { $('.nav').animate({top: -80})});
+	$(document).ready(function () { $('.scrollButtonHighlight').hide().animate});
 	$(document).ready(function () { $('.navbutton2').hide()});
 	$(document).ready(function () { $('.navbutton3').hide()});
 	$(document).ready(function () { $('.navbutton4').hide()});
@@ -111,7 +112,7 @@
 		$(".navbutton3").fadeOut();
 		$(".navbutton4").fadeOut();
         }
-    );
+   	);
 		
 	$(".mobilelogo").click(function() {
     	$('.mobile-content').stop().show().animate({top: '0%'}, 1000, 'easeInOutExpo')
@@ -129,7 +130,16 @@
 	$(".scrollbutton2").click(function() {
     	$('html, body').stop().animate({scrollTop: $(".about").offset().top}, 2000, 'easeInOutExpo');
 	});
-		
+	
+		$(".scrollButton2").hover(
+        function () {
+		$(".scrollButtonHighlight").fadeIn();
+        },
+        function () {
+		$(".scrollButtonHighlight").fadeOut();
+        }
+   	);
+	
 	$(".scrollbutton3").click(function() {
     	$('html, body').stop().animate({
         scrollTop: $(".portfolio").offset().top
