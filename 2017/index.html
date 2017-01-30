@@ -80,9 +80,9 @@
 <script>
 	$(window).scroll(function() {
   		if ($(this).hero-text()> 100) {
-			$('.hero-text').fadeOut();
+			$('.hero-text').stop().fadeOut();
 		} else {
-			$('.hero-text').fadeIn();
+			$('.hero-text').stop().fadeIn();
 		}
 	});
 	$(window).on('beforeunload', function(){
@@ -102,14 +102,14 @@
 			  
 	$(".nav").hover(
         function () {
-		$(".navbutton2").fadeIn();
-		$(".navbutton3").fadeIn();
-		$(".navbutton4").fadeIn();
+		$(".navbutton2").stop().fadeIn();
+		$(".navbutton3").stop().fadeIn();
+		$(".navbutton4").stop().fadeIn();
         },
         function () {
-		$(".navbutton2").fadeOut();
-		$(".navbutton3").fadeOut();
-		$(".navbutton4").fadeOut();
+		$(".navbutton2").stop().fadeOut();
+		$(".navbutton3").stop().fadeOut();
+		$(".navbutton4").stop().fadeOut();
         }
    	);
 		
