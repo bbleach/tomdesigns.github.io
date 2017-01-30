@@ -92,7 +92,7 @@
 	}
 	.hero-text,.hero-subtext {
 		position: fixed;
-		top: 60vh;
+		top: 30vh;
 		left: 50%;
  		transform: translateX(-50%);
 		z-index: 2;
@@ -110,7 +110,7 @@
 	}
 	.scrollButton2{
 		position: fixed;
-		top: 90vh;
+		top: 60vh;
 		left: 50%;
    		transform: translateX(-50%);
 		transform: scale(2);
