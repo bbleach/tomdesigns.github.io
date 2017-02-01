@@ -1,6 +1,5 @@
 <!doctype html>
-<html>
-<head>
+<html><head>
 <meta name="viewport" content="user-scalable=no"/>
 <title>Tom Designs</title>
 <!-- Temporarily disabled <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
@@ -20,8 +19,9 @@
 		</a>	
 		<ul>
 			<li><a class="navbutton2" href="javascript:void(0)">About</a></li>
- 			<li><a class="navbutton3" href="javascript:void(0)">Projects</a></li>
- 			<li><a class="navbutton4" href="javascript:void(0)">Contact</a></li>
+			<li><a class="navbutton3" href="javascript:void(0)">Services</a></li>
+ 			<li><a class="navbutton4" href="javascript:void(0)">Projects</a></li>
+ 			<li><a class="navbutton5" href="javascript:void(0)">Contact</a></li>
 		</ul>
 	</div>
 	<div class="header-wrapper">
@@ -42,10 +42,9 @@
 		</div>
 	</div>
 	<div class="mobile-content">
-		<p>test</p>
 		<a href="javascript:void(0)" class="hidemobile">
 			<span class="fa-stack fa-lg">
-  				<i class="fa fa-circle fa-stack-2x" style="color: #FF4081;"></i>
+  				<i class="fa fa-circle fa-stack-2x" style="color: #F50057;"></i>
  				<i class="fa fa-times fa-stack-1x" style="color: #FFFFFF;"></i>
 			</span>
 		</a>
@@ -55,7 +54,38 @@
 			<h1>I specialise in front-end development</h1>
 		</div>
 	</div>
+	<div class="services">
+		<h1 class="services-title">Services</h1>
+		<div class="services-webdesign">
+ 			<span class="fa-stack" style="transform: translateX(-30%) scale(6)">
+  				<i class="fa fa-circle fa-stack-2x" style="color: #F50057;"></i>
+  				<i class="fa fa-desktop fa-stack-1x" style="color: #ffffff; transform: scale(0.6)"></i>
+			</span>
+			<h2>Web Design</h2>
+			<p>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+		</div>
+		<div class="services-graphicdesign">
+ 			<span class="fa-stack" style="transform: translateX(-30%) scale(6);">
+  				<i class="fa fa-circle fa-stack-2x" style="color: #F50057;"></i>
+  				<i class="fa fa-picture-o fa-stack-1x" style="color: #ffffff; transform: scale(0.6)"></i>
+			</span>
+			<h2>Graphic Design</h2>
+			<p>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+		</div>
+		<div class="services-webdevelopment">
+ 			<span class="fa-stack" style="transform: translateX(-30%) scale(6)">
+  				<i class="fa fa-circle fa-stack-2x" style="color: #F50057;"></i>
+  				<i class="fa fa-code fa-stack-1x" style="color: #ffffff; transform: scale(0.6)"></i>
+			</span>
+			<h2>Web Development</h2>
+			<p>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+		</div>
+	</div>
+	<div class="c2a">
+	</div>
 	<div class="portfolio">
+		<h1>Portfolio</h1>
+		<h2>Section Under Development</h2>
 	</div>
 	<div class="contact">
 		<div class="contact-text">
@@ -94,6 +124,10 @@
 	$(document).ready(function () { $('.navbutton2').hide()});
 	$(document).ready(function () { $('.navbutton3').hide()});
 	$(document).ready(function () { $('.navbutton4').hide()});
+	$(document).ready(function () { $('.navbutton5').hide()});
+	$(document).ready(function () { $('.serviceshighlight1').hide()});
+	$(document).ready(function () { $('.serviceshighlight2').hide()});
+	$(document).ready(function () { $('.serviceshighlight3').hide()});
 	$(document).ready(function () { if(window.innerHeight > window.innerWidth){
 	$('.mobilelogo').hide().delay(2000).fadeIn(3000)}});
 			  
@@ -102,11 +136,13 @@
 		$(".navbutton2").stop().fadeIn();
 		$(".navbutton3").stop().fadeIn();
 		$(".navbutton4").stop().fadeIn();
+		$(".navbutton5").stop().fadeIn();
         },
         function () {
 		$(".navbutton2").stop().fadeOut();
 		$(".navbutton3").stop().fadeOut();
 		$(".navbutton4").stop().fadeOut();
+		$(".navbutton5").stop().fadeOut();
         }
    	);
 		
@@ -151,25 +187,31 @@
 	$(".navbutton1").click(function() {
 	    $('html, body').stop().animate({
         scrollTop: $(".header-wrapper").offset().top
-  	  }, 1500, 'easeInOutExpo');
+  	  }, 2000, 'easeInOutExpo');
 	});
 	
 	$(".navbutton2").click(function() {
  	   $('html, body').stop().animate({
         scrollTop: $(".about").offset().top
- 	   }, 1500, 'easeInOutExpo');
+ 	   }, 2000, 'easeInOutExpo');
 	});
 	
 	$(".navbutton3").click(function() {
    	 $('html, body').stop().animate({
-        scrollTop: $(".portfolio").offset().top
-   	 }, 1500, 'easeInOutExpo');
+        scrollTop: $(".services").offset().top
+   	 }, 2000, 'easeInOutExpo');
 	});
 	
 	$(".navbutton4").click(function() {
+   	 $('html, body').stop().animate({
+        scrollTop: $(".portfolio").offset().top
+   	 }, 2000, 'easeInOutExpo');
+	});
+	
+	$(".navbutton5").click(function() {
   	  $('html, body').stop().animate({
         scrollTop: $(".contact").offset().top
-  	  }, 1500, 'easeInOutExpo');
+  	  }, 2000, 'easeInOutExpo');
 	});
 
 	$(document).scroll(function() {
