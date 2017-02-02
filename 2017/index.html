@@ -56,32 +56,33 @@
 	</div>
 	<div class="services">
 		<h1 class="services-title">Services</h1>
-		<div class="services-webdesign">
- 			<span class="fa-stack" style="transform: translateX(-30%) scale(6)">
+		<div class="services-columns">
+			<span class="fa-stack fa-5x">
   				<i class="fa fa-circle fa-stack-2x" style="color: #F50057;"></i>
-  				<i class="fa fa-desktop fa-stack-1x" style="color: #ffffff; transform: scale(0.6)"></i>
+ 				<i class="fa fa-desktop fa-stack-1x" style="color: #FFFFFF;"></i>
 			</span>
-			<h2>Web Design</h2>
-			<p>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+			<h2>Marketing/Branding</h2>
+			<p>With extensive knowledge of color theory and branding techniques, I can help your social media to expand through advertising and design.  I can provide full re-branding based off of your logo, color scheme and images.</p>
 		</div>
-		<div class="services-graphicdesign">
- 			<span class="fa-stack" style="transform: translateX(-30%) scale(6);">
+		<div class="services-columns">
+			<span class="fa-stack fa-5x">
   				<i class="fa fa-circle fa-stack-2x" style="color: #F50057;"></i>
-  				<i class="fa fa-picture-o fa-stack-1x" style="color: #ffffff; transform: scale(0.6)"></i>
+ 				<i class="fa fa-picture-o fa-stack-1x" style="color: #FFFFFF;"></i>
 			</span>
 			<h2>Graphic Design</h2>
-			<p>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
 		</div>
-		<div class="services-webdevelopment">
- 			<span class="fa-stack" style="transform: translateX(-30%) scale(6)">
+		<div class="services-columns">
+			<span class="fa-stack fa-5x">
   				<i class="fa fa-circle fa-stack-2x" style="color: #F50057;"></i>
-  				<i class="fa fa-code fa-stack-1x" style="color: #ffffff; transform: scale(0.6)"></i>
+ 				<i class="fa fa-code fa-stack-1x" style="color: #FFFFFF;"></i>
 			</span>
-			<h2>Web Development</h2>
-			<p>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+			<h2>Web Design/Development</h2>
+			<p>By use of my ever-expanding knowledge of web design, I can help you gain the online presence you need.  I am very fond of modern design trends such as <a href="https://material.io/" target="_blank" title="Visit Google's official material design guidelines">Google's Material Design</a> and incoprorate them into my daily workflow as seen on this very site.</p>
 		</div>
 	</div>
 	<div class="c2a">
+		<h1>Like what you see?</h1>
+		<button class="c2abutton" onClick="c2abutton()"><span>Get in touch</span></button>
 	</div>
 	<div class="portfolio">
 		<h1>Portfolio</h1>
@@ -172,13 +173,7 @@
         }
    	);
 	
-	$(".scrollbutton3").click(function() {
-    	$('html, body').stop().animate({
-        scrollTop: $(".portfolio").offset().top
-   		}, 2000, 'easeInOutExpo');
-	});
-	
-	$(".scrollbutton4").click(function() {
+	$(".scrollButton5").click(function() {
   	  $('html, body').stop().animate({
         scrollTop: $(".contact").offset().top
   	  }, 2000, 'easeInOutExpo');
@@ -213,6 +208,9 @@
         scrollTop: $(".contact").offset().top
   	  }, 2000, 'easeInOutExpo');
 	});
+	
+	function c2abutton() {
+	  $('html, body').stop().animate({scrollTop: $(".contact").offset().top}, 2000, 'easeInOutExpo')};
 
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
