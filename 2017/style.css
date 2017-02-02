@@ -10,6 +10,7 @@
    	-moz-user-select: none;
   	-ms-user-select: none;
     	user-select: none;
+	box-sizing: border-box;
 }
 @media screen and (orientation: landscape) {	
 	footer {
@@ -56,7 +57,11 @@
 		text-align: center;
 		float: left;
 		text-decoration: none;
-		color: #AAAAAA
+		color: #AAAAAA;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
 	}
 	.nav a:hover {
 		color: #F50057
@@ -138,67 +143,107 @@
 		background: #ffffff;
 		height: 100%;
 		width: 100%;
-		position: relative;
+		text-align: center;
 	}
 	.services h1 {
-		transform: translateY(100px);
-		text-align: center;
 		font-size: 50px;
+		text-align: center;
 		opacity: 0.87;
+		transform: translateY(90px);
 	}
 	.services h2 {
-		transform: translateX(-50%) translateY(90px);
 		font-size: 30px;
-		opacity: 0.87;
 		text-align: center;
+		opacity: 0.87;
+		font-weight: 300;
 	}
 	.services p {
-		transform: translateX(-50%) translateY(90px);
-		font-size: 16px;
-		text-align: center;
-		font-weight: 300;
+		font-size: 18px;
+		text-align: justify;
 		opacity: 0.54;
-		width: 200px;
-		word-wrap: break-word;
+		margin-top: 10px;
 	}
-	.services-webdesign {
-		position: absolute;
-		left: 25%;
-		top: 40%;
+	.services a {
+		color: #F50057;
+	}
+	.services-columns {
+		transform: translateY(100px) scale(0.8);
+		float: left;
+    	width: 33.3%;
+		height: 60%;
+    	padding: 50px;
 		transition: all 0.5s;
 		-webkit-transition: all 0.5s;
 		-moz-transition: all 0.5s;
 		-o-transition: all 0.5s;
 	}
-	.services-webdesign:hover {
-		transform: translateY(30px);
+	.services-columns:hover {
+		transform: translateY(120px) scale(1);
+		float: left;
+    	width: 33.3%;
+		height: 70%;
+    	padding: 50px;
+		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 	}
-	.services-graphicdesign {
-		position: absolute;
-		left: 50%;
-		top: 40%;
+	.servicesbutton {
+		border: 3px solid #F50057;
+		border-radius: 2px;
+		background: #FFFFFF;
+		color: #F50057;
+		text-decoration: none;
+		padding: 10px 25px;
+		transition: all 0.5s;
 		-webkit-transition: all 0.5s;
 		-moz-transition: all 0.5s;
 		-o-transition: all 0.5s;
+		outline: none;
 	}
-	.services-graphicdesign:hover {
-		transform: translateY(30px);
-	}
-	.services-webdevelopment {
-		position: absolute;
-		left: 75%;
-		top: 40%;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
-	}
-	.services-webdevelopment:hover {
-		transform: translateY(30px);
+	.servicesbutton:hover {
+		border: 3px solid #F50057;
+		background: #F50057;
+		color: #FFFFFF;
+		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 	}
 	.c2a {
 		width: 100%;
-		height: 70%;
+		height: 50%;
 		background: #F50057;
+		text-align: center;
+	}
+	.c2a h1 {
+		font-size: 50px;
+		transform: translateY(80px);
+		text-align: center;
+		color: #FFFFFF;
+	}
+	.c2abutton {
+		border: 3px solid #ffffff;
+		background: #F50057;
+		color: #ffffff;
+		border-radius: 2px;
+		font-size: 30px;
+		height: auto;
+		width: auto;
+		padding: 20px;
+		transform: translateY(140px) scale(0.8);
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		outline: none;
+	}
+	.c2abutton:hover {
+		border: 3px solid #FFFFFF;
+		background: #FFFFFF;
+		color: #F50057;
+		border-radius: 2px;
+		font-size: 30px;
+		height: auto;
+		width: auto;
+		padding: 20px;
+		transform: translateY(140px) scale(1);
+		outline: none;
+		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 	}
 	.portfolio {
 		background: #ffffff;
@@ -249,6 +294,10 @@
 	}
 	.contact-text a:hover {
 		color: #F50057;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
 	}
 	.contact-text-title {
 		font-weight: 300;
