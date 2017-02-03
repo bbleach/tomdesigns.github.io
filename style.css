@@ -136,8 +136,8 @@
 	.about-text {
 		text-align: center;
 		position: relative;
-		top: 30%;
-		font-size: 2vw;
+		transform: translateY(100px);
+		font-size: 50px;
 	}
 	.services {
 		background: #ffffff;
