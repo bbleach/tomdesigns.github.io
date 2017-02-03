@@ -117,7 +117,8 @@
 		}
 	});
 	
-	window.onbeforeunload = function() {window.scrollTo(0,0);}
+	$(window).on('beforeunload', function() {
+   		$(window).scrollTop(0);
 	});
 	
 	$(document).ready(function () { $('html').hide().fadeIn(1500).delay(100)});
