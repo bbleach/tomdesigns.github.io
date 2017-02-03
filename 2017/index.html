@@ -57,30 +57,30 @@
 	<div class="services">
 		<h1 class="services-title">Services</h1>
 		<div class="services-columns">
-			<span class="fa-stack fa-5x">
+			<span class="fa-stack fa-5x services1">
   				<i class="fa fa-circle fa-stack-2x" style="color: #F50057;"></i>
  				<i class="fa fa-desktop fa-stack-1x" style="color: #FFFFFF;"></i>
 			</span>
 			<h2>Marketing/Branding</h2>
 			<p>With extensive knowledge of color theory and branding techniques, I can help your social media to expand through advertising and design.  I can provide full re-branding based off of your logo, color scheme and images.</p>
-			<br><button class="servicesbutton" onClick="c2abutton()"><span>Learn More</span></button>
+			<button class="servicesbutton" onClick="c2abutton()"><span>Learn More</span></button>
 		</div>
 		<div class="services-columns">
-			<span class="fa-stack fa-5x">
+			<span class="fa-stack fa-5x services1">
   				<i class="fa fa-circle fa-stack-2x" style="color: #F50057;"></i>
  				<i class="fa fa-picture-o fa-stack-1x" style="color: #FFFFFF;"></i>
 			</span>
 			<h2>Graphic Design</h2>
-			<br><button class="servicesbutton" onClick="c2abutton()"><span>Learn More</span></button>
+			<button class="servicesbutton" onClick="c2abutton()"><span>Learn More</span></button>
 		</div>
 		<div class="services-columns">
-			<span class="fa-stack fa-5x">
+			<span class="fa-stack fa-5x services1">
   				<i class="fa fa-circle fa-stack-2x" style="color: #F50057;"></i>
  				<i class="fa fa-code fa-stack-1x" style="color: #FFFFFF;"></i>
 			</span>
 			<h2>Web Design/Development</h2>
 			<p>By use of my ever-expanding knowledge of web design, I can help you gain the online presence you need.  I am very fond of modern design trends such as <a href="https://material.io/" target="_blank" title="Visit Google's official material design guidelines">Google's Material Design</a> and incoprorate them into my daily workflow as seen on this very site.</p>
-			<br><button class="servicesbutton" onClick="c2abutton()"><span>Learn More</span></button>
+			<button class="servicesbutton" onClick="c2abutton()"><span>Learn More</span></button>
 		</div>
 	</div>
 	<div class="c2a">
@@ -125,30 +125,8 @@
 	$(document).ready(function () { $('.scrollbutton2').hide().delay(2000).fadeIn(1000)});
 	$(document).ready(function () { $('.nav').animate({top: -80})});
 	$(document).ready(function () { $('.scrollButtonHighlight').hide()});
-	$(document).ready(function () { $('.navbutton2').hide()});
-	$(document).ready(function () { $('.navbutton3').hide()});
-	$(document).ready(function () { $('.navbutton4').hide()});
-	$(document).ready(function () { $('.navbutton5').hide()});
-	$(document).ready(function () { $('.serviceshighlight1').hide()});
-	$(document).ready(function () { $('.serviceshighlight2').hide()});
-	$(document).ready(function () { $('.serviceshighlight3').hide()});
 	$(document).ready(function () { if(window.innerHeight > window.innerWidth){
 	$('.mobilelogo').hide().delay(2000).fadeIn(3000)}});
-			  
-	$(".nav").hover(
-        function () {
-		$(".navbutton2").stop().fadeIn();
-		$(".navbutton3").stop().fadeIn();
-		$(".navbutton4").stop().fadeIn();
-		$(".navbutton5").stop().fadeIn();
-        },
-        function () {
-		$(".navbutton2").stop().fadeOut();
-		$(".navbutton3").stop().fadeOut();
-		$(".navbutton4").stop().fadeOut();
-		$(".navbutton5").stop().fadeOut();
-        }
-   	);
 		
 	$(".mobilelogo").click(function() {
     	$('.mobile-content').stop().show().animate({top: '0%'}, 1000, 'easeInOutExpo')
