@@ -15,34 +15,36 @@
 <body>
 	<div class="nav">	
 		<ul>
-			<li><a class="navbutton2" href="javascript:void(0)">About</a></li>
-			<li><a class="navbutton3" href="javascript:void(0)">Services</a></li>
- 			<li><a class="navbutton4" href="javascript:void(0)">Projects</a></li>
- 			<li><a class="navbutton5" href="javascript:void(0)">Contact</a></li>
+			<li onClick="about()" class="navlink">About</li>
+			<li onClick="services()" class="navlink">Services</li>
+ 			<li onClick="portfolio()" class="navlink">Projects</li>
+ 			<li onClick="contact()" class="navlink">Contact</li>
 		</ul>
-		<span class="navbutton1 logo" onClick="home()">	
+		<span class="logo" onClick="home()">	
 			<h1>Tom Designs</h1>
 		</span>
 		<ul class="social">
-			<li><a href="javascript:void(0)"><i class="fa fa-snapchat-ghost fa-fw" aria-hidden="true"></i></a></li>
-			<li><a href="javascript:void(0)"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>
- 			<li><a href="javascript:void(0)"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a></li>
-  			<li><a href="javascript:void(0)"><i class="fa fa-dribbble fa-fw" aria-hidden="true"></i></a></li>
-  			<li><a href="javascript:void(0)"><i class="fa fa-behance fa-fw" aria-hidden="true"></i></a></li>
+			<li onClick="snapchat()"><i class="fa fa-snapchat-ghost fa-fw sociallink" aria-hidden="true"></i></li>
+			<li onClick="facebook()"><i class="fa fa-facebook fa-fw sociallink" aria-hidden="true"></i></li>
+ 			<li onClick="instagram()"><i class="fa fa-instagram fa-fw sociallink" aria-hidden="true"></i></li>
+  			<li onClick="behance()"><i class="fa fa-behance fa-fw sociallink" aria-hidden="true"></i></li>
 		</ul>
 	</div>
+ 	<div class="sc-modal">
+  		<a href="https://snapchat.com/add/txm.m" target="_blank">
+  			<img src="Media/Images/snapcode.png"/>
+		</a>
+	</div>
+	<div class="sc-modal-bg" onClick="hidesnapchat()"></div>
 	<div class="header-wrapper">
 		<div class="header">
 			<h1 class="hero-text">Hey, <b>I'm Tom</b></h1>
 			<h2 class="hero-subtext">Graphic and web designer</h2>
-			<a href="javascript:void(0)" class="scrollbutton2">
-				<div class="scrollButton2">
+				<div class="scrollButton2" onClick="about()">
 					<span class="fa-stack">
-  						<i class="fa fa-circle fa-stack-2x  scrollButtonHighlight"></i>
   						<i class="fa fa-angle-down fa-stack-1x fa-inverse"></i>
 					</span>
 				</div>
-			</a>
 			<a href="javascript:void(0)" class="mobilelogo">
 				<i class="fa fa-bars"></i>
 			</a>
@@ -70,7 +72,7 @@
 			</span>
 			<h2>Marketing/Branding</h2>
 			<p>With extensive knowledge of color theory and branding techniques, I can help your social media to expand through advertising and design.  I can provide full re-branding based off of your logo, color scheme and images.</p>
-			<button class="servicesbutton" onClick="c2abutton()"><span>Learn More</span></button>
+			<button class="servicesbutton" onClick="contact()"><span>Learn More</span></button>
 		</div>
 		<div class="services-columns">
 			<span class="fa-stack fa-5x services1">
@@ -78,7 +80,7 @@
  				<i class="fa fa-picture-o fa-stack-1x" style="color: #FFFFFF;"></i>
 			</span>
 			<h2>Graphic Design</h2>
-			<button class="servicesbutton" onClick="c2abutton()"><span>Learn More</span></button>
+			<button class="servicesbutton" onClick="contact()"><span>Learn More</span></button>
 		</div>
 		<div class="services-columns">
 			<span class="fa-stack fa-5x services1">
@@ -87,12 +89,12 @@
 			</span>
 			<h2>Web Design/Development</h2>
 			<p>By use of my ever-expanding knowledge of web design, I can help you gain the online presence you need.  I am very fond of modern design trends such as <a href="https://material.io/" target="_blank" title="Visit Google's official material design guidelines">Google's Material Design</a> and incoprorate them into my daily workflow as seen on this very site.</p>
-			<button class="servicesbutton" onClick="c2abutton()"><span>Learn More</span></button>
+			<button class="servicesbutton" onClick="contact()"><span>Learn More</span></button>
 		</div>
 	</div>
 	<div class="c2a">
 		<h1>Like what you see?</h1>
-		<button class="c2abutton" onClick="c2abutton()"><span>Get in touch</span></button>
+		<button class="c2abutton" onClick="contact()"><span>Get in touch</span></button>
 	</div>
 	<div class="portfolio">
 		<h1>Portfolio</h1>
@@ -114,7 +116,6 @@
 		<a href="skype:live:djt8000?userinfo" class="footerlinks">Skype</a><br>
 		<a href="mailto:hello@tomdesigner.co.uk?Subject=Business%20Enquiry" class="footerlinks">Business Email</a>
 	</div>
-
 <script>
 	$(window).scroll(function() {
   		if ($(this).hero-text()> 100) {
@@ -125,15 +126,15 @@
 	});
 	
 	$(window).on('beforeunload', function() {
-   		$(window).scrollTop(0);
+   		$(window).stop().scrollTop(0);
 	});
 	
 	$(document).ready(function () { $('html').hide().fadeIn(1500).delay(100)});
+	$(document).ready(function () { $('.sc-modal-bg').hide()});
 	$(document).ready(function () { $('.hero-text').hide().delay(1000).fadeIn(3000)});
 	$(document).ready(function () { $('.hero-subtext').hide().delay(1500).fadeIn(3000)});
 	$(document).ready(function () { $('.scrollbutton2').hide().delay(2000).fadeIn(1000)});
 	$(document).ready(function () { $('.nav').animate({top: -80})});
-	$(document).ready(function () { $('.scrollButtonHighlight').hide()});
 	$(document).ready(function () { if(window.innerHeight > window.innerWidth){
 	$('.mobilelogo').hide().delay(2000).fadeIn(3000)}});
 		
@@ -143,65 +144,16 @@
 	$(".hidemobile").click(function() {
     	$('.mobile-content').stop().show().animate({top: '100%'}, 1000, 'easeInOutExpo')
 	});
-	
-	$(".scrollbutton1").click(function() {
-   	$('html, body').stop().animate({
-        scrollTop: $(".header-wrapper").offset().top
-    		}, 2000, 'easeInOutExpo');
-	});
-	
-	$(".scrollbutton2").click(function() {
-    	$('html, body').stop().animate({scrollTop: $(".about").offset().top}, 2000, 'easeInOutExpo');
-	});
-	
-		$(".scrollButton2").hover(
-        function () {
-		$(".scrollButtonHighlight").stop().fadeIn();
-        },
-        function () {
-		$(".scrollButtonHighlight").stop().fadeOut();
-        }
-   	);
-	
-	$(".scrollButton5").click(function() {
-  	  $('html, body').stop().animate({
-        scrollTop: $(".contact").offset().top
-  	  }, 2000, 'easeInOutExpo');
-	});
-	
-	$(".navbutton1").click(function() {
-	    $('html, body').stop().animate({
-        scrollTop: $(".header-wrapper").offset().top
-  	  }, 2000, 'easeInOutExpo');
-	});
-	
-	$(".navbutton2").click(function() {
- 	   $('html, body').stop().animate({
-        scrollTop: $(".about").offset().top
- 	   }, 2000, 'easeInOutExpo');
-	});
-	
-	$(".navbutton3").click(function() {
-   	 $('html, body').stop().animate({
-        scrollTop: $(".services").offset().top
-   	 }, 2000, 'easeInOutExpo');
-	});
-	
-	$(".navbutton4").click(function() {
-   	 $('html, body').stop().animate({
-        scrollTop: $(".portfolio").offset().top
-   	 }, 2000, 'easeInOutExpo');
-	});
-	
-	$(".navbutton5").click(function() {
-  	  $('html, body').stop().animate({
-        scrollTop: $(".contact").offset().top
-  	  }, 2000, 'easeInOutExpo');
-	});
-	
+
 	function home() {
 	  $('html, body').stop().animate({scrollTop: $(".header").offset().top}, 2000, 'easeInOutExpo')};
-	function c2abutton() {
+	function about() {
+	  $('html, body').stop().animate({scrollTop: $(".about").offset().top}, 2000, 'easeInOutExpo')};
+	function services() {
+	  $('html, body').stop().animate({scrollTop: $(".services").offset().top}, 2000, 'easeInOutExpo')};
+	function portfolio() {
+	  $('html, body').stop().animate({scrollTop: $(".portfolio").offset().top}, 2000, 'easeInOutExpo')};
+	function contact() {
 	  $('html, body').stop().animate({scrollTop: $(".contact").offset().top}, 2000, 'easeInOutExpo')};
 
 	$(document).scroll(function() {
@@ -225,6 +177,15 @@
 	$('.scrollbutton2').stop().fadeOut(100);
 	}
 	});
+	
+	function snapchat() {
+	 	$('.sc-modal-bg').stop().fadeIn(300);
+		$('.sc-modal img').stop().animate({top: '10%'}, 300, 'easeOutCirc');
+	};
+	function hidesnapchat() {
+	 	$('.sc-modal-bg').stop().fadeOut(100);
+		$('.sc-modal img').stop().animate({top: -300}, 100, 'easeOutCirc');
+	};
 </script>
 </body>
 </html>
