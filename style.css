@@ -44,13 +44,12 @@
 		z-index: 1000;
 		display: hidden;
 		box-shadow: 0px 0px 15px 0px #000000;
+		text-align: center;
 	}
 	.nav li {
 		float: left;
 		list-style-type: none;
 		overflow: hidden;
-		padding-left: 15px;
-		padding-top: 30px;
 	}
 	.nav a {
 		display: block;
@@ -58,25 +57,56 @@
 		float: left;
 		text-decoration: none;
 		color: #AAAAAA;
+		padding: 30px 5px 30px 5px;
 		transition: all 0.5s;
+		border-radius: 2px;
+		font-size: 16px;
 		-webkit-transition: all 0.5s;
 		-moz-transition: all 0.5s;
 		-o-transition: all 0.5s;
 	}
 	.nav a:hover {
-		color: #F50057
+		color: #F50057;
 	}
 	.nav ul {
-		transform: translateX(-50%);
+		padding-left: 10px;
 	}
 	.logo {
-		position: relative;
-		margin-top: 30px;
-		margin-left: 50%;
-		transform: translateX(-50%);
-		transform: scale(3);
+		position: fixed;
+		margin-top: 12px;
 		z-index: 10;
 		color: #ffffff;
+		left: 50%;
+		transform: translateX(-50%)
+	}
+	.logo h1 {
+		text-align: center;
+		font-weight: 500;
+		padding: 8px;
+		color: #FFFFFF;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+	}
+	.logo h1:hover {
+		color: #000000;
+		background: #ffffff;
+		transform: scale(1.1);
+		border-radius: 5px;
+	}
+	.social {
+		float: right;
+		padding-right: 10px;
+	}
+	.social a {
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+	}
+	.social a:hover {
+		transform: rotate(360deg);
 	}
 	.header {
 		background-attachment: fixed;
