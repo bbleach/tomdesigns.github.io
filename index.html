@@ -13,15 +13,22 @@
 </head>
 
 <body>
-	<div class="nav">
-		<a href="javascript:void(0)" class="navbutton1 logo">	
-			<i class="fa fa-university" aria-hidden="true"></i>
-		</a>	
+	<div class="nav">	
 		<ul>
 			<li><a class="navbutton2" href="javascript:void(0)">About</a></li>
 			<li><a class="navbutton3" href="javascript:void(0)">Services</a></li>
  			<li><a class="navbutton4" href="javascript:void(0)">Projects</a></li>
  			<li><a class="navbutton5" href="javascript:void(0)">Contact</a></li>
+		</ul>
+		<span class="navbutton1 logo" onClick="home()">	
+			<h1>Tom Designs</h1>
+		</span>
+		<ul class="social">
+			<li><a href="javascript:void(0)"><i class="fa fa-snapchat-ghost fa-fw" aria-hidden="true"></i></a></li>
+			<li><a href="javascript:void(0)"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>
+ 			<li><a href="javascript:void(0)"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a></li>
+  			<li><a href="javascript:void(0)"><i class="fa fa-dribbble fa-fw" aria-hidden="true"></i></a></li>
+  			<li><a href="javascript:void(0)"><i class="fa fa-behance fa-fw" aria-hidden="true"></i></a></li>
 		</ul>
 	</div>
 	<div class="header-wrapper">
@@ -192,6 +199,8 @@
   	  }, 2000, 'easeInOutExpo');
 	});
 	
+	function home() {
+	  $('html, body').stop().animate({scrollTop: $(".header").offset().top}, 2000, 'easeInOutExpo')};
 	function c2abutton() {
 	  $('html, body').stop().animate({scrollTop: $(".contact").offset().top}, 2000, 'easeInOutExpo')};
 
