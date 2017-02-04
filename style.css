@@ -414,8 +414,8 @@
 		-moz-transition: all 0.5s;
 		-o-transition: all 0.5s;
 	}
-	.sc-modal img {
-		transform: rotate(360deg)
+	.sc-modal img:hover {
+		transform: rotate(360deg);
 	}
 	.sc-modal-bg {
 		background: #fffc00;
