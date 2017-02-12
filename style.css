@@ -23,10 +23,12 @@
 	a{
 		color: #AAAAAA;
 		cursor: pointer;
+		text-decoration: none;
 	}
 	a:hover {
 		color: #F50057;
 		cursor: pointer;
+		text-decoration: underline;
 	}
 	h1 {
 		font-weight: 300;
