@@ -192,7 +192,7 @@
 		-moz-transition: all 1s easeOutExpo;
 		-o-transition: all 1s easeOutExpo;
 	}
-	.scrollButton2:active {
+	.scrollButton2:hover {
 		background: #F50057;
 	}
 	.about {
