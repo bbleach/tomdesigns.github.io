@@ -36,7 +36,7 @@
 		</a>
 	</div>
 	<div class="sc-modal-bg" onClick="hidesnapchat()"></div>
-	<div class="header-wrapper scroll">
+	<div class="header-wrapper">
 		<div class="header">
 			<h1 class="hero-text">Hey, <b>I'm Tom</b></h1>
 			<h2 class="hero-subtext">Graphic and web designer</h2>
@@ -58,12 +58,12 @@
 			</span>
 		</a>
 	</div>
-	<div class="about scroll">
+	<div class="about">
 		<div class="about-text">
 			<h1>About</h1>
 		</div>
 	</div>
-	<div class="services scroll">
+	<div class="services">
 		<h1 class="services-title">Services</h1>
 		<div class="services-columns">
 			<span class="fa-stack fa-5x services1">
@@ -93,15 +93,15 @@
 			<button class="servicesbutton" onClick="contact()"><span>LEARN MORE</span></button>
 		</div>
 	</div>
-	<div class="c2a scroll">
+	<div class="c2a">
 		<h1>Like what you see?</h1>
 		<button class="c2abutton" onClick="contact()"><span>GET IN TOUCH</span></button>
 	</div>
-	<div class="portfolio scroll">
+	<div class="portfolio">
 		<h1>Portfolio</h1>
 		<h2>Section Under Development</h2>
 	</div>
-	<div class="contact scroll">
+	<div class="contact">
 		<div class="contact-text">
 			<h1>Contact Me</h1><br>
 			<h2><span class="contact-text-title">E-mail:</span> <a href="mailto:hello@tomdesigner.co.uk?Subject=Business%20Enquiry" onclick="#contact" target="_top">
@@ -183,24 +183,6 @@
 		$('.sc-modal img').stop().animate({top: -300}, 100, 'easeOutCirc');
 	 	$('.sc-modal-bg').stop().fadeOut(300);
 	};
-var items = $(".scroll");
-var animating = false;
-
-$(window).scroll(function() {
-    clearTimeout($.data(this, 'scrollTimer'));
-    if (!animating) {
-        $.data(this, 'scrollTimer', setTimeout(function() {
-            items.each(function(key, value) {
-                if ($(value).offset().top > $(window).scrollTop()) {
-                    animating = true;
-                    $('body').animate( { scrollTop: $(value).offset().top + 'px' }, 250);
-                    setTimeout(function() { animating = false; }, 300);
-                    return false;
-                }
-            });
-        }, 200));
-    }
-});
 </script>
 </body>
 </html>
