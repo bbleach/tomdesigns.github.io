@@ -18,7 +18,8 @@
 }
 
 ::-webkit-scrollbar-track-piece{
-	background-color: #FFF;
+	display: hidden;
+	opacity: 0;
 }
 
 ::-webkit-scrollbar-thumb{
