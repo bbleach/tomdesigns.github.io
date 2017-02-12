@@ -136,7 +136,7 @@
 	.header-wrapper {
 		height: 100vh;
 		position: relative;
-		z-index: -999;
+		z-index: 0;
 		max-height: 100%;
 	}
 	.hero-text,.hero-subtext {
