@@ -179,20 +179,21 @@
 	}
 	.scrollButton2{
 		position: fixed;
-		top: 70vh;
+		top: 105vh;
 		left: 50%;
    		transform: translateX(-50%);
 		z-index: 10;
 		border-radius: 50px;
 		cursor: pointer;
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		background: #424242;
+		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+		transition: all 1s easeOutExpo;
+		-webkit-transition: all 1s easeOutExpo;
+		-moz-transition: all 1s easeOutExpo;
+		-o-transition: all 1s easeOutExpo;
 	}
-	.scrollButton2:hover {
+	.scrollButton2:active {
 		background: #F50057;
-		cursor: pointer;
 	}
 	.about {
 	 	background: #F50057;
