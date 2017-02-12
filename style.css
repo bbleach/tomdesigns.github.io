@@ -219,7 +219,7 @@
 	}
 	.services h1 {
 		font-size: 50px;
-		text-align: center;
+		text-align: justify;
 		opacity: 0.87;
 		transform: translateY(90px);
 	}
