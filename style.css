@@ -245,10 +245,10 @@
     		width: 33.3%;
 		height: 60%;
     		padding: 50px;
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		transition: all 0.5s easeInOutQuart;
+		-webkit-transition: all 0.5s easeInOutQuart;
+		-moz-transition: all 0.5s easeInOutQuart;
+		-o-transition: all 0.5s easeInOutQuart;
 	}
 	.services-columns:hover {
 		transform: translateY(120px) scale(1);
@@ -265,10 +265,10 @@
 		color: #F50057;
 		text-decoration: none;
 		padding: 10px 50px;
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		transition: all 0.5s easeInOutQuart;
+		-webkit-transition: all 0.5s easeInOutQuart;
+		-moz-transition: all 0.5s easeInOutQuart;
+		-o-transition: all 0.5s easeInOutQuart;
 		outline: none;
 	}
 	.servicesbutton:hover {
@@ -280,10 +280,10 @@
 		cursor: pointer;
 	}
 	.services1 {
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		transition: all 0.5s easeInOutQuart;
+		-webkit-transition: all 0.5s easeInOutQuart;
+		-moz-transition: all 0.5s easeInOutQuart;
+		-o-transition: all 0.5s easeInOutQuart;
 	}
 	.services-columns:hover > .services1 {
 		transform: rotate(360deg);
@@ -316,10 +316,10 @@
 		width: auto;
 		padding: 20px;
 		transform: translateY(140px) scale(0.8);
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		transition: all 0.5s easeInOutQuart;
+		-webkit-transition: all 0.5s easeInOutQuart;
+		-moz-transition: all 0.5s easeInOutQuart;
+		-o-transition: all 0.5s easeInOutQuart;
 		outline: none;
 	}
 	.c2abutton:hover {
@@ -369,10 +369,10 @@
 		border-bottom: 3px solid rgba(245, 0, 87, 0.00);
 		border-radius: 0px;
 		cursor: not-allowed;
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		transition: all 0.5s easeInOutQuart;
+		-webkit-transition: all 0.5s easeInOutQuart;
+		-moz-transition: all 0.5s easeInOutQuart;
+		-o-transition: all 0.5s easeInOutQuart;
 	}
 	.portfolio li:hover {
 		color: #F50057;
