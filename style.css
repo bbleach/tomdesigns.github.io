@@ -22,9 +22,11 @@
 	}
 	a{
 		color: #AAAAAA;
+		cursor: pointer;
 	}
 	a:hover {
 		color: #F50057;
+		cursor: pointer;
 	}
 	h1 {
 		font-weight: 300;
