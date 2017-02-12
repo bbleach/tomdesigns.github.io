@@ -212,7 +212,7 @@
 	.services {
 		background: #ffffff;
 		position: relative;
-		height: 100%;
+		height: auto;
 		width: 100%;
 		text-align: center;
 		z-index: 2;
@@ -241,9 +241,9 @@
 	.services-columns {
 		transform: translateY(100px) scale(0.8);
 		float: left;
-    	width: 33.3%;
+    		width: 33.3%;
 		height: 60%;
-    	padding: 50px;
+    		padding: 50px;
 		transition: all 0.5s;
 		-webkit-transition: all 0.5s;
 		-moz-transition: all 0.5s;
@@ -252,9 +252,9 @@
 	.services-columns:hover {
 		transform: translateY(120px) scale(1);
 		float: left;
-    	width: 33.3%;
+    		width: 33.3%;
 		height: 70%;
-    	padding: 50px;
+    		padding: 50px;
 		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 	}
 	.servicesbutton {
