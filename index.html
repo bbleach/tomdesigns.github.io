@@ -18,7 +18,7 @@
 			<li onClick="about()" class="navlink">About</li>
 			<li onClick="services()" class="navlink">Services</li>
  			<li onClick="portfolio()" class="navlink">Portfolio</li>
- 			<li onClick="contact()" class="navlink">Contact</li>
+ 			<li onClick="contact()" class="navlink">Contacts</li>
 		</ul>
 		<span class="logo" onClick="home()">	
 			<h1>Tom Designs</h1>
@@ -138,8 +138,8 @@
 	$(document).ready(function () { $('.sc-modal-bg').hide()});
 	$(document).ready(function () { $('.hero-text').hide().delay(1000).fadeIn(3000)});
 	$(document).ready(function () { $('.hero-subtext').hide().delay(1500).fadeIn(3000)});
-	$(document).ready(function () { $('.scrollbutton2').hide().delay(2000).fadeIn(1000)});
 	$(document).ready(function () { $('.nav').animate({top: -80})});
+	$(document).ready(function () { $('.scrollButton2').delay(800).animate({top: "70vh"}, {duration: 1500, easing: "easeOutExpo" })});
 	$(document).ready(function () { if(window.innerHeight > window.innerWidth){
 	$('.mobilelogo').hide().delay(2000).fadeIn(3000)}});
 		
@@ -170,18 +170,18 @@
 	}
 	});
     
-	$(document).scroll(function() {
-		var y = $(this).scrollTop();
-		if (y < 300) {
- 	$('.hero-text').stop().fadeIn(1000);
-	$('.hero-subtext').stop().fadeIn(1000);
-	$('.scrollbutton2').stop().fadeIn(1000);
-	} else {
-   	$('.hero-text').stop().fadeOut(100);
-	$('.hero-subtext').stop().fadeOut(100);
-	$('.scrollbutton2').stop().fadeOut(100);
-	}
-	});
+//	$(document).scroll(function() {
+//		var y = $(this).scrollTop();
+//		if (y < 300) {
+// 	$('.hero-text').stop().fadeIn(1000);
+//	$('.hero-subtext').stop().fadeIn(1000);
+//	$('.scrollButton2').stop().animate({top: "70vh"}, {duration: 600, easing: "easeOutExpo" })
+//	} else {
+//   	$('.hero-text').stop().fadeOut(100);
+//	$('.hero-subtext').stop().fadeOut(100);
+//	$('.scrollButton2').stop().animate({top: "101vh"}, {duration: 600, easing: "easeOutExpo" })
+//	}
+//	});
 	
 	function snapchat() {
 	 	$('.sc-modal-bg').stop().fadeIn(300);
