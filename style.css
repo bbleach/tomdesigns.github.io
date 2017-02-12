@@ -187,10 +187,10 @@
 		cursor: pointer;
 		background: #424242;
 		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-		transition: all 1s cubic-bezier(0.770, 0.000, 0.175, 1.000);
-		-webkit-transition: all 1s cubic-bezier(0.770, 0.000, 0.175, 1.000);
-		-moz-transition: all 1s cubic-bezier(0.770, 0.000, 0.175, 1.000);
-		-o-transition: all 1s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		transition: all 0.7s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 0.7s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.7s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.7s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	.scrollButton2:hover {
 		background: #F50057;
