@@ -15,9 +15,11 @@
 }
 ::-webkit-scrollbar{
 	width: 10px;
+	border-radius: 100px;
+	height: 60%;
 }
 
-::-webkit-scrollbar-track-piece{
+::-webkit-scrollbar-track{
 	display: hidden;
 	opacity: 0;
 }
@@ -27,6 +29,7 @@
 	outline: 2px solid #FFF;
 	outline-offset: -2px;
 	border: .1px solid #B7B7B7;
+	border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
@@ -142,8 +145,6 @@
 		cursor: pointer;
 	}
 	.header {
-		background-attachment: fixed;
-		background-repeat: repeat;
 		background: #212121;
 		height: 100vh;
 		width: 100%;
@@ -219,7 +220,7 @@
 	}
 	.services h1 {
 		font-size: 50px;
-		text-align: justify;
+		text-align: center;
 		opacity: 0.87;
 		transform: translateY(90px);
 	}
@@ -337,9 +338,10 @@
 	}
 	.portfolio {
 		background: #ffffff;
-		height: 100%;
+		height: 1000px;
 		width: 100%;
 		position: relative;
+		text-align: center;
 	}
 	.portfolio h1 {
 		transform: translateY(100px);
@@ -348,14 +350,54 @@
 		opacity: 0.87;
 	}
 	.portfolio h2 {
-		transform: translateY(105px);
 		font-size: 30px;
 		opacity: 0.87;
 		text-align: center;
 	}
+	.portfolio ul {
+		transform: translateY(100px);
+		display: inline-block;
+	}
+	.portfolio li {
+		float: left;
+		height: 36px;
+		padding: 9px 16px 0px 16px;
+		margin: 10px 20px 10px 20px;
+		font-weight: 500;
+		color: #F50057;
+		list-style: none;
+		border-bottom: 3px solid rgba(245, 0, 87, 0.00);
+		border-radius: 0px;
+		cursor: not-allowed;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+	}
+	.portfolio li:hover {
+		color: #F50057;
+		border-bottom-color: rgba(245, 0, 87, 1);
+	}
+	.portfolio li:active {
+		background: #F50057;
+		color: #FFFFFF;
+		border-radius: 2px;
+	}
+	.portfolio-content {
+		position: relative;
+		box-shadow: inset 0px 0px 12px 0 rgba(0,0,0,0.12);
+		width: 90%;
+		height: 725px;
+		left: 5%;
+		transform: translateY(100px);
+		cursor: progress;
+	}
 	.contact {
-		background: #212121;
-		height: 80%;
+		background: url(Media/Images/geometry_@2X.png);
+		background-repeat: round;
+		background-attachment: fixed;
+		background-size: auto;
+		height: 100%;
 		width: 100%;
 		position: relative;
 	}
@@ -368,19 +410,23 @@
 	}
 	.contact-text h1 {
 		font-size: 50px;
-		color: #F50057
+		color: #F50057;
+		opacity: 0.87;
 	}
 	.contact-text h2 {
 		font-size: 25px;
-		color: #FFFFFF;
+		color: #000000;
+		opacity: 0.87
 	}
 	.contact-text p {
-		font-size: 16px;
-		color: #FFFFFF;
+		font-size: 18px;
+		font-weight: 300;
+		color: #000000;
 		opacity: 0.5;
 	}
 	.contact-text a {
 		text-decoration: none;
+		font-weight: 300;
 	}
 	.contact-text a:hover {
 		color: #F50057;
