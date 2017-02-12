@@ -82,12 +82,12 @@
 		text-decoration: none;
 		color: #AAAAAA;
 		padding: 30px 5px 30px 5px;
-		transition: all 0.5s;
+		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 		border-radius: 2px;
 		font-size: 16px;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	.navlink:hover {
 		color: #F50057;
@@ -108,10 +108,10 @@
 		font-weight: 500;
 		padding: 8px;
 		color: #FFFFFF;
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	.logo h1:hover {
 		color: #000000;
@@ -125,19 +125,19 @@
 		padding-right: 10px;
 	}
 	.social a {
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	.navlink {
 		cursor: pointer;
 	}
 	.sociallink {
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	.sociallink:hover {
 		transform: rotate(360deg);
@@ -187,10 +187,10 @@
 		cursor: pointer;
 		background: #424242;
 		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-		transition: all 1s easeOutExpo;
-		-webkit-transition: all 1s easeOutExpo;
-		-moz-transition: all 1s easeOutExpo;
-		-o-transition: all 1s easeOutExpo;
+		transition: all 1s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 1s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 1s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 1s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	.scrollButton2:hover {
 		background: #F50057;
@@ -430,10 +430,10 @@
 	}
 	.contact-text a:hover {
 		color: #F50057;
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	.contact-text-title {
 		font-weight: 300;
@@ -451,10 +451,10 @@
 		text-decoration: none;
 		color: #FFFFFF;
 		opacity: 0.5;
-		transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
+		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	.footerlinks:hover {
 		color: #F50057;
