@@ -245,10 +245,10 @@
     		width: 33.3%;
 		height: 60%;
     		padding: 50px;
-		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
-		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
-		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
-		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+		-webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 	}
 	.services-columns:hover {
 		transform: translateY(120px) scale(1);
