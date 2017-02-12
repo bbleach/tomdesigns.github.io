@@ -245,10 +245,10 @@
     		width: 33.3%;
 		height: 60%;
     		padding: 50px;
-		transition: all 0.5s easeInOutQuart;
-		-webkit-transition: all 0.5s easeInOutQuart;
-		-moz-transition: all 0.5s easeInOutQuart;
-		-o-transition: all 0.5s easeInOutQuart;
+		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	.services-columns:hover {
 		transform: translateY(120px) scale(1);
@@ -265,10 +265,10 @@
 		color: #F50057;
 		text-decoration: none;
 		padding: 10px 50px;
-		transition: all 0.5s easeInOutQuart;
-		-webkit-transition: all 0.5s easeInOutQuart;
-		-moz-transition: all 0.5s easeInOutQuart;
-		-o-transition: all 0.5s easeInOutQuart;
+		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 		outline: none;
 	}
 	.servicesbutton:hover {
@@ -280,10 +280,10 @@
 		cursor: pointer;
 	}
 	.services1 {
-		transition: all 0.5s easeInOutQuart;
-		-webkit-transition: all 0.5s easeInOutQuart;
-		-moz-transition: all 0.5s easeInOutQuart;
-		-o-transition: all 0.5s easeInOutQuart;
+		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	.services-columns:hover > .services1 {
 		transform: rotate(360deg);
@@ -316,10 +316,10 @@
 		width: auto;
 		padding: 20px;
 		transform: translateY(140px) scale(0.8);
-		transition: all 0.5s easeInOutQuart;
-		-webkit-transition: all 0.5s easeInOutQuart;
-		-moz-transition: all 0.5s easeInOutQuart;
-		-o-transition: all 0.5s easeInOutQuart;
+		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 		outline: none;
 	}
 	.c2abutton:hover {
@@ -369,10 +369,10 @@
 		border-bottom: 3px solid rgba(245, 0, 87, 0.00);
 		border-radius: 0px;
 		cursor: not-allowed;
-		transition: all 0.5s easeInOutQuart;
-		-webkit-transition: all 0.5s easeInOutQuart;
-		-moz-transition: all 0.5s easeInOutQuart;
-		-o-transition: all 0.5s easeInOutQuart;
+		transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-webkit-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-moz-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+		-o-transition: all 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	.portfolio li:hover {
 		color: #F50057;
