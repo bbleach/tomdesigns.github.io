@@ -185,10 +185,10 @@
 	
 	function snapchat() {
 	 	$('.sc-modal-bg').stop().fadeIn(300);
-		$('.sc-modal img').stop().animate({top: '10%'}, 300, 'easeOutCirc');
+		$('.sc-modal img').stop().animate({top: '10%'}, 300, 'easeInOutExpo');
 	};
 	function hidesnapchat() {
-		$('.sc-modal img').stop().animate({top: -300}, 100, 'easeOutCirc');
+		$('.sc-modal img').stop().animate({top: -300}, 100, 'easeInOutExpo');
 	 	$('.sc-modal-bg').stop().fadeOut(300);
 	};
 </script>
