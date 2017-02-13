@@ -213,7 +213,7 @@
 	.services {
 		background: #ffffff;
 		position: relative;
-		height: 1000px;
+		height: 950px;
 		width: 100%;
 		text-align: center;
 		z-index: 2;
@@ -289,7 +289,7 @@
 		transform: rotate(360deg);
 	}
 	.c2a {
-		width: 640px;
+		width: 360px;
 		height: 50%;
 		background: #F50057;
 		text-align: center;
@@ -398,7 +398,7 @@
 		background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0)), url(Media/Images/geometry_@2X.png);
 		background-repeat: repeat;
 		background-size: auto;
-		height: 1280px;
+		height: 950px;
 		width: 100%;
 		position: relative;
 	}
