@@ -269,9 +269,9 @@
 	    	-webkit-order: 0;
 		-ms-flex-order: 0;
     		order: 0;
-    		-webkit-flex: 0 2 auto;
-    		-ms-flex: 0 2 auto;
-    		flex: 0 2 33.3%;
+    		-webkit-flex: 0 0 33.3%;
+    		-ms-flex: 0 0 33.3%;
+    		flex: 0 0 33.3%;
     		-webkit-align-self: auto;
     		-ms-flex-item-align: auto;
     		align-self: auto;
