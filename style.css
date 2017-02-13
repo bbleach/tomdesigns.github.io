@@ -262,7 +262,6 @@
 		color: #F50057;
 	}
 	.services-columns {
-		transform: translateY(100px) scale(0.8);
 		height: 60%;
     		padding: 30px;
 	    	-webkit-order: 0;
@@ -280,11 +279,6 @@
 		-o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 	}
 	.services-columns:hover {
-		transform: translateY(120px) scale(1);
-		float: left;
-    		width: 33.3%;
-		height: 70%;
-    		padding: 50px;
 		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 	}
 	.servicesbutton {
