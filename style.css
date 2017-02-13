@@ -271,7 +271,7 @@
     		order: 0;
     		-webkit-flex: 0 2 auto;
     		-ms-flex: 0 2 auto;
-    		flex: 0 2 auto;
+    		flex: 0 2 33.3%;
     		-webkit-align-self: auto;
     		-ms-flex-item-align: auto;
     		align-self: auto;
