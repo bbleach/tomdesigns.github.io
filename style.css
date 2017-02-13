@@ -488,3 +488,8 @@
 		display: none
 	}
 }
+@media screen and (orientation: portrait) {
+	*:hover {
+		white-space: 0px;
+	}	
+}
