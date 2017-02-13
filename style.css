@@ -393,9 +393,10 @@
 		cursor: progress;
 	}
 	.contact {
-		background: url(Media/Images/geometry_@2X.png);
-		background-repeat: round;
-		background-attachment: fixed;
+		background: -webkit-linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0), rgba(255,255,255,0)), url(Media/Images/geometry_@2X.png);
+		background: -o-linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0), rgba(255,255,255,0)), url(Media/Images/geometry_@2X.png);
+		background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0), rgba(255,255,255,0)), url(Media/Images/geometry_@2X.png);
+		background-repeat: repeat;
 		background-size: auto;
 		height: 100%;
 		width: 100%;
