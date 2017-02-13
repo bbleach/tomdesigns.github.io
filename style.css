@@ -486,3 +486,8 @@
 		display: none;
 	}
 }
+@media screen and (max-height: 450px) {
+	.scrollButton2 {
+		display: none
+	}
+}
