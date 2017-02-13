@@ -263,7 +263,6 @@
 	}
 	.services-columns {
 		transform: translateY(100px) scale(0.8);
-    		width: 30%;
 		height: 60%;
     		padding: 30px;
 	    	-webkit-order: 0;
