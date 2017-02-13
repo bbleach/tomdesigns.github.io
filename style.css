@@ -35,7 +35,7 @@
 ::-webkit-scrollbar-thumb:hover{
 	background-color: #909090;
 }
-@media screen and (orientation: landscape) {	
+@media screen {	
 	footer {
 		overflow: hidden;
 		margin: 0px;
