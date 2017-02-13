@@ -254,7 +254,7 @@
 	}
 	.services p {
 		font-size: 18px;
-		text-align: justify;
+		text-align: center;
 		opacity: 0.54;
 		margin-top: 10px;
 	}
@@ -263,10 +263,9 @@
 	}
 	.services-columns {
 		transform: translateY(100px) scale(0.8);
-		float: left;
-    		width: 33.3%;
+    		width: 30%;
 		height: 60%;
-    		padding: 50px;
+    		padding: 30px;
 	    	-webkit-order: 0;
 		-ms-flex-order: 0;
     		order: 0;
