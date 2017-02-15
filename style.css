@@ -499,4 +499,13 @@
 	.social {
 		display: none;
 	}
+	.portfolio li {
+		float: none;
+		transform: scale(1.2);
+		border: none;
+	}
+	.portfolio li:hover {
+		border: none;
+	}
 }
+
