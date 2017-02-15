@@ -493,7 +493,7 @@
 	.logo {
 		display: none;
 	}
-	nav ul {
+	.nav li {
 		display: none;
 	}
 	.social {
