@@ -483,6 +483,9 @@
 		opacity: 1;
 		display: none;
 	}
+	.sharebtn {
+		display: none;
+	}
 }
 @media screen and (max-height: 450px) {
 	.scrollButton2 {
@@ -506,6 +509,15 @@
 	}
 	.portfolio li:hover {
 		border: none;
+	}
+	.sharebtn {
+		display: initial;
+		position: fixed;
+		width: 10px;
+		z-index: 100000;
+		top: 80%;
+		left: 65%;
+		text-shadow: 0px 7px 12px rgba(0,0,0,0.6);
 	}
 }
 
