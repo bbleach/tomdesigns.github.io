@@ -123,17 +123,7 @@
 	$(document).ready(function () { $('.hero-subtext').hide().delay(1500).fadeIn(3000)});
 	$(document).ready(function () { $('.nav').animate({top: -80})});
 	$(document).ready(function () { $('.scrollButton2').delay(800).animate({top: "70vh"}, {duration: 1500, easing: "easeOutExpo" })});
-	$(document).ready(function () { $('.sharebtn').delay(800).animate({transform: "scale(1)"}, {duration: 600})});
-	$(document).ready(function () { if(window.innerHeight > window.innerWidth){
-	$('.mobilelogo').hide().delay(2000).fadeIn(3000)}});
 		
-	$(".mobilelogo").click(function() {
-    	$('.mobile-content').stop().show().animate({top: '0%'}, 1000, 'easeInOutExpo')
-	});
-	$(".hidemobile").click(function() {
-    	$('.mobile-content').stop().show().animate({top: '100%'}, 1000, 'easeInOutExpo')
-	});
-
 	function home() {
 	  $('html, body').stop().animate({scrollTop: $(".header").offset().top}, 2000, 'easeInOutExpo')};
 	function about() {
@@ -154,19 +144,6 @@
 	}
 	});
     
-//	$(document).scroll(function() {
-//		var y = $(this).scrollTop();
-//		if (y < 300) {
-// 	$('.hero-text').stop().fadeIn(1000);
-//	$('.hero-subtext').stop().fadeIn(1000);
-//	$('.scrollButton2').stop().animate({top: "70vh"}, {duration: 600, easing: "easeOutExpo" })
-//	} else {
-//   	$('.hero-text').stop().fadeOut(100);
-//	$('.hero-subtext').stop().fadeOut(100);
-//	$('.scrollButton2').stop().animate({top: "101vh"}, {duration: 600, easing: "easeOutExpo" })
-//	}
-//	});
-	
 	function snapchat() {
 	 	$('.sc-modal-bg').stop().fadeIn(300);
 		$('.sc-modal img').stop().animate({top: '10%'}, 300, 'easeInOutExpo');
@@ -175,6 +152,10 @@
 		$('.sc-modal img').stop().animate({top: -300}, 100, 'easeInOutExpo');
 	 	$('.sc-modal-bg').stop().fadeOut(300);
 	};
+	function share() {
+	};
+	function hideshare() {
+	}
 </script>
 </body>
 </html>
