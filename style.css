@@ -521,4 +521,33 @@
 		text-align: center;
 	}
 }
+@media screen and (device-aspect-ratio: 9/16) {
+	.logo {
+		display: none;
+	}
+	.nav li {
+		display: none;
+	}
+	.social {
+		display: none;
+	}
+	.portfolio li {
+		float: none;
+		transform: scale(1.2);
+		border: none;
+	}
+	.portfolio li:hover {
+		border: none;
+	}
+	.sharebtn {
+		display: initial;
+		position: fixed;
+		width: 10px;
+		z-index: 100000;
+		top: 80%;
+		left: 65%;
+		text-shadow: 0px 7px 12px rgba(0,0,0,0.6);
+		text-align: center;
+	}
+}
 
