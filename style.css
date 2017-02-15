@@ -13,6 +13,7 @@
 	box-sizing: border-box;
 	cursor: default;
 }
+/*DEFAULT STYLING*/
 @media screen {	
 	footer {
 		overflow: hidden;
@@ -488,8 +489,14 @@
 		display: none
 	}
 }
-@media screen and (orientation: portrait) {
-	*:hover {
-		white-space: 0px;
-	}	
+@media screen and (max-width: 770px) {
+	.logo {
+		display: none;
+	}
+	nav li {
+		display: none;
+	}
+	.social {
+		display: none;
+	}
 }
