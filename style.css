@@ -521,7 +521,10 @@
 		text-align: center;
 	}
 }
-@media screen and (device-aspect-ratio: 9/16) {
+@media screen and (width: 1440px) and (height: 2560px) {
+	:root {
+		zoom: 2;
+	}
 	.logo {
 		display: none;
 	}
