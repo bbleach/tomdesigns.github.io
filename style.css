@@ -518,6 +518,8 @@
 		top: 80%;
 		left: 65%;
 		text-shadow: 0px 7px 12px rgba(0,0,0,0.6);
+		transform: scale(0);
+		text-align: center;
 	}
 }
 
