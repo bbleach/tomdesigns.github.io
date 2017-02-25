@@ -161,7 +161,7 @@ a:hover {
 .footer-links .fa {
 	cursor: pointer;
 }
-.homebtn, .aboutbtn, .servicesbtn, .portfoliobtn, .contactbtn, .topbtn {
+.homebtn, .aboutbtn, .servicesbtn, .portfoliobtn, .contactbtn {
 	cursor: pointer;
 }
 
