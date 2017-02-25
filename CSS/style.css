@@ -98,7 +98,7 @@ a:hover {
 	top: 90%;
 }
 .header-downarrow:hover {
-	color: rgba(255,255,255,0.7) !important;
+	color: rgba(255,255,255,0.7);
 	cursor: pointer;
 }
 .text-container {
