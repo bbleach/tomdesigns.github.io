@@ -17,30 +17,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://use.fontawesome.com/e384dc41c7.js"></script>
-	
-	<script>
-		function about() {
-		  $('html, body').stop().animate({scrollTop: $(".about").offset().top}, 2000, 'easeInOutExpo')};
-		
-		function services() {
-		  $('html, body').stop().animate({scrollTop: $(".services").offset().top}, 2000, 'easeInOutExpo')};
-		
-		function portfolio() {
-		  $('html, body').stop().animate({scrollTop: $(".portfolio").offset().top}, 2000, 'easeInOutExpo')};
-		
-		function contact() {
-		  $('html, body').stop().animate({scrollTop: $(".contact").offset().top}, 2000, 'easeInOutExpo')};
-	</script>
 </head>
 
 <body>
 	<div class="header" style="background-image: url(Images/IMG_6175.jpg); background-attachment: fixed;">
 		<div class="nav">
 			<ul>
-				<li><p onClick="about()">ABOUT</p></li>
-				<li><p onClick="services()">SERVICES</p></li>
-				<li><p onClick="portfolio()">PORTFOLIO</p></li>
-				<li><p onClick="contact()">CONTACT</p></li>
+				<li><p class="aboutbtn">ABOUT</p></li>
+				<li><p class="servicesbtn">SERVICES</p></li>
+				<li><p class="portfoliobtn">PORTFOLIO</p></li>
+				<li><p class="contactbtn">CONTACT</p></li>
 			</ul>
 		</div>
 		<div class="hero">
@@ -49,7 +35,7 @@
 				<h2>Professional Media Production and design.</h2>
 			</div>
 		</div>
-		<i class="fa fa-angle-down fa-inverse fa-3x header-downarrow" onClick="about()" aria-hidden="true"></i>
+		<i class="fa fa-angle-down fa-inverse fa-3x header-downarrow aboutbtn" aria-hidden="true"></i>
 	</div>
 	<div class="text-container about">
 		<h1>About</h1>
@@ -118,6 +104,22 @@
 		</div>
 	</div>
 	
-
+	<script>
+		$(".homebtn").click(function() {
+    			$('html,body').animate({scrollTop: $(".second").offset().top}, 2000, easeInOutCubic);
+		});
+		$(".aboutbtn").click(function() {
+    			$('html,body').animate({scrollTop: $(".second").offset().top}, 2000, easeInOutCubic);
+		});
+		$(".servicesbtn").click(function() {
+    			$('html,body').animate({scrollTop: $(".second").offset().top}, 2000, easeInOutCubic);
+		});
+		$(".portfoliobtn").click(function() {
+    			$('html,body').animate({scrollTop: $(".second").offset().top}, 2000, easeInOutCubic);
+		});
+		$(".contactbtn").click(function() {
+    			$('html,body').animate({scrollTop: $(".second").offset().top}, 2000, easeInOutCubic);
+		});
+	</script>
 </body>
 </html>
