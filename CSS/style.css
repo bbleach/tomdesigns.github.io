@@ -163,6 +163,11 @@ a:hover {
 }
 .homebtn, .aboutbtn, .servicesbtn, .portfoliobtn, .contactbtn {
 	cursor: pointer;
+	color: rgba(0,0,0,0.87);
+}
+.homebtn:hover, .aboutbtn:hover, .servicesbtn:hover, .portfoliobtn:hover, .contactbtn:hover {
+	cursor: pointer;
+	color: rgba(0,0,0,0.54);
 }
 
 @media screen and (max-device-width:600px){
