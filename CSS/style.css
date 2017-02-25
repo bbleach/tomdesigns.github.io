@@ -157,3 +157,15 @@ a:hover {
 .footer-links .fa {
 	cursor: pointer;
 }
+
+
+@media screen and (max-device-width:600px){
+	.nav {
+		display: none;
+	}
+	.image-container {
+		max-height: 30%;
+		min-height: 20%;
+		height: 100px;
+	}
+}
