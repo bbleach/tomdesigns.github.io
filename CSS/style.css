@@ -12,6 +12,9 @@
     user-select: none;
 	cursor: default;
 }
+::-webkit-scrollbar {
+	display: none;
+}
 body, html {
 	height: 100%;
 	width: 100%;
