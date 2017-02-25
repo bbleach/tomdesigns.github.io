@@ -171,6 +171,7 @@ a:hover {
 		height: 200px;
 		background-attachment: initial;
 	}
-	.header-downarrow
+	.header-downarrow {
 		display: none;
+	}
 }
