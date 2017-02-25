@@ -17,6 +17,7 @@ body, html {
 	width: 100%;
 	margin: 0px;
 	font-family: 'Open sans', sans-serif;
+	overflow-x: hidden;
 }
 h1 {
 	color: rgba(0,0,0,0.87);
@@ -166,6 +167,7 @@ a:hover {
 	.image-container {
 		max-height: 30%;
 		min-height: 20%;
-		height: 100px;
+		height: 200px;
+		background-attachment: initial;
 	}
 }
