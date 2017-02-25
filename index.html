@@ -108,20 +108,23 @@
 	</div>
 	
 	<script>
+		$(document).ready(function() {
+			$(html).hide().stop().fadeIn(2000);
+		)};
 		$(".homebtn").click(function() {
-    			$('html,body').stop().animate({scrollTop: $(".header").offset().top}, 3000, 'easeInOutCubic');
+    			$('html,body').stop().animate({scrollTop: $(".header").offset().top}, 2000, 'easeInOutCubic');
 		});
 		$(".aboutbtn").click(function() {
-    			$('html,body').stop().animate({scrollTop: $(".about").offset().top}, 3000, 'easeInOutCubic');
+    			$('html,body').stop().animate({scrollTop: $(".about").offset().top}, 2000, 'easeInOutCubic');
 		});
 		$(".servicesbtn").click(function() {
-    			$('html,body').stop().animate({scrollTop: $(".services").offset().top}, 3000, 'easeInOutCubic');
+    			$('html,body').stop().animate({scrollTop: $(".services").offset().top}, 2000, 'easeInOutCubic');
 		});
 		$(".portfoliobtn").click(function() {
-    			$('html,body').stop().animate({scrollTop: $(".portfolio").offset().top}, 3000, 'easeInOutCubic');
+    			$('html,body').stop().animate({scrollTop: $(".portfolio").offset().top}, 2000, 'easeInOutCubic');
 		});
 		$(".contactbtn").click(function() {
-    			$('html,body').stop().animate({scrollTop: $(".contact").offset().top}, 3000, 'easeInOutCubic');
+    			$('html,body').stop().animate({scrollTop: $(".contact").offset().top}, 2000, 'easeInOutCubic');
 		});
 	</script>
 </body>
