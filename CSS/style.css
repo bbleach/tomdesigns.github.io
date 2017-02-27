@@ -59,6 +59,27 @@ button:focus {
 button:active {
 	transform: scale(0.9)
 }
+.button {
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	padding: 8px 30px;
+	background: rgba(0,0,0,0.87);
+	border: solid 2px rgba(0,0,0,0.87);
+	border-radius: 3px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.button:hover {
+	background: #FFF;
+	color: rgba(0,0,0,0.87);
+	transform: scale(1.1);
+	text-decoration: none;
+}
+.button:active {
+	transform: scale(0.9);
+}
 .nav {
 	position: absolute;
 	width: 100%;
