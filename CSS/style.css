@@ -178,7 +178,7 @@ button:active {
 	height: 500px;
 	background: white;
 	position: fixed;
-	top: 155%;
+	top: 50%;
 	left: 50%;
 	margin: -250px 0px 0px -250px;
 	z-index: 1000 !important;
