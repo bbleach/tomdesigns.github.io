@@ -53,6 +53,12 @@ button:hover {
 	color: rgba(0,0,0,0.87);
 	transform: scale(1.1);
 }
+button:focus {
+	outline: none;
+}
+button:active {
+	transform: scale(0.9)
+}
 .nav {
 	position: absolute;
 	width: 100%;
