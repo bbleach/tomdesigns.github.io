@@ -20,13 +20,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://use.fontawesome.com/e384dc41c7.js"></script>
-
-	<!--Hide modals-->
-	<script>
-		$(".graphicdesignmodal").hide();
-		$(".motiondesignmodal").hide();
-		$(".webdesignmodal").hide();
-	</script>
 </head>
 
 <body>
@@ -160,6 +153,35 @@
 		$(".header-downarrow").click(function() {
     			$('html,body').animate({scrollTop: $(".about").offset().top}, 2000, 'easeInOutExpo');
 		});
+		$( document ).ready(function() {
+			$(".graphicdesignmodal").hide();
+			$(".motiondesignmodal").hide();
+			$(".webdesignmodal").hide()
+		});
+		function graphicdesign() {
+			$(".graphicdesignmodal").fadeIn(300);
+			$(".modalbg").fadeIn(300);
+			$(".motiondesignmodal").fadeOut(100);
+			$(".webdesignmodal").fadeOut(100);
+		}
+		function motiondesign() {
+			$(".motiondesignmodal").fadeIn(300);
+			$(".modalbg").fadeIn(300);
+			$(".graphicdesignmodal").fadeOut(100);
+			$(".webdesignmodal").fadeOut(100);
+		}
+		function webdesign() {
+			$(".webdesignmodal").fadeIn(300);
+			$(".modalbg").fadeIn(300);
+			$(".graphicdesignmodal").fadeOut(100);
+			$(".motiondesignmodal").fadeOut(100);
+		}
+		function hidemodals() {
+			$(".modalbg").fadeOut(100);
+			$(".graphicdesignmodal").fadeOut(100);
+			$(".motiondesignmodal").fadeOut(100);
+			$(".webdesignmodal").fadeOut(100);
+		}
 	</script>
 </body>
 </html>
