@@ -173,7 +173,7 @@ button:active {
 	width: 350px;
 	padding: 20px;
 }
-.webdesignmodal {
+.modal {
 	width: 500px; 
 	height: 500px;
 	background: white;
@@ -185,6 +185,7 @@ button:active {
 	text-align: center;
 	box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
 	border-radius: 3px;
+	display: none;
 }
 .footer {
 	height: 200px;
