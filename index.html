@@ -87,17 +87,17 @@
 		<div class="graphicdesignmodal modal">
 			<i class="fa fa-window-close-o fa-2x" style="cursor: pointer; color: rgba(0,0,0,0.87); position: relative; left: 225px; top: 8px;" onClick="hidemodals()"></i>
 			<h1>Graphic Design</h1>
-			<a class="button" onclick="hidemodals();contact();">Get In Touch</a>
+			<a class="button" onClick="contact()">Get In Touch</a>
 		</div>
 		<div class="motiondesignmodal modal">
 			<i class="fa fa-window-close-o fa-2x" style="cursor: pointer; color: rgba(0,0,0,0.87); position: relative; left: 225px; top: 8px;" onClick="hidemodals()"></i>
 			<h1>Motion Design</h1>
-			<a class="button" onclick="hidemodals();contact();">Get In Touch</a>
+			<a class="button" onClick="contact()">Get In Touch</a>
 		</div>
 		<div class="webdesignmodal modal">
 			<i class="fa fa-window-close-o fa-2x" style="cursor: pointer; color: rgba(0,0,0,0.87); position: relative; left: 225px; top: 8px;" onClick="hidemodals()"></i>
 			<h1>Web Design</h1>
-			<a class="button" onclick="hidemodals();contact();">Get In Touch</a>
+			<a class="button" onClick="contact()">Get In Touch</a>
 		</div>
 		<div class="modalbg" onClick="hidemodals()">
 		</div>
@@ -208,6 +208,10 @@
 			$(".graphicdesignmodal").fadeOut(100);
 			$(".motiondesignmodal").fadeOut(100);
 			$(".webdesignmodal").fadeOut(100);
+		}
+		function contact() {
+			hidemodals();
+			$('html,body').animate({scrollTop: $(".contact").offset().top}, 2000, 'easeInOutExpo');
 		}
 	</script>
 </body>
