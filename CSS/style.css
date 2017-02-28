@@ -262,13 +262,6 @@ button:active {
 .contact form textarea:focus {
 	border: solid 1px blue;
 }
-.contact form input:invalid {
-	border: solid 2px red;
-}
-.contact form textarea:invalid {
-	border: solid 2px red;
-}
-
 .footer {
 	height: 200px;
 	background: #212121;
