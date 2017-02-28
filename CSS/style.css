@@ -296,6 +296,12 @@ button:active {
 	.header-downarrow {
 		display: none;
 	}
+	.modal {
+		width: 80%;
+	}
+	.contact form textarea {
+		width: 250px;
+	}
 }
 
 .typed-cursor{
