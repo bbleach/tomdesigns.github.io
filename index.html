@@ -20,6 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://use.fontawesome.com/e384dc41c7.js"></script>
+	<script src="https://cdn.rawgit.com/mattboldt/typed.js/master/js/typed.js"></script>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
 		</div>
 		<div class="hero">
 			<div class="hero-text">
-				<h1>Tom Designs</h1>
+				<h1>I create </h1><h1 class="headertyped"></h1>
 				<h2>Professional Media Production and design.</h2>
 			</div>
 		</div>
@@ -139,6 +140,13 @@
 	</div>
 	
 	<script>
+		$(function(){
+        		$(".headertyped").typed({
+            			strings: ["beautiful websites", "stunning designs", "breathtaking graphics],
+            			typeSpeed: 0,
+				loop: true
+        		});
+    		});
 		$(".homebtn").click(function() {
     			$('html,body').animate({scrollTop: $(".header").offset().top}, 2000, 'easeInOutExpo');
 		});
