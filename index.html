@@ -139,13 +139,6 @@
 	</div>
 	
 	<script>
-		$(window).scroll(function() {
-			if ($(this).scrollTop() > 500){  
-    				$(".nav").animate({top: "-30px"; height: "70px"}, 300, 'easeOutCirc');
-  			} else {
-    				$(".nav").animate({top: "0px"; height: "100px"}, 300, 'easeOutCirc');
-  		}});
-		
 		$(".homebtn").click(function() {
     			$('html,body').animate({scrollTop: $(".header").offset().top}, 2000, 'easeInOutExpo');
 		});
