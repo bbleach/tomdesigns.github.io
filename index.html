@@ -186,26 +186,26 @@
 			$(".webdesignmodal").hide()
 		});
 		function graphicdesign() {
-			$(".graphicdesignmodal").fadeIn(600);
-			$(".modalbg").fadeIn(600);
+			$(".graphicdesignmodal").fadeIn(600, 'easeOutCirc');
+			$(".modalbg").fadeIn(600, 'easeOutCirc);
 			$(".motiondesignmodal").fadeOut(100);
 			$(".webdesignmodal").fadeOut(100);
 		}
 		function motiondesign() {
-			$(".motiondesignmodal").fadeIn(600);
-			$(".modalbg").fadeIn(600);
+			$(".motiondesignmodal").fadeIn(600, 'easeOutCirc');
+			$(".modalbg").fadeIn(600, 'easeOutCirc');
 			$(".graphicdesignmodal").fadeOut(100);
 			$(".webdesignmodal").fadeOut(100);
 		}
 		function webdesign() {
-			$(".webdesignmodal").fadeIn(600);
-			$(".modalbg").fadeIn(600);
+			$(".webdesignmodal").fadeIn(600, 'easeOutCirc');
+			$(".modalbg").fadeIn(600, 'easeOutCirc');
 			$(".graphicdesignmodal").fadeOut(100);
 			$(".motiondesignmodal").fadeOut(100);
 		}
 		function hidemodals() {
-			$(".modalbg").fadeOut(300);
-			$(".graphicdesignmodal").fadeOut(300);
+			$(".modalbg").fadeOut(300, 'easeInCirc');
+			$(".graphicdesignmodal").fadeOut(300), 'easeInCirc';
 			$(".motiondesignmodal").fadeOut(300);
 			$(".webdesignmodal").fadeOut(300);
 		}
