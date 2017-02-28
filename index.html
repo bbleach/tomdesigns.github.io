@@ -26,6 +26,7 @@
 	<div class="header" style="background-image: url(Images/IMG_6175.jpg); background-attachment: fixed;">
 		<div class="nav">
 			<ul>
+				<li style="position: absolute; left: 0px; padding-left: 24px;"><p onClick="home()">TOM DESIGNS</p></li>
 				<li><p class="aboutbtn">ABOUT</p></li>
 				<li><p class="servicesbtn">SERVICES</p></li>
 				<li><p class="portfoliobtn">PORTFOLIO</p></li>
@@ -138,6 +139,13 @@
 	</div>
 	
 	<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 500){  
+    				$(".nav").animate({top: -30px; height: 70px;}, 300, 'easeOutCirc');
+  			} else {
+    				$(".nav").animate({top: 0px; height: 100px;}, 300, 'easeOutCirc');
+  		}});
+		
 		$(".homebtn").click(function() {
     			$('html,body').animate({scrollTop: $(".header").offset().top}, 2000, 'easeInOutExpo');
 		});
