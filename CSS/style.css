@@ -297,10 +297,16 @@ button:active {
 		display: none;
 	}
 	.modal {
-		width: 80%;
+		width: 125px;
+		margin-left: -125px;
 	}
 	.contact form textarea {
 		width: 250px;
+	}
+	.contact .mailtowarning {
+		width: 250px;
+		left: 50%;
+		margin-left: -125px;
 	}
 }
 
