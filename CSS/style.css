@@ -270,6 +270,8 @@ button:active {
 	text-align: center;
 	position: relative;
 	top: 50px;
+	color: rgba(0,0,0,0.87);
+	text-decoration: none;
 }
 .footer-links .fa {
 	cursor: pointer;
