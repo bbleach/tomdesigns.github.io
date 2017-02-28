@@ -262,17 +262,11 @@ button:active {
 .contact form textarea:focus {
 	border: solid 1px blue;
 }
-.contact form input:valid {
-	border: solid 1px green;
-}
-.contact form textarea:valid {
-	border: solid 1px green;
-}
 .contact form input:invalid {
-	border: solid 1px red;
+	border: solid 2px red;
 }
 .contact form textarea:invalid {
-	border: solid 1px red;
+	border: solid 2px red;
 }
 
 .footer {
