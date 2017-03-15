@@ -184,9 +184,10 @@ section {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 }
 .services-item {
-	width: 250px;
+	width: 275px;
 	height: 400px;
 }
