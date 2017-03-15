@@ -32,12 +32,20 @@ body {
 	background: #212121;
 }
 .accent-light {
-	color: #E8175D;
+	color: #89bdd3;
 	background: #FFFFFF;
 }
 .accent-dark {
 	color: #FFFFFF;
-	background: #E8175D;
+	background: #89bdd3;
+}
+.accent-light2 {
+	color: #9ad3de;
+	background: #FFFFFF;
+}
+.accent-dark2 {
+	color: #FFFFFF;
+	background: #9ad3de;
 }
 .hcenter {
 	margin: 0 auto;
