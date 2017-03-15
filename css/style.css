@@ -31,6 +31,14 @@ body {
 	color: #FFFFFF;
 	background: #212121;
 }
+.accent-light {
+	color: #E8175D;
+	background: #FFFFFF;
+}
+.accent-dark {
+	color: #FFFFFF;
+	background: #E8175D;
+}
 .hcenter {
 	margin: 0 auto;
 }
