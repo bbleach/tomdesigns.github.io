@@ -25,18 +25,18 @@ body {
 }
 .light {
 	color: #212121;
-	background: #FFFFFF;
+	background: #e3e3e3;
 }
 .dark {
-	color: #FFFFFF;
+	color: #e3e3e3;
 	background: #212121;
 }
 .accent-light {
 	color: #89bdd3;
-	background: #FFFFFF;
+	background: #e3e3e3;
 }
 .accent-dark {
-	color: #FFFFFF;
+	color: #e3e3e3;
 	background: #89bdd3;
 }
 .accent-light2 {
