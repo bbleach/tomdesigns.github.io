@@ -185,9 +185,9 @@ section {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+	align-items: stretch;
 }
 .services-item {
-	width: 275px;
-	height: 400px;
+	width: 25%;
+	height: 500px;
 }
