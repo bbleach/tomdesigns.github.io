@@ -178,6 +178,13 @@ section {
 	width: 50%;
 	min-width: 350px;
 }
+.about-text-container {
+	width: 50%;
+	min-width: 350px;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
 .about img {
 	width: 100%;
 	height: auto;
