@@ -155,6 +155,7 @@ section {
 	background-attachment: fixed;*/
 	background-size: cover;
 	background-position: center;
+	min-height: 100%;
 }
 .home h1 {
 	width: 80%;
@@ -172,6 +173,10 @@ section {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+}
+.about-container {
+	width: 50%;
+	min-width: 350px;
 }
 .about img {
 	width: 100%;
