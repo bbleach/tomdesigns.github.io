@@ -24,12 +24,12 @@ body {
 	transition: none !important;
 }
 .light {
-	color: #212121;
+	color: #373737;
 	background: #e3e3e3;
 }
 .dark {
 	color: #e3e3e3;
-	background: #212121;
+	background: #373737;
 }
 .accent-light {
 	color: #89bdd3;
@@ -41,10 +41,10 @@ body {
 }
 .accent-light2 {
 	color: #9ad3de;
-	background: #FFFFFF;
+	background: #e3e3e3;
 }
 .accent-dark2 {
-	color: #FFFFFF;
+	color: #e3e3e3;
 	background: #9ad3de;
 }
 .hcenter {
