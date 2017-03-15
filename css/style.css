@@ -187,7 +187,6 @@ section {
 	justify-content: space-between;
 }
 .services-item {
-	width: 400px;
-	height: auto;
-	min-height: 80%;
+	width: 250px;
+	height: 400px;
 }
