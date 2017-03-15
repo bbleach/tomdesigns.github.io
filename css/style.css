@@ -173,7 +173,6 @@ section {
 .services-item {
 	width: 400px;
 	height: auto;
-	min-height: 400px;
-	background: #000;
-	margin: 24px;
+	min-height: 80%;
+	margin: 12px;
 }
