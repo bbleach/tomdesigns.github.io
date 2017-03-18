@@ -16,10 +16,10 @@ window.location = newLocation;
 //NAVIGATION
 function openNav() {
 	$("nav").stop().css("left", "0px");
-	$("main").css("margin-left", "324px")
+	$("main").css("margin-left", "300px")
 }
 function closeNav() {
-	$("nav").css("left", "-324px");
+	$("nav").css("left", "-300px");
 	$("main").css("margin-left", "0px")
 }
 
@@ -34,3 +34,15 @@ $("[onclick]").click(function(event){
 $("nav").click(function(event){
     event.stopPropagation();
 });
+
+//SCROLL TO SCROLL-ANCHOR
+function scrollDown() {
+	$('html,body').stop().animate({scrollTop: $(".scroll-anchor").offset().top}, 2000, 'easeInOutExpo');
+}
+
+//BACK TO TOP
+function backToTop() {
+	$("html, body").animate({scrollTop: 0}, 2000, 'easeInOutExpo');
+}
+
+//HIDE NAVBUTON ON SCROLL DOWN, SHOW ON SCROLL UP

@@ -7,6 +7,8 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:500,600,700" rel="stylesheet">
 <script src="https://use.fontawesome.com/f76c22f2a5.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -15,9 +17,7 @@
 
 <body>
 	<nav class="light">
-		<i class="fa fa-toggle-left fa-2x" onClick="closeNav()" style="position: absolute; left: 280px"></i>
-		<img src="resources/images/Layer 0.png">
-		<hr class="light">
+		<i class="material-icons" onClick="closeNav()" style="position: absolute; right: 0px; top: 0px; padding: 12px; font-size: 56px;">close</i>
 		<ul>
 			<a href="index.html"><li>HOME</li></a>
 			<a href="about.html"><li>ABOUT</li></a>
@@ -25,18 +25,19 @@
 			<a href="portfolio.html"><li>PORTFOLIO</li></a>
 			<a href="contact.html"><li>CONTACT</li></a>
 		</ul>
-		<hr class="light">
 	</nav>
+	<div class="navbutton light">
+		<i class="material-icons" onClick="openNav()">menu</i>
+	</div>
 	<main>
-		<div class="navbar light">
-			<i class="fa fa-bars fa-3x" onClick="openNav()"></i>
-		</div>
-		<section class="home accent-dark" style="margin-top: 56px; box-sizing: border-box;">
+		<section class="home accent-dark">
 			<div class="center-text">
 				<h1 class="hcenter">Premium websites, non-premium price.</h1>
 				<h3 class="hcenter">Web development that takes you from idea to reality.</h3>
 			</div>
+			<button class="accent-light" onClick="scrollDown()" style="position: absolute; bottom: 96px; transform: translateX(-50%); margin: 0px;">LEARN MORE</button>
 		</section>
+		<div class="scroll-anchor"></div>
 		<section class="showcase light">
 			<div class="showcase-text-container">
 				<h2>Four years of design</h2>
@@ -45,6 +46,15 @@
 			<div class="showcase-container">
 				<img class="dark" src="resources/mockups/2Capture_imac2013_left.png">
 				<p class="dark"><i>An experimental portfolio</i></p>
+			</div>
+		</section>
+		<section class="c2a accent-dark">
+			<div class="center-text">
+				<h1>Like what you see?</h1>
+				<a class="accent-light button" href="about.html">ABOUT</a>
+				<a class="accent-light button" href="services.html">SERVICES</a>
+				<a class="accent-light button" href="portfolio.html">PORTFOLIO</a>
+				<a class="accent-light button" href="contact.html">CONTACT</a>
 			</div>
 		</section>
 		<section class="showcase light" style="flex-direction: row-reverse;">
@@ -57,8 +67,12 @@
 				<p class="dark"><i>A template created for a film production</i></p>
 			</div>
 		</section>
-		<footer class="dark" style="font-family: 'Montserrat', sans-serif; font-size: 16px; text-align: center;">Copyright 2017 Tom Mitchelmore</footer>
+		<footer class="accent-dark" style="font-family: 'Montserrat', sans-serif; font-size: 16px; text-align: center;">
+			<button class="accent-light" onClick="backToTop()">Back to top</button>
+			<p>Copyright 2017 Tom Mitchelmore</p>
+		</footer>
 	</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
