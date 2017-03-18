@@ -111,13 +111,18 @@ nav ul {
 	padding: 30px 12px 30px 12px;
 }
 nav li {
+	list-style: none;
+	cursor: pointer;
+	padding: 6px;
+	transition: all 1s;
+}
+nav a {
 	font-size: 28px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	padding: 6px;
-	cursor: pointer;
+	text-decoration: none;
+	color: #373737;
 	transition: all 1s;
-	list-style: none;
 }
 nav li:hover {
 	background: #212121;
@@ -148,6 +153,10 @@ section {
 	height: auto;
 	/*min-height: 100%;*/
 }
+.fullheight {
+	height: auto;
+	min-height: 100%;
+}
 .home {
 	text-align: center;
 	text-shadow: 0px 5px 10px rgba(0,0,0,0.2);
@@ -165,27 +174,27 @@ section {
 }
 .center-text {
 	position: relative;
-	top: 50vh;
+	top: 40vh;
 	transform: translateY(-50%);
 }
-.about {
+.showcase {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.about-container {
+.showcase-container {
 	width: 50%;
 	min-width: 350px;
 }
-.about-text-container {
+.showcase-text-container {
 	width: 50%;
 	min-width: 350px;
 	text-align: center;
 	padding: 10px;
 	box-sizing: border-box;
 }
-.about img {
+.showcase img {
 	width: 100%;
 	height: auto;
 	padding: 20px;
