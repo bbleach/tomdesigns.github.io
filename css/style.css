@@ -263,3 +263,11 @@ section {
 	top: 25vh;
 	transform: translateY(-50%);
 }
+media screen and (max-width: 716) {
+	.showcase-container {
+		width: 100%;
+	}
+	.showcase-text-container {
+		width: 100%;
+	}
+}
