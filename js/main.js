@@ -47,8 +47,7 @@ function backToTop() {
 
 //reCaptcha validation
 function recaptchaCallback() {
-    var btnSubmit = document.getElementById("input[type='submit']");
-    btnSubmit.prop("disabled", false)
+    $("input[type='submit']").prop("disabled", false)
 }
 
 //HIDE NAVBUTON ON SCROLL DOWN, SHOW ON SCROLL UP
