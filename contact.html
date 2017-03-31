@@ -8,10 +8,12 @@
 <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:500,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+<script src="https://use.fontawesome.com/b3d15d199f.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -29,14 +31,62 @@
 		<i class="material-icons" onClick="openNav()">menu</i>
 	</div>
 	<main>
-		<section class="accent-dark2 fullheight hcenter">
+		<section class="light hcenter fullheight">
 			<div class="center-text" style="text-align: center;">
-				<h1>Oops!</h1>
-				<h3> This section is currently under development</h3>
-				<a href="index.html" class="button accent-light2">HOME</a>
+				<h1>Contact</h1>
+				<h3>You can contact me using the following methods</h3>
+				<div class="contact-container hcenter">
+					<div class="contact-item dark">
+						<i class="fa fa-envelope" aria-hidden="true" style="font-size: 36px;"></i>
+						<div class="tooltip accent-dark">
+							<h4>tom@tomdesigner.co.uk</h4>
+						</div>
+					</div>
+					<div class="contact-item dark">
+						<i class="fa fa-facebook" aria-hidden="true" style="font-size: 36px;"></i>
+						<div class="tooltip accent-dark">
+							<h4>/tomdigitaldesign</h4>
+						</div>
+					</div>
+					<div class="contact-item dark">
+						<i class="fa fa-twitter" aria-hidden="true" style="font-size: 36px;"></i>
+						<div class="tooltip accent-dark">
+							<h4>@tommitchelmore_</h4>
+						</div>
+					</div>
+					<div class="contact-item dark">
+						<i class="fa fa-snapchat-ghost" aria-hidden="true" style="font-size: 36px;"></i>
+						<div class="tooltip accent-dark">
+							<h4>txm.m</h4>
+						</div>
+					</div>
+					<div class="contact-item dark">
+						<i class="fa fa-youtube" aria-hidden="true" style="font-size: 36px;"></i>
+						<div class="tooltip accent-dark">
+							<h4>Coming soon</h4>
+						</div>
+					</div>
+					<div class="contact-item dark">
+						<i class="fa fa-steam" aria-hidden="true" style="font-size: 36px;"></i>
+						<div class="tooltip accent-dark">
+							<h4>/tom_lmao</h4>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="second-section-name">
+		<section class="dark fullheight contact-form">
+			<h1>Email form</h1>
+			<form action="mailto:business@tomdesigner.co.uk" method="GET" autocomplete="on">
+					<input name="name" type="text" placeholder="Full name (Required)" required/>
+					<input name="email" type="email" placeholder="Email (Required)" required/><br>
+					<input name="website" type="url" placeholder="Website (if applicable)"/>
+					<input name="subject" type="text" placeholder="Subject (Required" required/><br>
+					<textarea name="body" placeholder="Your message (Required)" required></textarea><br>
+					<div class="g-recaptcha" data-sitekey="6LcVDxsUAAAAAKUkcZUcw7GWbzNz-ZSh2pIh_bEy"></div><br>
+					<input type="submit" value="Send"/>
+			</form>
+			<p class="mailtowarning">*Clicking send will open your email client - if your browser asks you whether you want to allow "mailto" links, accept.</p>
 		</section>
 		<footer class="accent-dark" style="font-family: 'Montserrat', sans-serif; font-size: 16px; text-align: center;">
 			<button class="accent-light" onClick="backToTop()">Back to top</button>

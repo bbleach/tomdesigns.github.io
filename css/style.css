@@ -24,27 +24,27 @@ body {
 	overflow-x: hidden;
 }
 .light {
-	color: #373737;
-	background: #e3e3e3;
+	color: #212121;
+	background: #FFFFFF;
 }
 .dark {
-	color: #e3e3e3;
+	color: #ffffff;
 	background: #373737;
 }
 .accent-light {
 	color: #66b9bf;
-	background: #e3e3e3;
+	background: #ffffff;
 }
 .accent-dark {
-	color: #e3e3e3;
+	color: #ffffff;
 	background: #66b9bf;
 }
 .accent-light2 {
 	color: #07889b;
-	background: #e3e3e3;
+	background: #ffffff;
 }
 .accent-dark2 {
-	color: #e3e3e3;
+	color: #ffffff;
 	background: #07889b;
 }
 .hcenter {
@@ -82,6 +82,12 @@ h2 {
 h3 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
+	font-weight: 500;
+	padding: 12px;
+}
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
 	font-weight: 500;
 	padding: 12px;
 }
@@ -263,6 +269,98 @@ section {
 	top: 25vh;
 	transform: translateY(-50%);
 }
+.contact-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: 500px;
+	padding: 30px;
+}
+.contact-item {
+	height: 75px;
+	width: 75px;
+	margin: 30px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.contact-item i {
+	cursor: pointer;
+}
+.contact-item .tooltip {
+	position: absolute;
+	margin-top: 78px;
+	border-radius: 2px;
+	display: none;
+}
+.tooltip:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 13px 15px;
+	border-color: #66b9bf transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-left: -13px;
+	top: -14px;
+	left: 50%;
+}
+.contact-item:hover {
+	
+}
+.contact-item:hover .tooltip {
+	display: block;
+}
+.contact-form {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.contact-form form {
+	width: 100%;
+}
+input {
+	padding: 12px;
+	margin: 12px;
+	width: 302px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	font-family: 'Montserrat',sans-serif;
+	font-size: 16px;
+	background: #ffffff;
+	color: #373737
+}
+input[type="submit"] {
+	padding: 20px;
+	height: 76px;
+}
+textarea {
+	padding: 12px;
+	margin: 12px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	resize: none;
+	width: 632px;
+	height: auto;
+	min-height: 100px;
+	font-family: 'Merriweather',serif;
+	font-size: 14px;
+}
+.g-recaptcha {
+	margin: 12px;
+	display: inline-block;
+	text-align: center;
+}
+
 @media screen and (max-width: 716px) {
 	.showcase-container {
 		width: 100%;
