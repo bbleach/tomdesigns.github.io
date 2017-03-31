@@ -45,4 +45,10 @@ function backToTop() {
 	$("html, body").animate({scrollTop: 0}, 2000, 'easeInOutExpo');
 }
 
+//reCaptcha validation
+function recaptchaCallback() {
+    var btnSubmit = document.getElementById("input[type='submit']");
+    btnSubmit.removeAttr("disabled");
+}
+
 //HIDE NAVBUTON ON SCROLL DOWN, SHOW ON SCROLL UP
