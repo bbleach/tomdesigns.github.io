@@ -50,4 +50,8 @@ function enableBtn() {
     $("input[type='submit']").prop("disabled", false)
 }
 
+function disableBtn() {
+    $("input[type='submit']").prop("disabled", true)
+}
+
 //HIDE NAVBUTON ON SCROLL DOWN, SHOW ON SCROLL UP
