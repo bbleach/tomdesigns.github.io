@@ -133,9 +133,6 @@ input[type="submit"]:enabled {
 input[type="url"]:enabled,input[type="email"]:enabled,input[type="text"] {
 	cursor: text;
 }
-textarea:enabled {
-	cursor: text;
-}
 .button {
 	display: inline-block;
 	padding: 16px 20px 16px 20px;
@@ -365,8 +362,9 @@ textarea {
 	width: 632px;
 	height: auto;
 	min-height: 100px;
-	font-family: 'Merriweather',serif;
-	font-size: 14px;
+	font-family: 'Montserrat',serif;
+	font-size: 16px;
+	cursor: text;
 }
 .g-recaptcha {
 	margin: 12px;
