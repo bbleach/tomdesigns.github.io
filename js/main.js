@@ -46,7 +46,7 @@ function backToTop() {
 }
 
 //reCaptcha validation
-function recaptchaCallback() {
+function enableBtn() {
     $("input[type='submit']").prop("disabled", false)
 }
 
