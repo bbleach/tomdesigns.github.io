@@ -49,6 +49,7 @@ body {
 }
 .hcenter {
 	margin: 0 auto;
+	text-align: center;
 }
 .center-text {
 	position: relative;
@@ -262,12 +263,22 @@ section {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: stretch;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 10px;
 }
 .services-item {
-	width: 25%;
+	width: 300px;
+	margin: 10px;
+	padding: 30px;
+	box-sizing: border-box;
 	height: auto;
+	text-align: center;
+	border-radius: 5px;
+	flex-grow: 1;
 }
 .c2a {
 	height: auto;
