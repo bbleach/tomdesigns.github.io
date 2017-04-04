@@ -55,3 +55,12 @@ function disableBtn() {
 }
 
 //HIDE NAVBUTON ON SCROLL DOWN, SHOW ON SCROLL UP
+
+//video
+$('.video').parent().click(function () {
+    if($(this).children(".video").get(0).paused){
+        $(this).children(".video").get(0).play();
+    }else{
+       $(this).children(".video").get(0).pause();
+    }
+});
