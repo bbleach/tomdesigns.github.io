@@ -1,0 +1,6 @@
+.accent {
+	background: #ec008c;
+	background: -webkit-linear-gradient(left, #fc6767, #ec008c);
+	background: -o-linear-gradient(left, #fc6767, #ec008c);
+	background: linear-gradient(to right, #fc6767, #ec008c);
+}

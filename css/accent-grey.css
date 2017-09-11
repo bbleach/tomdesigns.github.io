@@ -1,0 +1,15 @@
+.accent {
+	background: #131313;
+}
+.style-switcher-block {
+	background: #E9E9E9;
+}
+.style-switcher-toggle {
+	background: #E9E9E9;
+}
+.style-switcher-block h1 {
+	color: #131313;
+}
+.style-switcher-toggle .fa {
+	color: #131313 !important;
+}
