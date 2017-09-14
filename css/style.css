@@ -73,48 +73,6 @@ section {
 .about .wrapper .item h1 {
 	font-size: 30px;
 }
-#gdesign {
-	background-image: -webkit-linear-gradient(top left, #667eea 0%, #764ba2 100%);
-	background-image: -o-linear-gradient(top left, #667eea 0%, #764ba2 100%);
-	background-image: linear-gradient(to bottom right, #667eea 0%, #764ba2 100%);
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-}
-#wdesign {
-	background-image: -webkit-linear-gradient(left, #ff758c 0%, #ff7eb3 100%);
-	background-image: -o-linear-gradient(left, #ff758c 0%, #ff7eb3 100%);
-	background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-}
-#mdesign {
-	background-image: -webkit-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
-	background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
-	background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-}
-#installation {
-	background-image: -webkit-linear-gradient(290deg, #fc6076 0%, #ff9a44 100%);
-	background-image: -o-linear-gradient(290deg, #fc6076 0%, #ff9a44 100%);
-	background-image: linear-gradient(20deg, #fc6076 0%, #ff9a44 100%);
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-}
-#social {
-	background-image: -webkit-linear-gradient(bottom, #9be15d 0%, #00e3ae 100%);
-	background-image: -o-linear-gradient(bottom, #9be15d 0%, #00e3ae 100%);
-	background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-}
-#support {
-	background-image: -webkit-linear-gradient(bottom, #b224ef 0%, #7579ff 100%);
-	background-image: -o-linear-gradient(bottom, #b224ef 0%, #7579ff 100%);
-	background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-}
 .portfolio {
 	min-height: 0;
 	height: auto;
