@@ -4,3 +4,6 @@
 	background: -o-linear-gradient(left, #0072ff, #00c6ff);
 	background: linear-gradient(to right, #0072ff, #00c6ff);
 }
+.about .fa-circle {
+	color: #009CFF !important;
+}

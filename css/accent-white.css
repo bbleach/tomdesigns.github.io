@@ -5,5 +5,11 @@
 	background-image: background: linear-gradient(to right, #E100FF, #7F00FF);
 }
 .about .fa-circle {
-	color: #7F00FF !important;
+	color: #131313 !important;
+}
+.accent {
+	background: #E9E9E9;
+}
+.accent h1, p {
+	color: #131313 !important;
 }

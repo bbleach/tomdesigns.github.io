@@ -2,5 +2,7 @@
 	background: #fe8c00;
 	background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
 	background: linear-gradient(to right, #f83600, #fe8c00);
-
-
+}
+.about .fa-circle {
+	color: #FB6100 !important;
+}
