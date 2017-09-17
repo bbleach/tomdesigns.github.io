@@ -91,6 +91,7 @@ section {
 	font-weight: 600;
 	text-align: left;
 	cursor: pointer;
+	width: auto;
 }
 .header .navbar ul li p {
 }
