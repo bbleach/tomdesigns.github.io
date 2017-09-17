@@ -12,14 +12,35 @@
 
 <body>
 	<main>
-		<section class="header">
-			<h1 class="textdark">Hey, I'm Tom</h1>
-			<h2 class="textdark">Graphic and web designer</h2>
+		<section class="header" id="header">
+			<div class="navbar">
+				<h1 class="textdark">TomDesigns</h1>
+				<ul>
+					<li>
+						<a onClick="about()">ABOUT</a>
+					</li>
+					<li>
+						<a onClick="services()">SERVICES</a>
+					</li>
+					<li>
+						<a onClick="portfolio()">PORTFOLIO</a>
+					</li>
+					<li>
+						<a onClick="contact()">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wrapper">
+				<h1 class="textdark">Hey, I'm Tom</h1>
+				<h2 class="textdark">Designer and hardware specialist</h2>
+				<button class="btnaccent" onClick="services()">LEARN MORE</button>
+			</div>
+			
 		</section>
-		<section class="about accent">
+		<section class="about accent" id="about">
 			<h1 class="textlight">About</h1>
 			<p class="textlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-			<h1 class="textlight">Services</h1>
+			<h1 class="textlight" id="services">Services</h1>
 			<div class="wrapper">
 				<div class="item">
 					<span class="fa-stack fa-4x">
@@ -65,7 +86,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="portfolio">
+		<section class="portfolio" id="portfolio">
 			<h1 class="textdark">Portfolio</h1>
 			<div class="wrapper">
 				<div class="item">
@@ -84,7 +105,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact accent">
+		<section class="contact accent" id="contact">
 			<h1 class="textlight">Contact</h1>
 		</section>
 		<section class="footer">
@@ -97,6 +118,27 @@
 			<a href="">Link</a>
 			<a href="">Link</a>
 		</section>
+		
+
+		<div class="navtoggle">
+			<i class="fa fa-bars fa-3x"></i>
+		</div>
+		<div class="nav">
+			<!--<div class="close">
+				<i class="fa fa-window-close fa-3x"></i>
+			</div>-->
+			<div class="wrapper">
+				<ul>
+					<a href="#header"><li>Home</li></a>
+					<a href="#about"><li>About</li></a>
+					<a href="#services"><li>Services</li></a>
+					<a href="#portfolio"><li>Portfolio</li></a>
+					<a href="#contact"><li>Contact</li></a>
+				</ul>
+			</div>
+		</div>
+		
+		
 		<div class="style-switcher">
 			<div class="style-switcher-toggle">
 				<i class="fa fa-gear fa-2x fa-spin-hover" style="color: #ffffff;"></i>
@@ -104,23 +146,23 @@
 			<div class="style-switcher-block">
 				<h1 class="textlight">Theme</h1>
 				<div class="wrapper">
-					<div class="item" id="blue" onClick="blue()" style="background: #009CFF;">
+					<div class="item" id="blue" onClick="blue()" style="background: #1E88E5;">
 					</div>
-					<div class="item" id="red" onClick="red()" style="background: #cb2d3e;">
+					<div class="item" id="red" onClick="red()" style="background: #F44336;">
 					</div>
-					<div class="item" id="green" onClick="green()" style="background: #56ab2f;">
+					<div class="item" id="darkblue" onClick="darkblue()" style="background: #3F51B5;">
 					</div>
-					<div class="item" id="pink" onClick="pink()" style="background: #ec008c;">
+					<div class="item" id="pink" onClick="pink()" style="background: #E91E63;">
 					</div>
-					<div class="item" id="orange" onClick="orange()" style="background: #fe8c00;">
+					<div class="item" id="teal" onClick="teal()" style="background: #009688;">
 					</div>
-					<div class="item" id="darkblue" onClick="darkblue()" style="background: #7F00FF;">
+					<div class="item" id="orange" onClick="orange()" style="background: #F4511E;">
 					</div>
-					<div class="item" id="purple" onClick="purple()" style="background: #7F00FF;">
+					<div class="item" id="green" onClick="green()" style="background: #43A047;">
 					</div>
-					<div class="item" id="white" onClick="white()" style="background: #ffffff;">
+					<div class="item" id="purple" onClick="purple()" style="background: #673AB7;">
 					</div>
-					<div class="item" id="grey" onClick="grey()" style="background: #555555;">
+					<div class="item" id="grey" onClick="grey()" style="background: #607D8B;">
 					</div>
 				</div>
 			</div>
@@ -130,6 +172,8 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+<script src="js/nav.js"></script>
 <script src="js/styleswitcher.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
 </body>
 </html>

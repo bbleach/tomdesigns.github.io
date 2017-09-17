@@ -1,18 +1,18 @@
-.accent {
-	background: #131313;
+.accent, .nav .wrapper ul li {
+	background: #607D8B;
 }
-.style-switcher-block {
-	background: #E9E9E9;
+.about .fa-circle, .navbar h1 {
+	color: #607D8B !important;
 }
-.style-switcher-toggle {
-	background: #E9E9E9;
-}
-.style-switcher-block h1 {
-	color: #131313;
-}
-.style-switcher-toggle .fa {
-	color: #131313 !important;
-}
-.about .fa-circle {
-	color: #131313 !important;
+.btnaccent {
+	background: #607D8B;
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 16px;
+	outline: 0;
+	border: 0;
+	margin: 12px;
+	padding: 16px;
+	border-radius: 5px;
+	cursor: pointer;
 }

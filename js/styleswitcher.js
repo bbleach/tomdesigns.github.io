@@ -19,8 +19,8 @@ document.getElementById("color").href="css/accent-orange.css";
 function darkblue(){
 document.getElementById("color").href="css/accent-darkblue.css";
 }
-function white(){
-document.getElementById("color").href="css/accent-white.css";
+function teal(){
+document.getElementById("color").href="css/accent-teal.css";
 }
 function grey(){
 document.getElementById("color").href="css/accent-grey.css";
