@@ -1,17 +1,17 @@
 //nav button hide/show
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-    if (scroll > 700) {
-        $(".navtoggle").addClass("navtoggle2");
+    if (scroll > 650) {
+        $(".navbar").addClass("navbar2");
     } else {
-        $(".navtoggle").removeClass("navtoggle2");
+        $(".navbar").removeClass("navbar2");
     }
 });
 
 //nav bar show/hide
 
 //nav open/close
-$(".navtoggle").click(function(){
+$(".navbar h1").click(function(){
 	$(".nav").addClass("navopen");
 	$(".nav .wrapper ul li").each(function(i) {
     $(this).delay(200 * i).animate({
