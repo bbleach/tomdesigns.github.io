@@ -129,41 +129,28 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 0 400px 0 400px;
-}
-.services .image {
-	height: 100%;
-	width: auto;
-	min-width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	align-content: center;
+	align-items: center;
+	padding: 0;
 }
-.services .image img {
+.services img {
 	height: 700px;
 	width: auto;
 }
-.services .text {
-	width: 50%;
-	min-width: 200px;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	align-items: center;
-}
-.services .text ul {
+.services ul {
 	list-style: none;
+	padding: 0;
 }
-.services .text li {
-	margin: 30px 0 30px 0;
+.services li {
+	margin: 30px 30px 30px 30px;
 	cursor: pointer;
+	min-width: 0px;
 }
-.services .text li:hover {
+.services li:hover {
 	transform: scale(1.1);
 	
 }
-.services .text h2 {
+.services h2 {
 	text-align: left;
 	padding: 0;
 	margin: 0;
@@ -171,7 +158,7 @@ section {
 	font-weight: 500;
 	cursor: pointer;
 }
-.services .text p {
+.services p {
 	text-align: left;
 	padding: 0;
 	margin: 0;
