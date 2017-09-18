@@ -250,6 +250,7 @@ clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%);*/
 	height: auto;
 	min-height: 0;
 	padding: 12px;
+	box-sizing: border-box;
 }
 .footer ul {
 	margin: 12px 144px 12px 12px;
