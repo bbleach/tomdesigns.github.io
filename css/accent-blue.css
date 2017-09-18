@@ -1,7 +1,7 @@
 .accent, .nav .wrapper ul li {
 	background: #1E88E5;
 }
-.about .fa-circle, .navbar h1 {
+.about .fa-circle, .navbar h1, .textaccent {
 	color: #1E88E5 !important;
 }
 .btnaccent {

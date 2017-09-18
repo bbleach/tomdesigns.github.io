@@ -25,3 +25,9 @@ document.getElementById("color").href="css/accent-teal.css";
 function grey(){
 document.getElementById("color").href="css/accent-grey.css";
 }
+function rainbow(){
+document.getElementById("color").href="css/rainbow.css";
+}
+function strobe(){
+document.getElementById("color").href="css/strobe.css";
+}

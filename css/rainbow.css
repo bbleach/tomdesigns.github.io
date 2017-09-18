@@ -1,0 +1,92 @@
+.accent, .nav .wrapper ul li {
+	background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+	background-size: 1800% 1800%;
+	animation: rainbowgradient 8s ease infinite;
+}
+.about .fa-circle, .navbar h1, .textaccent {
+	animation: rainbowtext 3s infinite !important;
+	
+}
+.btnaccent {
+	animation: rainbow 3s infinite;
+	color: #ffffff !important;
+	font-weight: 500;
+	font-size: 16px;
+	outline: 0;
+	border: 0;
+	margin: 12px;
+	padding: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+@keyframes rainbow {
+	0% {background: red;}
+	14% {background: orange;}
+	28% {background: yellow;}
+	42% {background: green;}
+	56% {background: blue;}
+	70% {background: purple;}
+	84% {background: #FF009E;}
+	100% {background: red;}
+}
+
+@keyframes rainbowtext {
+	0% {color: #ff2400}
+	14% {color: #e81d1d}
+	28% {color: #e8b71d}
+	42% {color: #e3e81d}
+	56% {color: #1de840}
+	70% {color: #1ddde8}
+	84% {color: #2b1de8}
+	100% {color: #dd00f3}
+}
+
+@keyframes rainbowgradient { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+
+/*.accent, .nav .wrapper ul li {
+	animation: rainbow 3s infinite;
+}
+.about .fa-circle, .navbar h1, .textaccent {
+	animation: rainbowtext 3s infinite !important;
+	x
+}
+.btnaccent {
+	animation: rainbow 3s infinite;
+	color: #ffffff !important;
+	font-weight: 500;
+	font-size: 16px;
+	outline: 0;
+	border: 0;
+	margin: 12px;
+	padding: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+@keyframes rainbow {
+	0% {background: red;}
+	14% {background: orange;}
+	28% {background: yellow;}
+	42% {background: green;}
+	56% {background: blue;}
+	70% {background: purple;}
+	84% {background: #FF009E;}
+	100% {background: red;}
+}
+
+@keyframes rainbowtext {
+	0% {color: red}
+	14% {color: orange}
+	28% {color: yellow}
+	42% {color: green}
+	56% {color: blue}
+	70% {color: purple}
+	84% {color: #FF009E}
+	100% {color: red}
+}*/

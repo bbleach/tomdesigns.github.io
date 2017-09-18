@@ -1,0 +1,30 @@
+.accent, .nav .wrapper ul li {
+	animation: strobe 0.1s infinite;
+}
+.about .fa-circle, .navbar h1, .textaccent {
+	animation: strobetext 0.1s infinite !important;
+	
+}
+.btnaccent {
+	animation: strobe 0.1s infinite;
+	color: #ffffff !important;
+	font-weight: 500;
+	font-size: 16px;
+	outline: 0;
+	border: 0;
+	margin: 12px;
+	padding: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+@keyframes strobe {
+	0% {background: white;}
+	100% {background: black;}
+}
+
+@keyframes strobetext {
+	0% {color: white}
+	50% {color: black}
+	100% {color: white}
+}
