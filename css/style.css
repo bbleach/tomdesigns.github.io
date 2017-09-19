@@ -127,6 +127,7 @@ section {
 	background-attachment: fixed;
 	min-height: 0;
 	height: auto;
+	overflow: hidden;
 }
 .services .wrapper {
 	display: flex;
