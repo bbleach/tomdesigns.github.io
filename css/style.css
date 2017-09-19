@@ -14,9 +14,6 @@ html,body,main {
 	padding: 0;
 	white-space: 0;
 }
-main {
-	overflow-x: hidden;
-}
 /* 100,300,400,500,700,900 */
 h1 {
 	font-family: 'Roboto', sans-serif;
@@ -128,6 +125,7 @@ section {
 .services {
 	background: url(../images/bg/geometry_@2X.png);
 	background-attachment: fixed;
+	width: 100%;
 	min-height: 0;
 	height: auto;
 	overflow: hidden;
