@@ -119,6 +119,9 @@ section {
 	font-weight: 300;
 	padding: 0 20% 0 20%
 }
+.about h1,p {
+	transition: all 0s !important;
+}
 .services {
 	background: url(../images/bg/geometry_@2X.png);
 	background-attachment: fixed;
@@ -136,6 +139,7 @@ section {
 .services img {
 	height: 700px;
 	width: auto;
+	transition: all 0s !important;
 }
 .services ul {
 	list-style: none;
@@ -145,10 +149,14 @@ section {
 	margin: 30px 30px 30px 30px;
 	cursor: pointer;
 	min-width: 0px;
+	transition: all 0s !important;
 }
 .services li:hover {
 	transform: scale(1.1);
 	
+}
+.services h1 {
+	transition: all 0s !important;
 }
 .services h2 {
 	text-align: left;

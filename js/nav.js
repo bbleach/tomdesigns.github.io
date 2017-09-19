@@ -75,17 +75,20 @@ $(".nav").click(function(){
 
 //scrolling
 function header() {
-	$('html,body').stop().animate({scrollTop: $("#header").offset().top}, 2000, 'easeInOutExpo');
+	$('html,body').stop().animate({scrollTop: $("#header").offset().top}, 2000, 'easeInOutCubic');
 }
 function about() {
-	$('html,body').stop().animate({scrollTop: $("#about").offset().top}, 2000, 'easeInOutExpo');
+	$('html,body').stop().animate({scrollTop: $("#about").offset().top}, 2000, 'easeInOutCubic');
 }
 function services() {
-	$('html,body').stop().animate({scrollTop: $("#services").offset().top}, 2000, 'easeInOutExpo');
+	$('html,body').stop().animate({scrollTop: $("#services").offset().top}, 2000, 'easeInOutCubic');
 }
 function portfolio() {
-	$('html,body').stop().animate({scrollTop: $("#portfolio").offset().top}, 2000, 'easeInOutExpo');
+	$('html,body').stop().animate({scrollTop: $("#portfolio").offset().top}, 2000, 'easeInOutCubic');
 }
 function contact() {
-	$('html,body').stop().animate({scrollTop: $("#contact").offset().top}, 2000, 'easeInOutExpo');
+	$('html,body').stop().animate({scrollTop: $("#contact").offset().top}, 2000, 'easeInOutCubic');
+}
+function slowscroll() {
+	$('html,body').stop().animate({scrollTop: $(".footer").offset().top}, 10000, 'linear');
 }
