@@ -1,0 +1,178 @@
+/* COLORS */
+:root {
+	--white: rgba(240,240,240,1);
+	--black: rgba(15,15,15,1);
+	--blue: rgba(31, 58, 147,1);
+	--yellow: rgba(247,202,24,1);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+html, body, main {
+	width: 100%;
+	height: 100%;
+	background: var(--white);
+	font-size: 10px;
+	font-family: Roboto;
+}
+h1 {
+margin-bottom: 3rem;
+font-family: Roboto;
+font-size: 6.103515625em;
+line-height: 9rem;
+font-weight: 500;
+font-style: normal;
+letter-spacing: 0em;
+}
+
+h2 {
+margin-bottom: 3rem;
+font-family: Roboto;
+font-size: 4.8828125em;
+line-height: 6rem;
+font-weight: 500;
+font-style: normal;
+letter-spacing: 0em;
+}
+
+h3 {
+margin-bottom: 3rem;
+font-family: Roboto;
+font-size: 3.90625em;
+line-height: 6rem;
+font-weight: 500;
+font-style: normal;
+letter-spacing: 0em;
+}
+
+h4 {
+margin-bottom: 3rem;
+font-family: Roboto;
+font-size: 3.125em;
+line-height: 6rem;
+font-weight: 500;
+font-style: normal;
+letter-spacing: 0em;
+}
+
+h5 {
+margin-bottom: 3rem;
+font-family: Roboto;
+font-size: 2.5em;
+line-height: 3rem;
+font-weight: 500;
+font-style: normal;
+letter-spacing: 0em;
+}
+
+h6 {
+margin-bottom: 3rem;
+font-family: Roboto;
+font-size: 2em;
+line-height: 3rem;
+font-weight: 500;
+font-style: normal;
+letter-spacing: 0em;
+}
+
+p {
+margin-bottom: 3rem;
+font-family: Lora;
+font-size: 1.7em;
+line-height: 3rem;
+font-weight: 400;
+font-style: normal;
+letter-spacing: 0em;
+}
+
+
+
+
+.navbar {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 16px;
+	background: var(--white);
+	color: rgba(0,0,0,0.54);
+	font-weight: 500;
+}
+.navbar ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+}
+.navbar li {
+	padding: 12px;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+section.header {
+	width: 100%;
+	height: 100%;
+	background: white;
+}
+section.about {
+	width: 100%;
+	height: 100%;
+	background: white;
+}
+section.services {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+section.services .container {
+	width: 50%;
+}
+.services > .container:nth-child(1) {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+.services > .container:nth-child(2) {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 144px;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+#services1 > .container:nth-child(2) {
+	background: var(--blue);
+	color: var(--white);
+}
+#services2 > .container:nth-child(2) {
+	background: var(--white);
+	color: var(--black);
+}
+#services3 .container:nth-child(2) {
+	background: var(--blue);
+	color: var(--white);
+}
+.services img {
+	width: 80%;
+}
+
+section.contact {
+	width: 100%;
+	height: 100%;
+	background: white;
+}
