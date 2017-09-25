@@ -2,6 +2,7 @@
 :root {
 	--white: rgba(240,240,240,1);
 	--black: rgba(15,15,15,1);
+	--grey: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	--blue: rgba(31, 58, 147,1);
 	--yellow: rgba(247,202,24,1);
 }
@@ -31,10 +32,10 @@ html, body, main {
 	font-family: Roboto;
 }
 h1 {
-margin-bottom: 3rem;
+margin-bottom: 2rem;
 font-family: Roboto;
 font-size: 6.103515625em;
-line-height: 9rem;
+line-height: 5rem;
 font-weight: 500;
 font-style: normal;
 letter-spacing: 0em;
@@ -61,30 +62,10 @@ letter-spacing: 0em;
 }
 
 h4 {
-margin-bottom: 3rem;
+margin-bottom: 0;
 font-family: Roboto;
 font-size: 3.125em;
 line-height: 6rem;
-font-weight: 500;
-font-style: normal;
-letter-spacing: 0em;
-}
-
-h5 {
-margin-bottom: 3rem;
-font-family: Roboto;
-font-size: 2.5em;
-line-height: 3rem;
-font-weight: 500;
-font-style: normal;
-letter-spacing: 0em;
-}
-
-h6 {
-margin-bottom: 3rem;
-font-family: Roboto;
-font-size: 2em;
-line-height: 3rem;
 font-weight: 500;
 font-style: normal;
 letter-spacing: 0em;
@@ -110,6 +91,10 @@ letter-spacing: 0em;
 	background: var(--white);
 	color: rgba(0,0,0,0.54);
 	font-weight: 500;
+	position: absolute;
+	top: 100px;
+	z-index: 2;
+	box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
 }
 .navbar ul {
 	display: flex;
@@ -121,16 +106,20 @@ letter-spacing: 0em;
 	padding: 12px;
 	font-size: 1.6rem;
 	text-transform: uppercase;
+	position: relative;
+}
+.navbar li:first-of-type {
+	margin-right: auto;
 }
 section.header {
 	width: 100%;
 	height: 100%;
-	background: white;
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 section.about {
 	width: 100%;
 	height: 100%;
-	background: white;
+	background: var(--white);
 }
 section.services {
 	width: 100%;
@@ -155,20 +144,28 @@ section.services .container {
 	box-sizing: border-box;
 	flex-wrap: wrap;
 }
-#services1 > .container:nth-child(2) {
-	background: var(--blue);
+#services1 {
+	background: var(--grey);
 	color: var(--white);
 }
-#services2 > .container:nth-child(2) {
+#services2 {
 	background: var(--white);
-	color: var(--black);
+	color: var(--grey);
 }
-#services3 .container:nth-child(2) {
-	background: var(--blue);
+#services3 {
+	background: var(--grey);
+	background-position: center;
 	color: var(--white);
+}
+#text1, #text2, #text3 > h1,h4,p {
+	position: relative;
 }
 .services img {
-	width: 80%;
+	width: 70%;
+	position: relative;
+}
+#services3 img {
+	width: 40%;
 }
 
 section.contact {
