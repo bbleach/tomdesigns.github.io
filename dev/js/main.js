@@ -1,5 +1,3 @@
-
-
 //Navbar
 var navbar_pin = new ScrollMagic.Scene({
 	triggerElement: '.navbar',
@@ -8,9 +6,10 @@ var navbar_pin = new ScrollMagic.Scene({
 .setPin('.navbar', {pushFollowers: false});
 
 var navbar_tween = new TimelineMax()
-	.from('body > main > section.header > div > div > ul > li:not(:first-child)', 0.5, {left:-200, ease:Power2.easeInOut}, 0)
-	.from('body > main > section.header > div > div > ul > li:first-child', 0.5, {left: 200, right: -200, ease:Power2.easeInOut}, 0)
-	.from('.navbar', 0.4, {backgroundColor:'transparent', boxShadow:0, color:'rgba(240,240,240,1)', ease:Power2.easeInOut}, 0.3);
+	.from('body > main > section.header > div > div > ul > li:not(:first-child)', 0.8, {left:-200, ease:Power2.easeInOut}, 0)
+	.from('body > main > section.header > div > div > ul > li:first-child', 0.8, {left: 200, right: -200, ease:Power2.easeInOut}, 0)
+	.from('.navbar', 0.4, {backgroundColor:'transparent', color:'rgba(240,240,240,1)', ease:Power2.easeInOut}, 0.4)
+	.from('.navbar', 0.4, {boxShadow:0, ease:Power2.easeInOut}, 0.5);
 
 
 
@@ -19,6 +18,26 @@ var navbar = new ScrollMagic.Scene({
 	triggerHook: 'onLeave'
 })
 .setTween(navbar_tween);
+
+//HEADER
+
+$(function() {
+	new TimelineMax()
+		.from('body > main > section.header > div.wrapper > h1', 2, {opacity: 0, top: 200, ease:Power3.easeInOut}, 0)
+		.from('body > main > section.header > div.wrapper > h2', 2, {opacity: 0, top: 100, ease:Power3.easeInOut}, 0.7)
+		.staggerFrom($('#navul').children(), 1, {opacity: 0, top: -50, ease:Power1.easeOut}, 0.2, 2)
+		.from('.scroll_indicator', 3, {opacity: 0, top: 300, ease:Power3.easeInOut}, 3);
+	});
+
+var header_content_timeline = new TimelineMax()
+.to('body > main > section.header > div.wrapper', 1, {top:400, opacity:0, ease:Power1.easeIn}, 0);
+
+var header_content = new ScrollMagic.Scene({
+	triggerElement: '.about',
+	triggerHook: 'onEnter',
+	duration: '80%'
+})
+.setTween(header_content_timeline);
 
 //SERVICES 1
 
@@ -88,5 +107,5 @@ var services3_content = new ScrollMagic.Scene({
 
 //CONTROLLER
 
-var controller = new ScrollMagic.Controller({}).addScene([navbar, navbar_pin, services1_pin, services2_pin, services1_content, services2_content , services3_content]);
+var controller = new ScrollMagic.Controller({}).addScene([navbar, header_content, navbar_pin, services1_pin, services2_pin, services1_content, services2_content , services3_content]);
 
