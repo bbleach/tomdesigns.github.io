@@ -9,9 +9,8 @@ var navbar_tween = new TimelineMax()
 	.from('body > main > section.header > div > div > ul > li:not(:first-child)', 0.8, {left:-200, ease:Power2.easeInOut}, 0)
 	.from('body > main > section.header > div > div > ul > li:first-child', 0.8, {left: 200, right: -200, ease:Power2.easeInOut}, 0)
 	.from('.navbar', 0.4, {backgroundColor:'transparent', color:'rgba(240,240,240,1)', ease:Power2.easeInOut}, 0.4)
-	.from('.navbar', 0.4, {boxShadow:0, ease:Power2.easeInOut}, 0.5);
-
-
+	.from('.navbar', 0.4, {boxShadow:0, ease:Power2.easeInOut}, 0.5)
+	.from('body > main > section.header > div.scrollmagic-pin-spacer > div > span', 0.8, {left: 100, right: -100, ease:Power2.easeInOut}, 0);
 
 var navbar = new ScrollMagic.Scene({
 	triggerElement:'.navbar',
