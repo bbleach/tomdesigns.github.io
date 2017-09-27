@@ -3,7 +3,7 @@
 	--white: rgba(240,240,240,1);
 	--black: rgba(15,15,15,1);
 	--grey: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	--blue: rgba(31, 58, 147,1);
+	--blue: #48ABE0;
 	--yellow: rgba(247,202,24,1);
 }
 html, body, div, span, applet, object, iframe,
@@ -31,51 +31,77 @@ html, body, main {
 	font-size: 10px;
 	font-family: Roboto;
 	min-width: 592px;
+	cursor: default;
+	user-select: none;
 }
+html, body {
+font-size: 10px;
+}
+
 h1 {
-margin-bottom: 2rem;
-font-family: Roboto;
+margin-bottom: 3rem;
+font-family: Montserrat;
 font-size: 6.103515625em;
-line-height: 5rem;
-font-weight: 500;
+line-height: 9rem;
+font-weight: 600;
 font-style: normal;
 letter-spacing: 0em;
 }
 
 h2 {
 margin-bottom: 3rem;
-font-family: Roboto;
+font-family: Montserrat;
 font-size: 4.8828125em;
 line-height: 6rem;
-font-weight: 500;
+font-weight: 600;
 font-style: normal;
 letter-spacing: 0em;
 }
 
 h3 {
 margin-bottom: 3rem;
-font-family: Roboto;
+font-family: Montserrat;
 font-size: 3.90625em;
 line-height: 6rem;
-font-weight: 500;
+font-weight: 600;
 font-style: normal;
 letter-spacing: 0em;
 }
 
 h4 {
-margin-bottom: 0;
-font-family: Roboto;
+margin-bottom: 0rem;
+font-family: Montserrat;
 font-size: 3.125em;
 line-height: 6rem;
-font-weight: 500;
+font-weight: 600;
+font-style: normal;
+letter-spacing: 0em;
+}
+
+h5 {
+margin-bottom: 3rem;
+font-family: Montserrat;
+font-size: 2.5em;
+line-height: 3rem;
+font-weight: 600;
+font-style: normal;
+letter-spacing: 0em;
+}
+
+h6 {
+margin-bottom: 3rem;
+font-family: Montserrat;
+font-size: 2em;
+line-height: 3rem;
+font-weight: 600;
 font-style: normal;
 letter-spacing: 0em;
 }
 
 p {
-margin-bottom: 3rem;
-font-family: Lora;
-font-size: 1.7em;
+margin-bottom: 0rem;
+font-family: Assistant;
+font-size: 1.8em;
 line-height: 3rem;
 font-weight: 400;
 font-style: normal;
@@ -89,9 +115,10 @@ letter-spacing: 0em;
 	width: 100%;
 	box-sizing: border-box;
 	padding: 16px;
+	font-family: Montserrat;
 	background: var(--white);
 	color: rgba(0,0,0,0.54);
-	font-weight: 500;
+	font-weight: 100;
 	position: absolute;
 	top: 100px;
 	z-index: 2;
@@ -158,8 +185,72 @@ section.header .scroll_indicator {
 }
 section.about {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	background: var(--white);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: flex-start;
+}
+section.about h1 {
+	margin-bottom: 3rem;
+}
+section.about .container {
+	width: 50%;
+	padding: 100px;
+	box-sizing: border-box;
+	color: var(--black);
+}
+section.about .skillbar {
+	width: 100%;
+	height: 10px;
+	background: rgba(200,200,200,1);
+	border-radius: 5px;
+	margin: 3px 0 8px 0;
+}
+section.about .skillbar .html {
+	width: 85%;
+	height: 10px;
+	/*background: var(--blue);*/
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	border-radius: 5px;
+}
+section.about .skillbar .css {
+	width: 95%;
+	height: 10px;
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	border-radius: 5px;
+}
+section.about .skillbar .js {
+	width: 75%;
+	height: 10px;
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	border-radius: 5px;
+}
+section.about .skillbar .ps {
+	width: 85%;
+	height: 10px;
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	border-radius: 5px;
+}
+section.about .skillbar .ae {
+	width: 93%;
+	height: 10px;
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	border-radius: 5px;
+}
+section.about .skillbar .c4d {
+	width: 85%;
+	height: 10px;
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	border-radius: 5px;
+}
+section.about .skillbar .cad {
+	width: 90%;
+	height: 10px;
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	border-radius: 5px;
 }
 section.services {
 	width: 100%;
@@ -210,11 +301,16 @@ section.services .container {
 #services3 img {
 	width: 40%;
 }
-
+section.portfolio {
+	width: 100%;
+	height: 100%;
+	background: var(--white);
+	position: relative;
+}
 section.contact {
 	width: 100%;
 	height: 100%;
-	background: white;
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
 }
 
 @media screen and (max-width: 1150px) {
@@ -225,7 +321,13 @@ section.contact {
 		display: block;
 		position: relative;
 	}
-	section.services .container {
+	section.about .container {
+		width: 100%;
+	}
+	section.about .container:first-child {
+		padding-bottom: 0;
+	}
+	section.services .container, section.about .container {
 		width: 100%;
 		min-width: 575px;
 		height: 100%;
