@@ -140,6 +140,10 @@ letter-spacing: 0em;
 .navbar li:first-of-type {
 	margin-right: auto;
 }
+#navul > li:nth-child(5), #navul > li:nth-child(6) {
+	cursor: not-allowed;
+	text-decoration: line-through;
+}
 .mobile {
 	display: none;
 }
