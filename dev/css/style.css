@@ -142,6 +142,42 @@ letter-spacing: 0em;
 .navbar .mobile {
 	display: none;
 }
+.mobilenav {
+	width: 350px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: -400px;
+	padding: 48px;
+	box-sizing: border-box;
+	background: var(--white);
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	z-index: 4;
+}
+.mobilenav ul {
+	width: 100%;
+	height: auto;
+	list-style: none;
+}
+.mobilenav li {
+	font-family: Montserrat;
+	font-size: 4em;
+	color: var(--black);
+	padding: 6px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.overlay {
+	background: var(--black);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+}
 section.header {
 	width: 100%;
 	height: 100%;
@@ -314,6 +350,11 @@ section.contact {
 }
 
 @media screen and (max-width: 1150px) {
+	.navbar {
+		width: 80px;
+		height: 80px;
+		transform: translate(30px,30px);
+	}
 	.navbar ul {
 		display: none;
 	}

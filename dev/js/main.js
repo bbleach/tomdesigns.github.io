@@ -1,3 +1,12 @@
+
+//MOBILE NAV
+function mobilenav() {
+	new TimelineMax().to('.mobilenav', 0.5, {left: 0, ease:Power4.easeOut}, 0).to('.overlay', 0.5, {opacity: 0.5, zIndex: 3, ease:Power4.easeOut}, 0);
+}
+function closemobilenav() {
+	new TimelineMax().to('.mobilenav', 0.5, {left: -350, ease:Power4.easeOut}, 0).to('.overlay', 0.5, {opacity: 0, zIndex: -1, ease:Power4.easeOut}, 0);
+}
+
 //Navbar
 var navbar_pin = new ScrollMagic.Scene({
 	triggerElement: '.navbar',
