@@ -140,4 +140,3 @@ var services3_content = new ScrollMagic.Scene({
 //CONTROLLER
 
 var controller = new ScrollMagic.Controller({}).addScene([navbar, header_content, navbar_pin, skillbars, services1_pin, services2_pin, services1_content, services2_content, services3_pin, services3_content]);
-
