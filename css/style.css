@@ -107,6 +107,15 @@ font-weight: 400;
 font-style: normal;
 letter-spacing: 0em;
 }
+button {
+	padding: 16px;
+	border-radius: 3px;
+	border: 0;
+	font-size: 16px;
+	font-family: Montserrat;
+	font-weight: 500;
+	text-transform: uppercase;
+}
 [onClick] {
 	cursor: pointer;
 }
@@ -343,7 +352,69 @@ section.portfolio {
 	height: 100%;
 	background: var(--white);
 	position: relative;
-	display: none;
+	padding: 100px;
+	box-sizing: border-box;
+	text-align: center;
+	color: var(--black);
+}
+section.portfolio h1 {
+	position: relative;
+}
+section.portfolio .main-carousel {
+	width: 100%;
+	height: 80%;
+}
+section.portfolio .main-carousel .carousel-cell:nth-child(1) {
+	background: url(../img/portfolio/BlastedMemories.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+section.portfolio .main-carousel .carousel-cell:nth-child(2) {
+	background: url(../img/portfolio/EssexRoads.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+section.portfolio .main-carousel .carousel-cell:nth-child(3) {
+	background: url(../img/portfolio/grizzlystrength.png);
+	opacity: 0.95;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+section.portfolio .carousel-cell {
+	width: 100%;
+	height: 100%;
+}
+section.portfolio .carousel-cell h2,h3 {
+	color: var(--white);
+	background: var(--black);
+	padding: 6px 12px 6px 12px;
+}
+section.portfolio .carousel-cell h2 {
+	position: absolute;
+	text-align: left;
+	width: auto;
+	top: 100px;
+	left: 30px;
+}
+section.portfolio .carousel-cell h3 {
+	position: absolute;
+	text-align: right;
+	bottom: 100px;
+	right: 30px;
+}
+section.c2a {
+	width: 100%;
+	height: auto;
+	padding: 200px;
+	box-sizing: border-box;
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	position: relative;
+}
+section.c2a h1 {
+	color: var(--white);
+}
+section.c2a button {
+	color: #5690E3;
 }
 section.contact {
 	width: 100%;
@@ -362,6 +433,7 @@ section.contact h1 {
 	color: var(--white);
 	width: 100%;
 	text-align: center;
+	position: relative;
 }
 section.contact form {
 	width: 50%;
@@ -392,6 +464,7 @@ section.contact form input, textarea {
 	border-radius: 10px;
 	background: var(--white);
 	color: var(--black);
+	position: relative;
 }
 section.contact form input {
 	width: 90%;
@@ -489,5 +562,11 @@ section.contact form textarea {
 	}
 	.services > .container:nth-child(1) {
 		display: none;
+	}
+	section.contact form input[type="submit"] {
+		width: 100%;
+	}
+	section.contact form input[type="reset"] {
+		width: 100%;
 	}
 }

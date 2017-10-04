@@ -86,7 +86,7 @@ var services1_content_timeline = new TimelineMax()
 
 var services1_content = new ScrollMagic.Scene({
 	triggerElement: '.trigger1',
-	triggerHook: 0.4//,
+	triggerHook: 0.3//,
 //	duration: '100%'
 })
 .setTween(services1_content_timeline);
@@ -109,7 +109,7 @@ var services2_content_timeline = new TimelineMax()
 
 var services2_content = new ScrollMagic.Scene({
 	triggerElement: '.trigger2',
-	triggerHook: 0.4//,
+	triggerHook: 0.3//,
 //	duration: '100%'
 })
 .setTween(services2_content_timeline);
@@ -132,11 +132,42 @@ var services3_content_timeline = new TimelineMax()
 
 var services3_content = new ScrollMagic.Scene({
 	triggerElement: '.trigger3',
-	triggerHook: 0.4//,
+	triggerHook: 0.3//,
 //	duration: '100%'
 })
 .setTween(services3_content_timeline);
 
+//PORTFOLIO
+var portolio_content_timeline = new TimelineMax()
+.from('#portfolio > h1', 1, {top:400, opacity:0, ease:Power2.easeInOut}, 0)
+.from('#portfolio > div', 1, {top:400, opacity:0, ease:Power2.easeInOut}, 0.2);
+
+var portfolio_content = new ScrollMagic.Scene({
+	triggerElement: '#portfolio',
+	triggerHook: 0.3
+})
+.setTween(portolio_content_timeline);
+
+//CONTACT
+
+var contact_content_timeline = new TimelineMax()
+.from('#contact > h1', 1, {top:400, opacity:0, ease:Power2.easeInOut})
+.staggerFrom($('#contact > form > div:nth-child(1)').children(), 1, {left:-300, opacity:0, ease:Power2.easeInOut}, 0.2, 0.2)
+.staggerFrom($('#contact > form > div:nth-child(2)').children(), 1, {right:-300, opacity:0, ease:Power2.easeInOut}, 0.2, 0.2);
+
+var contact_content = new ScrollMagic.Scene({
+	triggerElement: '#contact',
+	triggerHook: 0.4
+})
+.setTween(contact_content_timeline);
+
 //CONTROLLER
 
-var controller = new ScrollMagic.Controller({}).addScene([navbar, header_content, navbar_pin, skillbars, services1_pin, services2_pin, services1_content, services2_content, services3_pin, services3_content]);
+var controller = new ScrollMagic.Controller({}).addScene([navbar, header_content, navbar_pin, skillbars, services1_pin, services2_pin, services1_content, services2_content, services3_pin, services3_content, portfolio_content, contact_content]);
+
+//flickity
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'center',
+  wrapAround: true
+});
