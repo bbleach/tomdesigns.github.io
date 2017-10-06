@@ -43,7 +43,7 @@ margin-bottom: 3rem;
 font-family: futura-pt;
 font-size: 6.103515625em;
 line-height: 9rem;
-font-weight: 500;
+font-weight: 600;
 font-style: normal;
 letter-spacing: 0em;
 }
@@ -53,7 +53,7 @@ margin-bottom: 3rem;
 font-family: futura-pt;
 font-size: 4.8828125em;
 line-height: 6rem;
-font-weight: 500;
+font-weight: 600;
 font-style: normal;
 letter-spacing: 0em;
 }
@@ -63,7 +63,7 @@ margin-bottom: 3rem;
 font-family: futura-pt;
 font-size: 3.90625em;
 line-height: 6rem;
-font-weight: 500;
+font-weight: 600;
 font-style: normal;
 letter-spacing: 0em;
 }
@@ -73,7 +73,7 @@ margin-bottom: 0rem;
 font-family: futura-pt;
 font-size: 3.125em;
 line-height: 6rem;
-font-weight: 500;
+font-weight: 600;
 font-style: normal;
 letter-spacing: 0em;
 }
@@ -83,7 +83,7 @@ margin-bottom: 3rem;
 font-family: futura-pt;
 font-size: 2.5em;
 line-height: 3rem;
-font-weight: 500;
+font-weight: 600;
 font-style: normal;
 letter-spacing: 0em;
 }
@@ -93,7 +93,7 @@ margin-bottom: 3rem;
 font-family: futura-pt;
 font-size: 2em;
 line-height: 3rem;
-font-weight: 500;
+font-weight: 600;
 font-style: normal;
 letter-spacing: 0em;
 }
@@ -103,7 +103,7 @@ margin-bottom: 0rem;
 font-family: Roboto;
 font-size: 1.8em;
 line-height: 3rem;
-font-weight: 300;
+font-weight: 400;
 font-style: normal;
 letter-spacing: 0em;
 opacity: 0.7;
@@ -114,7 +114,7 @@ button {
 	border: 0;
 	font-size: 16px;
 	font-family: futura-pt;
-	font-weight: 500;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 [onClick] {
@@ -126,7 +126,7 @@ button {
 	box-sizing: border-box;
 	padding: 16px;
 	font-family: futura-pt;
-	font-weight: 500;
+	font-weight: 600;
 	background: var(--white);
 	color: rgba(0,0,0,0.54);
 	position: absolute;
@@ -197,7 +197,7 @@ button {
 .mobilenav li, .mobilenav a {
 	font-family: Roboto;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 	color: rgba(0,0,0,0.87);
 	display: flex;
 	align-content: center;
@@ -251,11 +251,11 @@ section.header h1,h2 {
 }
 section.header h1 {
 	font-size: 8em;
-	font-weight: 500;
+	font-weight: 600;
 }
 section.header h2 {
 	font-size: 2.4em;
-	font-weight: 500;
+	font-weight: 600;
 }
 section.header .scroll_indicator {
 	border-left: solid 4px var(--white);
@@ -497,7 +497,7 @@ section.contact form input, textarea {
 	margin: 12px;
 	box-sizing: border-box;
 	font-family: futura-pt;
-	font-weight: 500;
+	font-weight: 600;
 	border: 0;
 	border-radius: 10px;
 	background: var(--white);
@@ -513,7 +513,7 @@ section.contact form input[type="submit"] {
 	width: calc(45% - 12px);
 	margin: 12px;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 600;
 	background: var(--white);
 	color: var(--black);
 }
@@ -521,7 +521,7 @@ section.contact form input[type="reset"] {
 	width: calc(45% - 12px);
 	margin: 12px;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 600;
 	background: var(--white);
 	color: var(--black);
 }
@@ -560,7 +560,7 @@ section.contact form textarea {
 }
 .footer li:first-child {
 	color: #878787;
-	font-weight: 500;
+	font-weight: 600;
 	padding: 0 0 10px 0;
 }
 .footer a:hover {
