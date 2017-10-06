@@ -152,8 +152,8 @@ var portfolio_content = new ScrollMagic.Scene({
 
 var contact_content_timeline = new TimelineMax()
 .from('#contact > h1', 1, {top:400, opacity:0, ease:Power2.easeInOut})
-.staggerFrom($('#contact > form > div:nth-child(1)').children(), 1, {left:-300, opacity:0, ease:Power2.easeInOut}, 0.2, 0.2)
-.staggerFrom($('#contact > form > div:nth-child(2)').children(), 1, {right:-300, opacity:0, ease:Power2.easeInOut}, 0.2, 0.2);
+.staggerFrom($('#contact > form > div:nth-child(1)').children(), 1, {left:300, opacity:0, ease:Power2.easeInOut}, 0.2, 0.2)
+.staggerFrom($('#contact > form > div:nth-child(2)').children(), 1, {right:300, opacity:0, ease:Power2.easeInOut}, 0.2, 0.2);
 
 var contact_content = new ScrollMagic.Scene({
 	triggerElement: '#contact',

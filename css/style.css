@@ -100,10 +100,10 @@ letter-spacing: 0em;
 
 p {
 margin-bottom: 0rem;
-font-family: Assistant;
+font-family: Roboto;
 font-size: 1.8em;
 line-height: 3rem;
-font-weight: 400;
+font-weight: 300;
 font-style: normal;
 letter-spacing: 0em;
 }
@@ -153,38 +153,75 @@ button {
 	display: none;
 }
 .mobilenav {
-	width: 350px;
+	width: 300px;
 	height: 100%;
 	position: fixed;
 	top: 0;
 	left: -400px;
-	padding: 48px;
-	box-sizing: border-box;
 	background: var(--white);
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	align-items: flex-start;
+	justify-content: flex-start;
+	z-index: 4;
+	overflow-y: scroll;
+}
+.mobilenav div {
+	width: 350px;
+	height: 169px;
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	display: flex;
+	align-content: flex-end;
+	align-items: flex-end;
+	padding: 24px 24px 12px 24px;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+.mobilenav div p {
+	color: rgba(255,255,255,0.7);
+	line-height: normal;
+}
+.mobilenav div p:first-child {
+	font-weight: 400;
+	color: rgba(255,255,255,1);
+}
+.mobilenav ul {
+	height: auto;
+	list-style: none;
+	padding: 24px;
+	line-height: 48px;
+	width: 100%;
+}
+.mobilenav li, .mobilenav a {
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 500;
+	color: rgba(0,0,0,0.87);
 	display: flex;
 	align-content: center;
 	align-items: center;
-	justify-content: center;
-	z-index: 4;
 }
-.mobilenav ul {
+.mobilenav li i {
+	margin-right: 48px;
+	font-size: 24px;
+	border-radius: 100px;
+	color: rgba(0,0,0,0.54);
+}
+body > div.mobilenav > ul > li.spacer {
+	font-size: 16px;
+	border-top: solid 1px rgba(0,0,0,0.12);
+	color: rgba(0,0,0,0.38);
+	line-height: 0px;
+	padding-top: 16px;
+	margin: 24px 0 16px 0;
 	width: 100%;
-	height: auto;
-	list-style: none;
-}
-.mobilenav li {
-	font-family: Montserrat;
-	font-size: 4em;
-	color: var(--black);
-	padding: 6px;
-	text-align: center;
-	text-transform: uppercase;
 }
 .overlay {
 	background: var(--black);
 	opacity: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	position: fixed;
 	z-index: -1;
 }
@@ -533,8 +570,8 @@ section.contact form textarea {
 }
 @media screen and (max-width: 1150px) {
 	.mobile {
-		width: 100px;
-		height: 100px;
+		width: 60px;
+		height: 60px;
 		font-size: 14px;
 		top: 30px;
 		left: 30px;
@@ -568,5 +605,8 @@ section.contact form textarea {
 	}
 	section.contact form input[type="reset"] {
 		width: 100%;
+	}
+	.footer {
+		overflow: hidden;
 	}
 }
