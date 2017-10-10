@@ -33,6 +33,7 @@ html, body, main {
 	min-width: 592px;
 	cursor: default;
 	user-select: none;
+	overflow-x: hidden;
 }
 html, body {
 font-size: 10px;
@@ -658,11 +659,13 @@ section.faq div {
 	align-content: flex-start;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	padding: 150px;
+	padding: 150px 150px 150px 150px;
 	box-sizing: border-box;
 }
 section.faq div:nth-of-type(3) {
 	width: 100%;
+	position: absolute;
+	bottom: 0px;
 }
 section.faq h1 {
 	text-align: center;
