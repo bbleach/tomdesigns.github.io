@@ -33,7 +33,6 @@ html, body, main {
 	min-width: 592px;
 	cursor: default;
 	user-select: none;
-	overflow-x: hidden;
 }
 html, body {
 font-size: 10px;
