@@ -16,6 +16,20 @@
 </head>
 
 <body>
+	<div class="loader">
+		<div class="spinner">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
 	<div class="mobilenav">
 		<div>
 			<p>Tom Mitchelmore</p>
@@ -221,10 +235,27 @@
 			</ul>
 			<ul>
 				<li>FAQ</li>
-				<li><a href="#footer">Legal</a></li>
-				<li><a href="#footer">Payment</a></li>
+				<li><a href="#footer" onClick="faq()">Legal</a></li>
+				<li><a href="#footer" onClick="faq()">Payment</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
+		</section>
+		<section class="faq">
+			<div>
+				<h1>Legal</h1>
+				<p style="font-style: italic">(Coming soon)</p>
+			</div>
+			<div>
+				<h1>Payment</h1>
+				<p>I am flexible regarding payment - for every unique project I will design a payment method that suits both parties.  This may consist of upfront payment, installments or a deposit-and-final-payment system.</p>
+				<br>
+				<p>All payments will be handles through a secure protocol that protects both parties.  Usually, this will be paypal - however cash-in-hand is also possible if we have a face-to-face consultation.</p>
+				<br>
+				<p>I will provide a full receipt with all invoices however information regarding payment may be requested at any time.</p>
+			</div>
+			<div>
+				<button onClick="closefaq()">Close</button>
+			</div>
 		</section>
 	</main>
 

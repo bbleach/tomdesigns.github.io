@@ -1,3 +1,16 @@
+//LOADER
+$(document).ready(function () { 
+    $('.loader').delay(1000).fadeOut(500, header_in); //Fadeout loading overlay then run the header in variable
+});
+
+//Animate in the header content
+var header_in = function() {
+		new TimelineMax()
+			.to('body > main > section.header > div.wrapper > h1', 1, {opacity: 1, top: 0, ease:Power3.easeInOut}, 0)
+			.to('body > main > section.header > div.wrapper > h2', 2, {opacity: 1, top: 0, ease:Power3.easeInOut}, 0.1)
+			.staggerTo($('#navul').children(), 0.7, {opacity: 1, top: 0, ease:Power1.easeOut}, 0.1, 1)
+			.to('.scroll_indicator', 2, {opacity: 1, bottom: 60, ease:Power3.easeInOut}, 1.5);
+		};
 
 //MOBILE NAV
 function mobilenav() {
@@ -28,13 +41,14 @@ var navbar = new ScrollMagic.Scene({
 
 //HEADER
 
-$(function() {
-	new TimelineMax()
-		.from('body > main > section.header > div.wrapper > h1', 1, {opacity: 0, top: 200, ease:Power3.easeInOut}, 0)
-		.from('body > main > section.header > div.wrapper > h2', 2, {opacity: 0, top: 100, ease:Power3.easeInOut}, 0.1)
-		.staggerFrom($('#navul').children(), 0.2, {opacity: 0, top: -50, ease:Power1.easeOut}, 0.1, 1)
-		.from('.scroll_indicator', 2, {opacity: 0, top: 300, ease:Power3.easeInOut}, 1.5);
-	});
+//MOVED INTO LOADER SCRIPT
+//$(function() {
+//	new TimelineMax()
+//		.from('body > main > section.header > div.wrapper > h1', 1, {opacity: 0, top: 200, ease:Power3.easeInOut}, 0)
+//		.from('body > main > section.header > div.wrapper > h2', 2, {opacity: 0, top: 100, ease:Power3.easeInOut}, 0.1)
+//		.staggerFrom($('#navul').children(), 0.2, {opacity: 0, top: -50, ease:Power1.easeOut}, 0.1, 1)
+//		.from('.scroll_indicator', 2, {opacity: 0, top: 300, ease:Power3.easeInOut}, 1.5);
+//	});
 
 var header_content_timeline = new TimelineMax()
 .to('body > main > section.header > div.wrapper', 1, {top:400, opacity:0, ease:Power1.easeIn}, 0);
@@ -171,3 +185,12 @@ $('.main-carousel').flickity({
   cellAlign: 'center',
   wrapAround: true
 });
+
+//FAQ
+
+function faq() {
+	TweenMax.to($('.faq'), 0.7, {top:0, ease: Power2.easeInOut})
+};
+function closefaq() {
+	TweenMax.to($('.faq'), 0.7, {top: '200%', ease: Power2.easeInOut})
+};
