@@ -507,20 +507,6 @@ section.portfolio .carousel-cell h3 {
 	bottom: 100px;
 	right: 30px;
 }
-section.c2a {
-	width: 100%;
-	height: auto;
-	padding: 200px;
-	box-sizing: border-box;
-	background: linear-gradient(to right, #5B86E5, #36D1DC);
-	position: relative;
-}
-section.c2a h1 {
-	color: var(--white);
-}
-section.c2a button {
-	color: #5690E3;
-}
 section.contact {
 	width: 100%;
 	height: 100%;
@@ -570,6 +556,7 @@ section.contact form input, textarea {
 	background: var(--white);
 	color: var(--black);
 	position: relative;
+	outline: none;
 }
 section.contact form input {
 	width: 90%;
@@ -583,6 +570,7 @@ section.contact form input[type="submit"] {
 	font-weight: 600;
 	background: var(--white);
 	color: var(--black);
+	cursor: pointer;
 }
 section.contact form input[type="reset"] {
 	width: calc(45% - 12px);
@@ -591,11 +579,23 @@ section.contact form input[type="reset"] {
 	font-weight: 600;
 	background: var(--white);
 	color: var(--black);
+	cursor: pointer;
 }
 section.contact form textarea {
 	resize: none;
 	width: 90%;
 	height: 150px;
+}
+section.contact form p {
+	color: rgba(255,255,255,0.54);
+	font-size: 16px;
+	width: 100%;
+	padding: 12px;
+	box-sizing: border-box;
+	font-weight: 400;
+	bottom: 50px;
+	height: auto;
+	position: absolute;
 }
 .footer {
 	font-family: futura-pt;
@@ -652,13 +652,14 @@ section.faq {
 	align-items: flex-start;
 }
 section.faq div {
-	width: 50%;
+	/*width: 50%;*/
+	width: 51%;
 	display: flex;
 	justify-content: center;
 	align-content: flex-start;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	padding: 150px 150px 150px 150px;
+	padding: 150px 150px;
 	box-sizing: border-box;
 }
 section.faq div:nth-of-type(3) {
@@ -672,6 +673,10 @@ section.faq h1 {
 section.faq h1, section.faq p {
 	color: var(--black);
 	width: 100%;
+}
+section.faq p:nth-child(-n+2) {
+	font-weight: 600;
+	color: rgba(0,0,0,1);
 }
 section.faq button {
 	background: var(--white);
@@ -719,13 +724,21 @@ section.faq button:focus {
 	.services > .container:nth-child(1) {
 		display: none;
 	}
+	section.contact form {
+		width: 100%;
+	}
 	section.contact form input[type="submit"] {
 		width: 100%;
 	}
 	section.contact form input[type="reset"] {
 		width: 100%;
 	}
-	.footer {
-		overflow: hidden;
+	.footer ul {
+		margin-right: 20px;
+	}
+	section.faq div {
+	/*width: 50%;*/
+	width: 100%;
+	padding: 50px;
 	}
 }
