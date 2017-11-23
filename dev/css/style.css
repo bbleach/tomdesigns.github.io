@@ -30,7 +30,6 @@ html, body, main {
 	background: var(--white);
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
-	min-width: 592px;
 	cursor: default;
 	user-select: none;
 }
@@ -88,10 +87,11 @@ nav div:hover span:nth-child(3) {
 .nav {
 	position: fixed;
 	left: 0;
-	width: 100%;
+	width: 100vw !important;
 	height: calc(100% - 100px);
 	bottom: 0px;
 	z-index: 10;
+	display: none;
 }
 .nav div:first-child {
 	width: 100%;
@@ -131,23 +131,6 @@ nav div:hover span:nth-child(3) {
 	transform: translateX(-50px);
 	opacity: 0;
 }
-.indicator {
-	width: 20px;
-	height: 40%;
-	position: fixed;
-	top: 30%;
-	right: 100px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: space-around;
-}
-.indicator span {
-	width: 10px;
-	height: 10px;
-	border: 1px solid var(--white);
-	border-radius: 10px;
-}
 h1 {
 	color: var(--black);
 	font-size: 64px;
@@ -174,9 +157,11 @@ section {
 	position: absolute;
 }
 .about {
-	height: 100vh;
+	height: auto;
+	min-height: 100%;
+	width: 100%;
 	background: var(--grey);
-	position: absolute;
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -198,7 +183,7 @@ section {
 	margin: 12px 0 2px 0;
 }
 .about .skillbar {
-	width: 100%;
+	width: 100% !important;
 	height: 15px;
 	background: rgba(0,0,0,0.2);
 	border-radius: 7.5px;
@@ -231,4 +216,74 @@ section {
 }
 .services {
 	background: var(--green);
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: 100px;
+	box-sizing: border-box;
+}
+.services h1 {
+	color: var(--white);
+	margin-bottom: 50px;
+}
+.services .container {
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.services .container > div {
+	width: 300px;
+	height: 500px;
+	flex-grow: 1;
+	border-radius: 8px;
+	background: var(--grey);
+	box-shadow: -10px 10px 0px 0px rgba(25, 20, 20, 0.4);
+	margin: 25px 25px;
+	box-sizing: border-box;
+}
+.services .container > div > .icon {
+	width: 100%;
+	height: 125px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background: /*rgba(35,30,30,1)*/var(--grey);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+body > main > section.services > div > div > div > i {
+	font-size: 90px;
+	text-align: center;
+	color: var(--white);
+}
+.services .container > div h1 {
+	font-size: 28px;
+	text-align: center;
+	padding: 12px 0;
+	margin-bottom: 0;
+	color: var(--white);
+	background: var(--black);
+}
+.services .container > div h2 {
+	font-size: 22px;
+	text-align: left;
+	padding: 12px 12px 3px 12px;
+	box-sizing: border-box;
+	margin-bottom: 0;
+	color: var(--white);
+}
+.services .container > div p {
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	padding: 0px 12px;
+	box-sizing: border-box;
+	margin-bottom: 0;
+	color: var(--white);
+	opacity: 0.9;
 }

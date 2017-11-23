@@ -68,6 +68,7 @@ function navBtnClosed() {
 }
 
 function nav() {
+	$('.nav').show();
 	$('nav div').prop('onclick',null).off('click');
 	new TimelineMax({
 		onComplete: navBtnClosed
@@ -76,6 +77,7 @@ function nav() {
 		.staggerTo($('body > div.nav > div:nth-child(2) > ul > li'), 0.5, {opacity: 1, transform: 'translateX(0px)', ease:Power2.easeOut}, 0.08, 0.5);
 }
 function closeNav() {
+	$('.nav').delay(800).hide(0);
 	$('nav div').prop('onclick',null).off('click');
 	new TimelineMax({
 		onComplete: navBtnOpen
@@ -110,12 +112,24 @@ var header_pin2 = new ScrollMagic.Scene({
 .addTo(controller);
 var about_tween = new TimelineMax()
 	.staggerFrom($('body > main > section.about > div:nth-child(1)').children(), 1, {opacity:0, ease:Power4.easeInOut},0.1, 0)
-	.from('body > main > section.about > div:nth-child(2) > h1', 2, {opacity:0, ease:Power4.easeInOut},0.1, 0)
-	.staggerFrom($('body > main > section.about > div:nth-child(2) > div').children(), 1.5, {width:0, opacity:0, ease:Power4.easeInOut},0.1, 0.4);
+	.from('body > main > section.about > div:nth-child(2) > h1', 1, {opacity:0, ease:Power4.easeInOut},0.1, 0)
+	.staggerFrom($('body > main > section.about > div:nth-child(2) > div').children(), 0.4, {width:0, opacity:0, ease:Power4.easeInOut},0.1, 0.0)
+	.staggerFrom($('body > main > section.about > div:nth-child(2) > div > div').children(), 1, {width:0, opacity:0, ease:Power4.easeInOut},0.1, 0.3);
 
 var about_scene = new ScrollMagic.Scene({
 	triggerElement: '.about',
 	triggerHook: '0.7'
 })
 .setTween(about_tween)
+.addTo(controller);
+
+var services_timeline = new TimelineMax()
+	.from('body > main > section.services > h1', 0.7, {opacity: 0, ease:Power2.easeInOut}, 0)
+	.staggerFrom($('body > main > section.services > div').children(), 0.8, {opacity: 0, transform: 'translateY(100px)', ease:Power4.easeInOut}, 0.1, 0.1);
+
+var services_scene = new ScrollMagic.Scene({
+	triggerElement: '.services',
+	triggerHook: '0.8'
+})
+.setTween(services_timeline)
 .addTo(controller);
