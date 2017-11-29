@@ -90,8 +90,12 @@ var controller = new ScrollMagic.Controller();
 
 var header_timeline = new TimelineMax()
 	.to('.header', 1, {backgroundColor:'#1ED760'}, 0)
+	.to('.header', 1, {backgroundColor:'#f4f4f4'}, 1)
+	.to('.header h1:nth-child(2)', 1, {color:'#1ED760', textShadow:0}, 1)
 	.to('.header h1:first-child', 0.5, {transform:'scale(0)', opacity:0, ease:Power4.easeIn}, 0)
 	.from('.header h1:nth-child(2)', 0.5, {transform:'scale(10)', opacity:0, ease:Power4.easeOut}, 0.3)
+	.to('.popup', 0.8, {bottom: '100px', width:'80%', opacity:1, ease:Power4.easeIn}, 0.6)
+	.to('.popup', 0.8, {bottom: '-100px', ease:Power4.easeIn}, 0.9)
 ;
 
 var header_scene = new ScrollMagic.Scene({
