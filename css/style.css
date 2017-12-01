@@ -5,6 +5,7 @@
 	--grey: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	--blue: #48ABE0;
 	--yellow: rgba(247,202,24,1);
+	user-select: none;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
