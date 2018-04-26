@@ -653,8 +653,7 @@ section.faq {
 	align-items: flex-start;
 }
 section.faq div {
-	/*width: 50%;*/
-	width: 51%;
+	width: 50%;
 	display: flex;
 	justify-content: center;
 	align-content: flex-start;
@@ -675,10 +674,10 @@ section.faq h1, section.faq p {
 	color: var(--black);
 	width: 100%;
 }
-section.faq p:nth-child(-n+2) {
+/*section.faq p:nth-child(-n+2) {
 	font-weight: 600;
 	color: rgba(0,0,0,1);
-}
+}*/
 section.faq button {
 	background: var(--white);
 	border: solid 2px var(--black);
