@@ -1,0 +1,18 @@
+.accent, .nav .wrapper ul li {
+	background: #607D8B;
+}
+.about .fa-circle, .navbar h1, .textaccent {
+	color: #607D8B !important;
+}
+.btnaccent {
+	background: #607D8B;
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 16px;
+	outline: 0;
+	border: 0;
+	margin: 12px;
+	padding: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
