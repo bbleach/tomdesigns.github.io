@@ -489,6 +489,7 @@ div.filters li {
 	font-size: 1.9em;
 	color: var(--black);
 	cursor: pointer;
+	opacity: 0.7;
 }
 .grid-item {
 	width: 25%;
