@@ -1,6 +1,7 @@
 //LOADER
 $(document).ready(function () { 
-    $('.loader').delay(1000).fadeOut(500, header_in); //Fadeout loading overlay then run the header in variable
+    $('.loader').delay(1000).fadeOut(500, header_in);
+	$grid.isotope({ sortBy : 'random' });
 });
 
 //Animate in the header content
@@ -78,7 +79,7 @@ var skillbars_tween = new TimelineMax()
 
 var skillbars = new ScrollMagic.Scene({
 	triggerElement: '.about',
-	triggerHook: 0.8
+	triggerHook: 0.7
 })
 .setTween(skillbars_tween);
 
@@ -151,14 +152,27 @@ var services3_content = new ScrollMagic.Scene({
 })
 .setTween(services3_content_timeline);
 
+//GALLERY
+var gallery_content_timeline = new TimelineMax()
+.from('.gallery > h1:nth-child(1)', 1, {top:400, opacity:0, ease:Power2.easeInOut}, 0)
+.staggerFrom('.gallery li', 1, {opacity:0, ease:Power2.easeInOut},0.1, 0.2)
+.staggerFrom('.grid-item', 1, {opacity:0, ease:Power2.easeInOut},0.1, 0.2);
+
+var gallery_content = new ScrollMagic.Scene({
+	triggerElement: '.gallery',
+	triggerHook: 0.7
+})
+.setTween(gallery_content_timeline);
+
 //PORTFOLIO
+
 var portolio_content_timeline = new TimelineMax()
-.from('#portfolio > h1', 1, {top:400, opacity:0, ease:Power2.easeInOut}, 0)
+.from('#portfolio > h1', 1, {opacity:0, ease:Power2.easeInOut}, 0)
 .from('#portfolio > div', 1, {top:400, opacity:0, ease:Power2.easeInOut}, 0.2);
 
 var portfolio_content = new ScrollMagic.Scene({
 	triggerElement: '#portfolio',
-	triggerHook: 0.3
+	triggerHook: 0.7
 })
 .setTween(portolio_content_timeline);
 
@@ -171,13 +185,13 @@ var contact_content_timeline = new TimelineMax()
 
 var contact_content = new ScrollMagic.Scene({
 	triggerElement: '#contact',
-	triggerHook: 0.4
+	triggerHook: 0.7
 })
 .setTween(contact_content_timeline);
 
 //CONTROLLER
 
-var controller = new ScrollMagic.Controller({}).addScene([navbar, header_content, navbar_pin, skillbars, services1_pin, services2_pin, services1_content, services2_content, services3_pin, services3_content, portfolio_content, contact_content]);
+var controller = new ScrollMagic.Controller({}).addScene([navbar, header_content, navbar_pin, skillbars, services1_pin, services2_pin, services1_content, services2_content, services3_pin, services3_content, gallery_content, portfolio_content, contact_content]);
 
 //flickity
 $('.main-carousel').flickity({
@@ -194,3 +208,43 @@ function faq() {
 function closefaq() {
 	TweenMax.to($('.faq'), 0.7, {top: '200%', ease: Power2.easeInOut})
 };
+
+//isotope
+$('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  // options...
+});
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});
+
+$(".filters .all").click(function() {
+  $grid.isotope({filter:'.grid-item'})
+});
+$(".filters .c4d").click(function() {
+  $grid.isotope({filter:'.c4d'})
+});
+$(".filters .aef").click(function() {
+  $grid.isotope({filter:'.ae'})
+});
+$(".filters .psd").click(function() {
+  $grid.isotope({filter:'.ps'})
+});
+$(".filters .wde").click(function() {
+  $grid.isotope({filter:'.wde'})
+});
+$(".filters .rs").click(function() {
+  $grid.isotope({filter:'.rs'})
+});
+$(".filters .3d").click(function() {
+  $grid.isotope({filter:'.3d'})
+});
+$(".filters .render").click(function() {
+  $grid.isotope({filter:'.render'})
+});

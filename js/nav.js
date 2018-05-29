@@ -7,6 +7,9 @@ function about() {
 function services() {
 	$('html,body').stop().animate({scrollTop: $(".trigger1").offset().top}, 1500, 'easeInOutExpo');
 }
+function gallery() {
+	$('html,body').stop().animate({scrollTop: $(".gallery").offset().top}, 1500, 'easeInOutExpo');
+}
 function portfolio() {
 	$('html,body').stop().animate({scrollTop: $(".portfolio").offset().top}, 1500, 'easeInOutExpo');
 }

@@ -453,6 +453,52 @@ section.services .container {
 #services3 img {
 	width: 40%;
 }
+section.gallery {
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	background: var(--white);
+	position: relative;
+	padding: 100px;
+	box-sizing: border-box;
+	text-align: center;
+	color: var(--black);
+}
+div.filters {
+	margin-bottom: 6px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: flex-start;
+}
+div.filters ul {
+	text-align: center;
+	margin: 6px;
+}
+div.filters li {
+	background: var(--white);
+	border-bottom: solid 2px var(--black);
+	float: left;
+	list-style: none;
+	padding: 6px;
+	margin: 6px;
+	text-align: center;
+	font-family: roboto;
+	font-size: 1.9em;
+	color: var(--black);
+	cursor: pointer;
+}
+.grid-item {
+	width: 25%;
+	padding: 12px;
+	box-sizing: border-box;
+}
+.grid-item > img {
+	width: 100%;
+	height: 100%;
+}
 section.portfolio {
 	width: 100%;
 	height: 100%;
@@ -724,6 +770,9 @@ section.faq button:focus {
 	.services > .container:nth-child(1) {
 		display: none;
 	}
+	.grid-item {
+		width: 50%;
+	}
 	section.contact form {
 		width: 100%;
 	}
@@ -740,5 +789,10 @@ section.faq button:focus {
 	/*width: 50%;*/
 	width: 100%;
 	padding: 50px;
+	}
+}
+@media screen and (max-width: 700px) {
+	.grid-item {
+		width: 100%;
 	}
 }
