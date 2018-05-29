@@ -1,6 +1,6 @@
 //LOADER
 $(document).ready(function () { 
-	$grid.isotope({filter:'.all'});
+	$grid.isotope({filter:'.rs'});
     $('.loader').delay(1000).fadeOut(500, header_in);
 });
 
@@ -21,6 +21,8 @@ function closemobilenav() {
 	new TimelineMax().to('.mobilenav', 0.5, {left: -350, ease:Power4.easeOut}, 0).to('.overlay', 0.5, {opacity: 0, zIndex: -1, ease:Power4.easeOut}, 0);
 }
 
+if ($( window ).width() >= 1024) {
+// do some magic
 //Navbar
 var navbar_pin = new ScrollMagic.Scene({
 	triggerElement: '.navbar',
