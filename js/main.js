@@ -1,7 +1,7 @@
 //LOADER
 $(document).ready(function () { 
+	$grid.isotope({filter:'.all'});
     $('.loader').delay(1000).fadeOut(500, header_in);
-	$grid.isotope({ sortBy : 'random' });
 });
 
 //Animate in the header content
@@ -33,7 +33,7 @@ var navbar_tween = new TimelineMax()
 	.from('body > main > section.header > div > div > ul > li:first-child', 0.3, {left: 200, right: -200, ease:Power2.easeInOut}, 0)
 	.from('.navbar', 0.3, {backgroundColor:'transparent', color:'rgba(240,240,240,1)', ease:Power2.easeInOut}, 0)
 	.from('.navbar', 0.3, {boxShadow:0, ease:Power2.easeInOut}, 0)
-	.from('#navul > li:nth-child(7) > a:nth-child(1)', 0.3, {color:'#ffffff'}, 0);
+	.from('#navul > li:nth-child(6) > a:nth-child(1)', 0.3, {color:'#ffffff'}, 0);
 
 var navbar = new ScrollMagic.Scene({
 	triggerElement:'.navbar',
@@ -157,7 +157,7 @@ var services3_content = new ScrollMagic.Scene({
 var gallery_content_timeline = new TimelineMax()
 .from('.gallery > h1:nth-child(1)', 1, {top:400, opacity:0, ease:Power2.easeInOut}, 0)
 .staggerFrom('.gallery li', 1, {opacity:0, ease:Power2.easeInOut},0.1, 0.2)
-.staggerFrom('.grid-item', 1, {opacity:0, ease:Power2.easeInOut},0.1, 0.2);
+.staggerFrom('.grid-item:not(.ph)', 1, {opacity:0, ease:Power2.easeInOut},0.1, 0.2);
 
 var gallery_content = new ScrollMagic.Scene({
 	triggerElement: '.gallery',
@@ -226,7 +226,7 @@ $grid.imagesLoaded().progress( function() {
 });
 
 $(".filters .all").click(function() {
-  $grid.isotope({filter:'.grid-item'})
+  $grid.isotope({filter:'.all'})
 });
 $(".filters .c4d").click(function() {
   $grid.isotope({filter:'.c4d'})
