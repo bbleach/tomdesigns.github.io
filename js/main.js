@@ -231,10 +231,10 @@ $(".filters .c4d").click(function() {
   $grid.isotope({filter:'.c4d'})
 });
 $(".filters .aef").click(function() {
-  $grid.isotope({filter:'.ae'})
+  $grid.isotope({filter:'.aef'})
 });
 $(".filters .psd").click(function() {
-  $grid.isotope({filter:'.ps'})
+  $grid.isotope({filter:'.psd'})
 });
 $(".filters .wde").click(function() {
   $grid.isotope({filter:'.wde'})
