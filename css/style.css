@@ -1,4 +1,9 @@
 /* COLORS */
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
 :root {
 	--white: rgba(240,240,240,1);
 	--black: rgba(15,15,15,1);
