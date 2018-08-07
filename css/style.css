@@ -380,7 +380,13 @@ section.about .skillbar .css {
 	border-radius: 5px;
 }
 section.about .skillbar .js {
-	width: 75%;
+	width: 25%;
+	height: 10px;
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
+	border-radius: 5px;
+}
+section.about .skillbar .py {
+	width: 40%;
 	height: 10px;
 	background: linear-gradient(to right, #5B86E5, #36D1DC);
 	border-radius: 5px;
