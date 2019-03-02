@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Summer | Projects</title>
+	<link rel='stylesheet' href='css/style.min.css' />
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+	<link rel="stylesheet"
+      href="css/vs.css">
+<script src="js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<!-- navbar -->
+	<div class="navbar navbar--extended">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="index.html" class="navbar__logo">Tom Mitchelmore</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="https://tomdesigner.co.uk">Main Site</a></li>
+						<li><a href="https://github.com/tomdesigns" target="_blank">Github</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero unit -->
+	<div class="page__header">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		<div class="page__header__inner">
+			<div class="container">
+				<div class="page__header__content">
+                    <div class="page__header__content__inner" id='navConverter'>
+                        <h1 class="page__header__title">School Summer Projects</h1>
+                        <p class="page__header__text">Tasks set as preparation for A-level computer science.</p>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page content -->
+	<div class="page">
+		<div class="container">
+			<div class="page__inner">
+				<div class="page__menu">
+                    <ul class="vMenu">
+                        <li><a href="#" class="vMenu--active">Average speed checker</a></li>
+                        <li><a href="techsupport.html">Simple tech support</a></li>
+                        <li><a href="mathquiz.html">Random maths quiz</a></li>
+                        <li><a href="avgcam2.html">CSV exporting</a></li>
+                    </ul>
+				</div>
+				<div class="page__main">
+					<div class="text-container">
+						<h1 id="averagespeedcameraprogram">Average Speed Camera Program</h1>
+
+<p>The first of three summer assignments in python.  (Also my first python program) <br />
+<a href="https://github.com/tomdesigns/AvgCam/blob/master/AvgCam/AvgCam.py" style="color:#6C63FF">Quick link to code</a></p>
+
+<h2 id="taskintroduction">Task introduction</h2>
+
+<p>On many major roads average speed checks are in place. Two sensors are placed a known
+distance apart and vehicle number plate recognition is used to identify a vehicle and the
+time it enters the section of road being monitored. The time is recorded when the vehicle
+leaves the monitored section.
+By using the time taken to travel the known distance, the average speed of a vehicle can be
+calculated.
+Write a program for calculating average speeds for a vehicle travelling through a section of
+road.</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>When the program is run, the user is prompted to enter a registration plate.  The program will attempt to confirm that this number plate conforms to the default UK format.  Then, the user is promted to enter when the car enters and exits the average speed zone, along with the speed limit.  After this, the program uses speed = distance / time to calculte the average speed of the car before deciding whether it breaks or abides by the speed limit.</p>
+
+<h2 id="breakdown">Breakdown</h2>
+
+<h3 id="useoflibraries">Use of libraries</h3>
+
+<p>Regular expressions and datetime were used within this program.</p>
+
+<pre><code class="python language-python">import re
+from datetime import datetime, timedelta
+</code></pre>
+
+<h3 id="validatinganinput">Validating an input</h3>
+
+<p>Regular expressions allowed me to check that the input "carReg" matched a format.  This was achieved as follows:</p>
+
+<p>A re.match statement checks for two letters, two numbers, a space and then 3 letters.</p>
+
+<pre><code class="python language-python">while True:
+    carReg = input("Enter car registration: \n")
+    if re.match ('^[A-Za-z]{2}[0-9]{2}[ ][A-Za-z]{3}$', carReg):
+        carReg = carReg.upper()
+        break
+    else:
+        print("Invalid registration, please use the form AA11 AAA (Where A is any letter A-Z, and 1 is any integer &lt; 10.")
+</code></pre>
+
+<h3 id="handlingtimings">Handling timings</h3>
+
+<p>Datetime allowed me to easily handle timings and generate a difference in seconds between the two HH:MM:SS values.</p>
+
+<pre><code class="python language-python">t1 = input ("Time entering average speed zone \n")
+t2 = input ("Time leaving average speed zone \n")
+</code></pre>
+
+<p>.total_seconds() allowed me to convert the time delta object into an integer value, which is then converted into hours as a float value.</p>
+
+<pre><code class="python language-python">format = "%H:%M:%S"
+td = datetime.strptime(t2, format) - datetime.strptime(t1, format)
+time = td.total_seconds() / timedelta(hours=1).total_seconds()
+</code></pre>
+
+<p>These inputs also went through similar validation to the 'carReg' variable, ensuring it's in the format HH:MM:SS.</p>
+
+<pre><code class="python language-python">if re.match ('^[0-2][0-9]:[0-5][0-9]:[0-5][0-9]$', t1):
+</code></pre>
+
+<h2 id="other">Other</h2>
+
+<p>This program was written in <a href="https://visualstudio.microsoft.com/" style="color:#6C63FF">Visual Studio</a> in around 1 hour initially, with an additional hour of debugging and improvements.</p>
+
+<hr />
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src='js/app.min.js'></script>
+</body>
+</html>

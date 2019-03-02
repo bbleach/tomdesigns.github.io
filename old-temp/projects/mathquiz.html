@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Summer | Projects</title>
+	<link rel='stylesheet' href='css/style.min.css' />
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+	<link rel="stylesheet"
+      href="css/vs.css">
+<script src="js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<!-- navbar -->
+	<div class="navbar navbar--extended">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="index.html" class="navbar__logo">Tom Mitchelmore</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="https://tomdesigner.co.uk">Main Site</a></li>
+						<li><a href="https://github.com/tomdesigns" target="_blank">Github</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero unit -->
+	<div class="page__header">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		<div class="page__header__inner">
+			<div class="container">
+				<div class="page__header__content">
+                    <div class="page__header__content__inner" id='navConverter'>
+                        <h1 class="page__header__title">School Summer Projects</h1>
+                        <p class="page__header__text">Tasks set as preparation for A-level computer science.</p>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page content -->
+	<div class="page">
+		<div class="container">
+			<div class="page__inner">
+				<div class="page__menu">
+                    <ul class="vMenu">
+                        <li><a href="avgcam.html">Average speed checker</a></li>
+                        <li><a href="techsupport.html">Simple tech support</a></li>
+                        <li><a href="#" class="vMenu--active">Random maths quiz</a></li>
+                        <li><a href="avgcam2.html">CSV exporting</a></li>
+                    </ul>
+				</div>
+				<div class="page__main">
+					<div class="text-container">
+						<h1 id="mathquizprogram">Math Quiz Program</h1>
+
+<p>The third of three summer assignments in python. <br />
+<a href="https://github.com/tomdesigns/MathQuiz/blob/master/MathQuiz/MathQuiz.py" style="color:#6C63FF">Quick link to code</a></p>
+
+<h2 id="taskintroduction">Task introduction</h2>
+
+<p>A primary school teacher wants a computer program to test the basic arithmetic skills of her
+students. The program should generate a quiz consisting of a series of random questions,
+using in each case any two numbers and addition, subtraction and multiplication. The
+system should ask the student’s name, then ask 10 questions, output if the answer to each
+question is correct or not and produce a final score out of 10.</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>As the program is run, the user is prompted to enter a name.  Then, 2 random integers and a random operator are generated to provide a random question.  The user is prompted for an answer is a score is kept.</p>
+
+<h2 id="breakdown">Breakdown</h2>
+
+<h3 id="useoflibraries">Use of libraries</h3>
+
+<p>Random, Time and OS were used in the program.</p>
+
+<pre><code class="python language-python">import random
+import time
+import os
+</code></pre>
+
+<h3 id="generatingrandomintegersandoperators">Generating random integers and operators</h3>
+
+<p>Generating the random numbers was simple, <code>int1</code> and <code>int2</code> are assigned a number each between 1 and 10.</p>
+
+<pre><code class="python language-python">int1 = random.randint(1,10)
+int2 = random.randint(1,10)
+</code></pre>
+
+<p>To generate a random operator, I generated a random number between 1 and 3 and used elif statements to assign each a different operator.</p>
+
+<pre><code class="python language-python">oprt = random.randint(1,3)
+</code></pre>
+
+<pre><code class="python language-python">if oprt == 1:
+    op = "+"
+    answer = (int1+int2)
+elif oprt == 2:
+    op = "-"
+    answer = (int1-int2)
+elif oprt == 3:
+    op = "*"
+    answer = (int1*int2)
+</code></pre>
+
+<p>At this stage, I also generated the answer to compare the user input to.</p>
+
+<h3 id="verifyingtheanswer">Verifying the answer</h3>
+
+<p>An if statement was used to check the answer.  If it is correct, 1 is added to the score.</p>
+
+<pre><code class="python language-python">if int(ans) == int(answer):
+    print("Correct!")
+    score +=1
+    print("Current score: {} \n".format(score))
+else:
+    print("Incorrect, the correct answer is: {} \n".format(answer))
+    print("Current score: {} \n".format(score))
+</code></pre>
+
+<p>.total_seconds() allowed me to convert the time delta object into an integer value, which is then converted into hours as a float value.</p>
+
+<h3 id="managingstructureflow">Managing structure/flow</h3>
+
+<p>As the program begins, the variables <code>score</code> and <code>question</code> are set to 0 and 1 respectively.  This means that each question is numbered, and the score can be seen throughout.</p>
+
+<p>The question generating code uses a for loop in order to repeat 10 times.</p>
+
+<pre><code class="python language-python">for x in range(0,10):
+</code></pre>
+
+<p>After each question, 1 is added to the question number with <code>question +=1</code> and, granted it is correct, 1 is added to the score with <code>score +=1</code></p>
+
+<p>Also, after each question, <code>time.sleep(3)</code> allows the user to review their current score before the console is cleared with <code>os.system('cls')</code></p>
+
+<h2 id="other">Other</h2>
+
+<p>This program was written in <a href="https://visualstudio.microsoft.com/" style="color:#6C63FF">Visual Studio</a> in around 30 mins initially, with an additional 15 mins of debugging and improvements.</p>
+
+<hr />
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src='js/app.min.js'></script>
+</body>
+</html>
