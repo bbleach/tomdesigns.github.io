@@ -115,6 +115,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    width: 400px;
 }
 .controls > div {
     width: 100%;
