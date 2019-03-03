@@ -18,10 +18,12 @@ The init() function works to both start and reset a game (See line comments)
 function init() {
     grid = [] //Empty grid array
     $(".grid").empty().show(); //Empty the grid <div> tag in index.html
-    for (i = 0; i < 16; i++) {
+    grid.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]); //Padding zeros
+    for (i = 1; i < 17; i++) {
         grid.push([]); //Creates a row
+        grid[i].push(0); //Padding zeros
         $('<div class="outside"></div>').appendTo('.grid'); //Create html <div> rows
-        for (j = 0; j < 16; j++) {
+        for (j = 1; j < 17; j++) {
             var v = Math.floor((Math.random() * 4) + 1) //Random integer 0 < v <= 4
 
             if (Math.random() < 0.002) {
@@ -53,7 +55,10 @@ function init() {
             };
             $(`<div class="${v}" onclick="test(${j},${i})"></div>`).appendTo(`body > section > div.grid > div:nth-child(${i})`); //Creates block objects, where v is the class referencing style.css (for colour).
         }
+        
+        grid[i].push(0);
     }
+    grid.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
     animateIn();
 };
 
@@ -72,46 +77,30 @@ function test(x, y) {
     var c = grid[y][x]
 
     //Top
-    try {
-        if (grid[y - 1][x] == c) {
-            grid[y - 1][x] = 0;
-            iterate(x, y - 1, c);
-        }
-    }
-    catch (error) {
+    if (grid[y - 1][x] == c) {
+        grid[y - 1][x] = 0;
+        iterate(x, y - 1, c);
     };
     //Bottom
-    try {
-        if (grid[y + 1][x] == c) {
-            grid[y + 1][x] = 0;
-            iterate(x, y + 1, c);
-        }
-    }
-    catch (error) {
+    if (grid[y + 1][x] == c) {
+        grid[y + 1][x] = 0;
+        iterate(x, y + 1, c);
     };
     //Left
-    try {
-        if (grid[y][x - 1] == c) {
-            grid[y][x - 1] = 0;
-            iterate(x - 1, y, c);
-        }
-    }
-    catch (error) {
+    if (grid[y][x - 1] == c) {
+        grid[y][x - 1] = 0;
+        iterate(x - 1, y, c);
     };
     //Right
-    try {
-        if (grid[y][x + 1] == c) {
-            grid[y][x + 1] = 0;
-            iterate(x + 1, y, c);
-        }
+    if (grid[y][x + 1] == c) {
+        grid[y][x + 1] = 0;
+        iterate(x + 1, y, c);
     }
-    catch (error) {
-    };
 
     if (c == 5) {
         l = least();
-        for (i = 0; i < 16; i++) {
-            for (j = 0; j < 16; j++) {
+        for (i = 1; i < 17; i++) {
+            for (j = 1; j < 17; j++) {
                 if (grid[j][i] == l) {
                     grid[j][i] = 0
                 }
@@ -121,19 +110,14 @@ function test(x, y) {
 
     if (c == 6) {
         grid[y][x] = 0
-        //test(x + 1, y);
-        //test(x - 1, y);
-        //test(x, y + 1);
-        //test(x, y - 1);
-        //test(x - 1, y - 1);
-        //test(x + 1, y - 1);
-        //test(x + 1, y + 1);
-        //test(x - 1, y + 1);
+        test(x + 1, y);
+        test(x - 1, y);
+        test(x, y + 1);
+        test(x, y - 1);
     };
     
     //Set initial point to 0, then update
     grid[y][x] = 0;
-    drop();
     updateGrid();
     updateScore();
 };
@@ -147,41 +131,21 @@ reason a discrete second function is needed.
 
 function iterate(x, y, c) {
     recurs++;
-    //Top
-    try {
-        if (grid[y - 1][x] == c) {
-            grid[y - 1][x] = 0;
-            iterate(x, y - 1, c);
-        }
-    }
-    catch (error) {
+    if (grid[y - 1][x] == c) {
+        grid[y - 1][x] = 0;
+        iterate(x, y - 1, c);
     };
-    //Bottom
-    try {
-        if (grid[y + 1][x] == c) {
-            grid[y + 1][x] = 0;
-            iterate(x, y + 1, c);
-        }
-    }
-    catch (error) {
+    if (grid[y + 1][x] == c) {
+        grid[y + 1][x] = 0;
+        iterate(x, y + 1, c);
     };
-    //Left
-    try {
-        if (grid[y][x - 1] == c) {
-            grid[y][x - 1] = 0;
-            iterate(x - 1, y, c);
-        }
-    }
-    catch (error) {
+    if (grid[y][x - 1] == c) {
+        grid[y][x - 1] = 0;
+        iterate(x - 1, y, c);
     };
-    //Right
-    try {
-        if (grid[y][x + 1] == c) {
-            grid[y][x + 1] = 0;
-            iterate(x + 1, y, c);
-        }
-    }
-    catch (error) {
+    if (grid[y][x + 1] == c) {
+        grid[y][x + 1] = 0;
+        iterate(x + 1, y, c);
     };
     grid[y][x] = 0;
 };
@@ -194,30 +158,24 @@ stored in the grid array and update classes as necessary.
 ---------------------------------------------------------------------------------*/
 
 function updateGrid() {
-    for (i = 0; i < 16; i++) {
-        for (j = 0; j < 16; j++) {
+    for (i = 1; i < 17; i++) {
+        for (j = 1; j < 17; j++) {
             v = grid[i][j];
             switch (v) {
                 case 0:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("transparent");
+                    $(`.outside:nth-child(${i}) > div:nth-child(${j})`).removeAttr('class').addClass("transparent");
                     break;
                 case 1:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("red");
+                    $(`.outside:nth-child(${i}) > div:nth-child(${j})`).removeAttr('class').addClass("red");
                     break;
                 case 2:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("green");
+                    $(`.outside:nth-child(${i}) > div:nth-child(${j})`).removeAttr('class').addClass("green");
                     break;
                 case 3:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("blue");
+                    $(`.outside:nth-child(${i}) > div:nth-child(${j})`).removeAttr('class').addClass("blue");
                     break;
                 case 4:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("yellow");
-                    break;
-                case 5:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("wipeout");
-                    break;
-                case 6:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("bomb");
+                    $(`.outside:nth-child(${i}) > div:nth-child(${j})`).removeAttr('class').addClass("yellow");
                     break;
             }
         }
@@ -260,8 +218,8 @@ function least() {
     var n = [0, 0, 0, 0]
     var low = 0
 
-    for (i = 0; i < 16; i++) {
-        for (j = 0; j < 16; j++) {
+    for (i = 1; i < 17; i++) {
+        for (j = 1; j < 17; j++) {
             switch (grid[i][j]) {
                 case 1:
                     n[0]++
@@ -284,16 +242,6 @@ function least() {
     recurs = n[low]
     low++
     return low
-};
-
-/*---------------------------------------------------------------------------------
-drop(); 
-
-Nothing special, TweenMax staggering animation of each row - purely aesthetic.
-VERY broken as of now.
----------------------------------------------------------------------------------*/
-
-function drop() {
 };
 
 /*---------------------------------------------------------------------------------
