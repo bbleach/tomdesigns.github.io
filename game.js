@@ -70,7 +70,12 @@ function test(x, y) {
     turn++;
     recurs = 0;
     var c = grid[y][x]
-
+    
+    //Crash prevention
+    if (c == 0) {
+        return;
+    };
+ 
     //Top
     try {
         if (grid[y - 1][x] == c) {
@@ -121,14 +126,14 @@ function test(x, y) {
 
     if (c == 6) {
         grid[y][x] = 0
-        //test(x + 1, y);
-        //test(x - 1, y);
-        //test(x, y + 1);
-        //test(x, y - 1);
-        //test(x - 1, y - 1);
-        //test(x + 1, y - 1);
-        //test(x + 1, y + 1);
-        //test(x - 1, y + 1);
+        test(x + 1, y);
+        test(x - 1, y);
+        test(x, y + 1);
+        test(x, y - 1);
+        test(x - 1, y - 1);
+        test(x + 1, y - 1);
+        test(x + 1, y + 1);
+        test(x - 1, y + 1);
     };
     
     //Set initial point to 0, then update
