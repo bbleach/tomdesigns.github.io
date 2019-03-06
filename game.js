@@ -340,13 +340,4 @@ function start() {
     $('body > section > div.controls > div > h2').text(`Turn: ${turn}/50`).show();
     $('button').text("Reset grid");
     init();
-}
-
-function bomb() {
-    for (i = 0; i < 16; i++) {
-        for (j = 0; j < 16; j++) {
-            grid[i][j] = 6
-        }
-    };
-    updateGrid();
-}
+};
