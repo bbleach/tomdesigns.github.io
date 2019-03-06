@@ -51,7 +51,7 @@ function init() {
                 case 6:
                     v = "bomb";
             };
-            $(`<div class="${v}" onclick="test(${j},${i})"></div>`).appendTo(`body > section > div.grid > div:nth-child(${i})`); //Creates block objects, where v is the class referencing style.css (for colour).
+            $(`<div class="${v}" onclick="test(${j},${i})"></div>`).appendTo(`body > section > div.grid > div:nth-child(${i + 1})`); //Creates block objects, where v is the class referencing style.css (for colour).
         }
     }
     animateIn();
@@ -204,25 +204,25 @@ function updateGrid() {
             v = grid[i][j];
             switch (v) {
                 case 0:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("transparent");
+                    $(`.outside:nth-child(${i + 1}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("transparent");
                     break;
                 case 1:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("red");
+                    $(`.outside:nth-child(${i + 1}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("red");
                     break;
                 case 2:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("green");
+                    $(`.outside:nth-child(${i + 1}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("green");
                     break;
                 case 3:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("blue");
+                    $(`.outside:nth-child(${i + 1}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("blue");
                     break;
                 case 4:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("yellow");
+                    $(`.outside:nth-child(${i + 1}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("yellow");
                     break;
                 case 5:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("wipeout");
+                    $(`.outside:nth-child(${i + 1}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("wipeout");
                     break;
                 case 6:
-                    $(`.outside:nth-child(${i}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("bomb");
+                    $(`.outside:nth-child(${i + 1}) > div:nth-child(${j + 1})`).removeAttr('class').addClass("bomb");
                     break;
             }
         }
