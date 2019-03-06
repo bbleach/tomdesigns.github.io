@@ -70,7 +70,12 @@ function test(x, y) {
     turn++;
     recurs = 0;
     var c = grid[y][x]
-
+    
+    //Crash prevention
+    if (c == 0) {
+        return;
+    };
+ 
     //Top
     try {
         if (grid[y - 1][x] == c) {
@@ -121,14 +126,14 @@ function test(x, y) {
 
     if (c == 6) {
         grid[y][x] = 0
-        //test(x + 1, y);
-        //test(x - 1, y);
-        //test(x, y + 1);
-        //test(x, y - 1);
-        //test(x - 1, y - 1);
-        //test(x + 1, y - 1);
-        //test(x + 1, y + 1);
-        //test(x - 1, y + 1);
+        test(x + 1, y);
+        test(x - 1, y);
+        test(x, y + 1);
+        test(x, y - 1);
+        test(x - 1, y - 1);
+        test(x + 1, y - 1);
+        test(x + 1, y + 1);
+        test(x - 1, y + 1);
     };
     
     //Set initial point to 0, then update
@@ -289,11 +294,26 @@ function least() {
 /*---------------------------------------------------------------------------------
 drop(); 
 
-Nothing special, TweenMax staggering animation of each row - purely aesthetic.
-VERY broken as of now.
+Eh?
 ---------------------------------------------------------------------------------*/
 
 function drop() {
+    for (i = 15; i > -1; i--) {
+        for (j = 15; j > -1; j--) {
+            if (grid[i][j] != 0) {
+                var a = 0
+                try {
+                    while (grid[i + 1 + a][j] == 0) {
+                        grid[i + 1 + a][j] = grid[i + a][j]
+                        grid[i + a][j] = 0
+                        a++
+                    }
+                }
+                catch (error) {
+                }
+            }
+        }
+    }
 };
 
 /*---------------------------------------------------------------------------------
@@ -320,4 +340,13 @@ function start() {
     $('body > section > div.controls > div > h2').text(`Turn: ${turn}/50`).show();
     $('button').text("Reset grid");
     init();
+}
+
+function bomb() {
+    for (i = 0; i < 16; i++) {
+        for (j = 0; j < 16; j++) {
+            grid[i][j] = 6
+        }
+    };
+    updateGrid();
 }
