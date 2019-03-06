@@ -6,13 +6,9 @@ var recurs = 0
 /*---------------------------------------------------------------------------------
  init();
  
- The array structure is grid[y][x] - where '0 <= [y], [x] <= 18.'
- 
- The grid is 18 * 18 although the game is 16 * 16 in the middle.  The 'padding'
- of 0's means the testing functions won't throw range errors when checking
- the edges.  The 'play area' could be defined as '0 < [y], [x] < 18.'
+ The array structure is grid[y][x] - where '0 <= [y], [x] <= 16.'
 
-The init() function works to both start and reset a game (See line comments)
+ The init() function works to both start and reset a game (See line comments)
 ---------------------------------------------------------------------------------*/
 
 function init() {
