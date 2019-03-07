@@ -20,7 +20,7 @@ function init() {
         for (j = 0; j < 16; j++) {
             var v = Math.floor((Math.random() * 4) + 1) //Random integer 0 < v <= 4
 
-            if (Math.random() < 0.002) {
+            if (Math.random() < 0.002 && i > 0 && j > 0 && i < 15 && j < 15) {
                 v = 6
             } else if (Math.random() < 0.001) {
                 v = 5
@@ -134,6 +134,7 @@ function test(x, y) {
         test(x + 1, y - 1);
         test(x + 1, y + 1);
         test(x - 1, y + 1);
+        turn = turn - 8
     };
     
     //Set initial point to 0, then update
