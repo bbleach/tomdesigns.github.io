@@ -2,6 +2,8 @@ var grid = new Array(17);
 var turn = 0
 var score = 0
 var recurs = 0
+var h = 0
+
 
 /*---------------------------------------------------------------------------------
  init();
@@ -71,10 +73,6 @@ function test(x, y) {
     if (c == 0) {
         return;
     };
-
-    if (turn == 51) {
-        start();
-    };
  
     //Top
     try {
@@ -141,6 +139,10 @@ function test(x, y) {
     grid[y][x] = 0;
     updateGrid();
     updateScore();
+
+    if (turn > 49) {
+        checkScore();
+    };
 };
 /*---------------------------------------------------------------------------------
 iterate(x coordinate, y coordinate, colour value); 
@@ -256,7 +258,7 @@ function updateScore() {
         score += ((50 * recurs) * (recurs + 1))
     }
     $('body > section > div.controls > div > h1').text(`Score: ${score}`);
-    $('body > section > div.controls > div > h2').text(`Turn: ${turn}/50`);
+    $('body > section > div.controls > div > h2:nth-child(3)').text(`Turn: ${turn}/50`);
 };
 
 /*---------------------------------------------------------------------------------
@@ -338,6 +340,20 @@ function fill() {
     }
 }
 
+function checkScore() {
+    h = localStorage.getItem('highscore')
+    if (score > h) {
+        localStorage.setItem('highscore', score)
+    }
+    $('body > section > div.controls > div > h2:nth-child(2)').text(`Highscore: ${localStorage.getItem('highscore')}`);
+    start();
+}
+
+function clearScore() {
+    localStorage.setItem('highscore', 0)
+    $('body > section > div.controls > div > h2:nth-child(2)').text(`Highscore: ${localStorage.getItem('highscore')}`);
+}
+
 /*---------------------------------------------------------------------------------
 animateIn(); 
 
@@ -359,7 +375,10 @@ function start() {
     score = 0
     turn = 0
     $('body > section > div.controls > div > h1').text(`Score: ${score}`).show();
-    $('body > section > div.controls > div > h2').text(`Turn: ${turn}/50`).show();
-    $('button').text("Reset grid");
+    $('body > section > div.controls > div > h2:nth-child(2)').text(`Highscore: ${localStorage.getItem('highscore')}`).show();
+    $('body > section > div.controls > div > h2:nth-child(3)').text(`Turn: ${turn}/50`).show();
+    $('body > section > div.controls > div > p').show();
+    $('body > section > div.controls > div:nth-child(2) > button:nth-child(1)').text("Reset grid");
+    $('body > section > div.controls > div:nth-child(2) > button:nth-child(2)').show();
     init();
 };

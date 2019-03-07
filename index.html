@@ -9,7 +9,7 @@
 	<meta property="og:description" content="Computer science task - written in javascript (jQuery)" />
     <title>Block Game</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 </head>
 
 <body>
@@ -20,9 +20,15 @@
         <div class="controls">
             <div>
                 <h1>Score: null</h1>
+                <h2>Highscore: null</h2>
                 <h2>Turn: n/50</h2>
+                <p>Note:  The highscore is local only to the current browser being used.  It is stored in your browser cache, and thus, will not reset when the browser is closed.</p>
+                <p><a href="https://github.com/tomdesigns/tomdesigns.github.io" target="_blank">Source</a></p>
             </div>
-            <button onclick="start()">Start game</button>
+            <div>
+                <button onclick="start()">Start game</button>
+                <button onclick="clearScore()" style="display: none;">Reset Highscore</button>
+            </div>
         </div>
     </section>
     <script src="lib/jquery.js" type="text/javascript"></script>

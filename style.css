@@ -1,6 +1,7 @@
 * {
-    font-family: Montserrat, sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 24px;
+    user-select: none;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -68,8 +69,8 @@ img {
     background: #131313
     
 }
-.grid, .main button {
-    margin: 0 30px;
+.grid, .controls {
+    margin: 30px;
 }
 .grid {
     display: flex;
@@ -121,18 +122,23 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     width: 400px;
 }
 .controls > div {
-    width: 100%;
-    margin-bottom: 150px;
+    width: 400px;
+}
+.controls > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
 }
 h1, h2, p {
     color: #ffffff;
     padding: 10px;
-    font-family: Montserrat, sans-serif;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
     display: none;
+    width: 100%;
 }
 h1 {
     font-size: 48px;
@@ -143,11 +149,22 @@ h2 {
 p {
     font-size: 16px;
 }
+a:link {
+    color: #0063ff;
+}
+a:visited {
+    color: #9700ff;
+}
+a:hover {
+    color: #690075;
+}
 button {
     padding: 10px 20px 10px 20px;
     margin: 100px 20px 10px 20px;
     background: #131313;
     color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 300;
     border: solid 1px #ffffff;
     border-radius: 0px;
     cursor: pointer;
