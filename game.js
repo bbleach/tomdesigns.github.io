@@ -71,6 +71,10 @@ function test(x, y) {
     if (c == 0) {
         return;
     };
+
+    if (turn == 51) {
+        start();
+    };
  
     //Top
     try {
@@ -134,7 +138,6 @@ function test(x, y) {
     
     //Set initial point to 0, then update
     grid[y][x] = 0;
-    drop();
     updateGrid();
     updateScore();
 };
@@ -195,6 +198,10 @@ stored in the grid array and update classes as necessary.
 ---------------------------------------------------------------------------------*/
 
 function updateGrid() {
+
+    drop();
+    fill();
+
     for (i = 0; i < 16; i++) {
         for (j = 0; j < 16; j++) {
             v = grid[i][j];
@@ -311,6 +318,24 @@ function drop() {
         }
     }
 };
+
+function fill() {
+    for (i = 0; i < 16; i++) {
+        for (j = 0; j < 16; j++) {
+            if (grid[i][j] == 0) {
+                var v = Math.floor((Math.random() * 4) + 1)
+
+                if (Math.random() < 0.002) {
+                    v = 6
+                } else if (Math.random() < 0.001) {
+                    v = 5
+                };
+
+                grid[i][j] = v
+            }
+        }
+    }
+}
 
 /*---------------------------------------------------------------------------------
 animateIn(); 
