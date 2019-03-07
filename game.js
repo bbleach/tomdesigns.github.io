@@ -4,6 +4,7 @@ var score = 0
 var recurs = 0
 var h = 0
 
+$(document).ready(start);
 
 /*---------------------------------------------------------------------------------
  init();
@@ -378,7 +379,7 @@ function start() {
     $('body > section > div.controls > div > h2:nth-child(2)').text(`Highscore: ${localStorage.getItem('highscore')}`).show();
     $('body > section > div.controls > div > h2:nth-child(3)').text(`Turn: ${turn}/50`).show();
     $('body > section > div.controls > div > p').show();
-    $('body > section > div.controls > div:nth-child(2) > button:nth-child(1)').text("Reset grid");
+    $('body > section > div.controls > div:nth-child(2) > button:nth-child(1)').show();
     $('body > section > div.controls > div:nth-child(2) > button:nth-child(2)').show();
     init();
 };
