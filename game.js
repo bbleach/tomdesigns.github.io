@@ -1,9 +1,7 @@
-var grid = new Array(17);
-var turn = 0
-var score = 0
-var recurs = 0
-var h = 0
+//Init. global scope variables
+var grid = new Array(17), turn = 0, score = 0, recurs = 0, h = 0
 
+//JQuery document ready callback
 $(document).ready(start);
 
 /*---------------------------------------------------------------------------------
@@ -301,7 +299,9 @@ function least() {
 /*---------------------------------------------------------------------------------
 drop(); 
 
-Eh?
+Iterates through the grid array, where the value below is 0, the value is shifted
+down.  The 'a' value allows this to iterate while the value below is zero.
+This is much more efficient than any other method.
 ---------------------------------------------------------------------------------*/
 
 function drop() {
@@ -323,6 +323,14 @@ function drop() {
     }
 };
 
+/*---------------------------------------------------------------------------------
+fill(); 
+
+Iterates through the array, replacing all 0's with a random colour value.
+Wipeout and bomb blocks have the same chance of spawning as in the init()
+function.
+---------------------------------------------------------------------------------*/
+
 function fill() {
     for (i = 0; i < 16; i++) {
         for (j = 0; j < 16; j++) {
@@ -341,6 +349,13 @@ function fill() {
     }
 }
 
+/*---------------------------------------------------------------------------------
+checkScore(); 
+
+Compares the current score the localStorage 'highscore' key and updates as
+necessary.
+---------------------------------------------------------------------------------*/
+
 function checkScore() {
     h = localStorage.getItem('highscore')
     if (score > h) {
@@ -349,6 +364,12 @@ function checkScore() {
     $('body > section > div.controls > div > h2:nth-child(2)').text(`Highscore: ${localStorage.getItem('highscore')}`);
     start();
 }
+
+/*---------------------------------------------------------------------------------
+clearScore(); 
+
+Sets the localStorage key 'highscore' to 0 and updates the play area as necessary.
+---------------------------------------------------------------------------------*/
 
 function clearScore() {
     localStorage.setItem('highscore', 0)
@@ -368,8 +389,8 @@ function animateIn() {
 /*---------------------------------------------------------------------------------
 start(); 
 
-Main function called by the start button - resets score and turn values and sets
-up the play area (ish)
+Main function called by JQuery's page load callback.  Resets score and turn values
+and sets up the play area (ish)
 ---------------------------------------------------------------------------------*/
 
 function start() {
